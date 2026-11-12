@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script language="javascript" type="text/javascript"
+	src="../Scripts/collapsepanel.js?ver=2016"></script> -->
+<!-- <style type="text/css">
+.dataTables_length
+{
+  top: 10px; 
+  font-weight: bold;
+/*   padding-bottom: 1em; */
+  margin-right: 15px; 
+/*  	margin-left: 1px; */
+} 
+.dataTables_info {
+  margin-left: 17px; 
+  font-weight: bold;
+} 
+/* table.dataTable th, table.dataTable td {
+    padding: 3px;
+    border: #cfe0e9 solid 1px;
+    border-spacing: 1px;
+} */
+</style> -->
+</head>
+<body>
+<!DOCTYPE html>
+<title>:: Telangana eProcurement Portal ::</title>
+<!-- Responsive CSS Starts Here -->
+<!-- Responsive CSS Ends Here -->
+<div class="loader"></div>
+<!-- HeaderTop Starts Here -->
+<div class="container-fluid">
+<div class="row tsFooterDown" id="myDIV-1">
+<div class="col-lg-4 col-md-6 col-sm-6">
+<div class="footer-social-icons">
+<ul class="social-icons">
+<li><a class="social-icon" href="#"> <i class="fa fa-facebook"></i></a></li>
+<li><a class="social-icon" href="#"> <img alt="Twitter X" class="fa-twitter" src="/views/themes/currenttheme/images/twitter.svg"/> </a></li>
+<li><a class="social-icon" href="#"> <i class="fa fa-youtube"></i></a></li>
+<!-- <li><a href="#" class="social-icon"> <i
+								class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" class="social-icon"> <i
+								class="fa fa-google-plus"></i></a></li> -->
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6">
+<!-- <span style="color: #0C1B56"> <b>Welcome to Telangana State eProcurement Portal </b> </span> &nbsp; -->
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="pull-right">
+<div class="btn-group">
+<div class="topTxtLinks">
+<div class="dropdown-wrapper" id="langDropdown">
+<button aria-expanded="false" aria-haspopup="listbox" class="dropdown-togglelang" type="button">
+<span class="dropdown-label">
+<i class="fa fa-globe"></i>
+<span class="lang-text">
+								        Select Language
+								      </span>
+</span>
+<i class="fa fa-angle-down dropdown-arrow"></i>
+</button>
+<ul class="dropdown-menu" role="listbox">
+<li data-value="en" role="option">
+							      English
+							    </li>
+<li data-value="te" role="option">
+							      తెలుగు
+							    </li>
+</ul>
+</div>
+<a href="#skipContentBox"> Skip to Content</a>  
+							<!-- <a href="?lang=en">English</a> | <a href="?lang=te">Telugu</a>  -->
+<!-- <a href="#" onclick="changeLang('en')">English</a> | 
+								<a href="#" onclick="changeLang('te')" >Telugu</a> -->
+<a class="btn2" href="#" onclick="fnPreLogin('screen-reader.html')" title=""><i class="fa fa-wheelchair"> </i></a> <a class="decrease btn2" href="#" title="Decrease font size"><i class="fa fa-font size1"> <i class="fa fa-minus minus"> </i>
+</i></a> <a class="resetMe btn2" href="#" title="Default font size"><i class="fa fa-font size1"> </i></a> <a class="increase btn2" href="#" title="Increase font size"><i class="fa fa-font size1"> <i class="fa fa-plus plus"> </i>
+</i></a> <a class="white btn2" href="#" onclick="btnGrayScale()"><i class="fa fa-font white size1"> </i></a> <a class="whiteR btn2" href="#" onclick="btnNormalScale()"><i class="fa fa-font size1"> </i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- HeaderTop Starts Here -->
+<div id="wrapper">
+<div class="tsHeader">
+<div>
+<img alt="Welcome to Telangana State eProcurement Portal" id="tsHeaderImg" src="/views/themes/latestTheme/homepage/images/tsHomePage-left.png" title="Welcome to Telangana State eProcurement Portal" width="100%"/>
+</div>
+<div>
+<img alt="Welcome to Telangana State eProcurement Portal" id="tsHeaderImg" src="/views/themes/latestTheme/homepage/images/tsHomePage-center.png" title="Welcome to Telangana State eProcurement Portal" width="100%"/>
+</div>
+<div>
+<img alt="Welcome to Telangana State eProcurement Portal" id="tsHeaderImg" src="/views/themes/latestTheme/homepage/images/tsHomePage-right.png" title="Welcome to Telangana State eProcurement Portal" width="100%"/>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+<form action="/TenderDetailsHome.html" id="misreports" method="post" name="misreports">
+<!-- Navigation Starts Here -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container-fluid">
+<div class="collapse navbar-collapse" id="cssmenu">
+<ul class="nav navbar-nav">
+<li><a class="customAct" href="#" onclick="fnPreLogin('login.html')"><i aria-hidden="true" class="fa fa-home"></i></a></li>
+<li><a href="#" onclick="fnPreLogin('eprocurement-guidelines.html')"><i aria-hidden="true" class="fa fa-file-text"></i> Guidelines</a></li>
+<li><a href="#" onclick="misReport()"> <i aria-hidden="true" class="fa fa-bar-chart"></i> MIS Reports
+								</a></li>
+<li><a href="#" onclick="fnPreLogin('news-government-orders.html')"><i aria-hidden="true" class="fa fa-list-alt"></i> G.O.s</a></li>
+<li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i aria-hidden="true" class="fa fa-question-circle"></i> FAQ's <i aria-hidden="true" class="fa fa-caret-down"></i></a>
+<ul class="dropdown-menu">
+<li><a href="#" onclick="fnPreLogin('faqs.html')">General</a></li>
+<li><a href="#" onclick="fnPreLogin('contractors-faqs.html')">Contractors</a></li>
+<li><a href="#" onclick="fnPreLogin('departments-faqs.html')">Departments</a></li>
+</ul></li>
+<li><a href="#" onclick="fnPreLogin('downloads.html')"><i aria-hidden="true" class="fa fa-download"></i> Downloads</a></li>
+<li><a href="#" onclick="fnPreLogin('helpdesk.html')">
+<img alt="Technical Helpdesk" src="/views/themes/currenttheme/homepage/images/headset.svg"/>
+								 Technical HelpDesk</a></li>
+<li><a href="#" onclick="fnPreLogin('feedback-suggestions.html')"><i aria-hidden="true" class="fa fa-comments"></i>Suggestions</a></li>
+<li><a href="#" onclick="fnPreLogin('contact-us.html')"><i aria-hidden="true" class="fa fa-phone"></i>
+ Contact Us</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<input name="CSRFToken" type="hidden" value="c78398d8-b7eb-431a-b9c7-3c30c29ca9d4"/>
+<input name="hdnEncryptNames" type="hidden" value="hdnEncryptNames"/>
+<input name="hdnEncryptValues" type="hidden" value="hdnEncryptValues"/>
+</form>
+<div align="left" class="PageTitle">
+		Welcome to Tender Details
+	</div>
+<div class="container-fluid minH">
+<div class="row">
+<div class="col-lg-12">
+<form action="/TenderDetailsHome.html" id="tenderDetailsHome" method="post" name="tenderDetailsHome" onkeypress="searchKeyPress(event);">
+<div id="ModalBackgroundDiv"></div>
+<div class="card" id="Tendersearch">
+<div class="card-heading">
+<div class="card-title">
+<span> Tender Search </span>
+</div>
+<div class="card-right">
+<span id="errorMessage1"></span>
+</div>
+</div>
+<div class="card-body">
+<div class="mt10" id="Searchby">
+<div class="row">
+<div class="col-md-4" id="">
+<div class="form-group">
+<div class="dflex">
+<input class="form-control" id="nTenderID" maxlength="200" name="nTenderID" placeholder="Search by ... Tender ID/ IFB No/ Name of Work" type="text" value=""/>
+<input class="Button" id="searchTender" onclick="searchBtn()" type="button" value="Search"/>
+<input align="middle" class="Button" id="Advanced" onclick="Advancedsearch()" type="button" value="Advanced Search"/>
+</div>
+<label id="errmsg"> </label>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<div class="checkboxes-and-radios">
+<input id="corrigendumsDetails" name="corrigendums" onclick="radiovalid(this)" type="checkbox"/>
+<label class="Text" for="corrigendumsDetails" title="Corrigendums On">View Corrigendums </label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- advance serach starts -->
+<div class="mt10" id="advSearch">
+<div id="advsearch">
+<div id="AdvancedSearch2">
+<div class="row">
+<div class="col-md-2" id="Department">
+<div class="form-group">
+<label for="" id=""> </label>
+<select class="form-control" id="nDepartmentID" name="nDepartmentID" onchange="getCircles(this.value)">
+<option selected="selected" value="0">Select Department</option>
+<option value="600">AAROGYASRI HEALTH CARE TRUST</option>
+<option value="3086">AG audit</option>
+<option value="1252">AGRICULTURAL MARKETING  DEPARTMENT - TELANGANA</option>
+<option value="597">Agriculture &amp; Cooperative Department</option>
+<option value="473">ARCHAEOLOGY AND MUSEUMS - TELANGANA</option>
+</select>
+<label></label>
+</div>
+</div>
+<div class="col-md-2" id="circle">
+<div class="form-group">
+<label for="" id=""> </label>
+<select class="form-control" id="subDeptId" name="subDeptId">
+<option value="">
+															Select Circle
+														</option>
+</select>
+<label> </label>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<select class="form-control" id="ddlDistrict" name="ddlDistrict">
+<option selected="selected" value="">
+															Select District
+														</option>
+<option value="14">ADILABAD</option>
+<option value="28">BHADRADRI KOTHAGUDEM</option>
+<option value="8">HYDERABAD</option>
+<option value="19">JAGITIAL</option>
+<option value="24">JANGOAN</option>
+</select>
+<span id="errmsg"></span>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<select class="form-control" id="ddlMandal" name="ddlMandal">
+<option value="">
+															Select Mandal
+														</option>
+</select>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<select class="form-control" id="biddingType1" name="biddingType">
+<option value="">
+															Select Search By
+														</option>
+<option value="102">
+															Limited
+														</option>
+<option value="1">
+															Auction Applicable
+														</option>
+</select>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<select class="form-control" id="sProcurementType" name="sProcurementType">
+<option value="">
+															Tender Category
+														</option>
+<option value="101">
+															WORKS
+														</option>
+<option value="102">
+															PRODUCTS
+														</option>
+<option value="104">
+															SERVICES
+														</option>
+</select>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2" id="">
+<div class="form-group">
+<input class="form-control" id="mECVValue1" maxlength="12" name="mECVValue1" placeholder="ECV From Value" type="text" value=""/>
+<span id="errmsgFrom"></span>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<input class="form-control" id="mECVValue2" maxlength="12" name="mECVValue2" placeholder="ECV To Value" type="text" value=""/>
+<span id="errmsgTo"></span>
+</div>
+</div>
+<div class="col-md-2" id="dtBidClosingselect2">
+<div class="form-group">
+<select class="form-control" id="dtBidClosingselect1" name="dtBidClosingselect" onchange="fnEnableDate()" placeholder="By dates">
+<option value="">
+															By Dates
+														</option>
+<option value="108">
+															Bid Submission StartDate
+														</option>
+<option value="109">
+															Bid Submission EndDate
+														</option>
+</select>
+</div>
+</div>
+<div class="col-md-2" id="Enddate">
+<div class="form-group">
+<div class="dflex">
+<input class="form-control" id="dtBidClosing1" name="dtBidClosing1" placeholder="Bid Closing From" readonly="readonly" type="text" value=""/>
+<a class="dinline" href="javascript:void(0)" id="aHref1" runat="server"> <img align="absMiddle" alt="" border="0" id="IMG1" name="popdtp" onclick="if(self.gfPop)gfPop1.fPopCalendar(document.getElementById('dtBidClosing1'));return false;" src="/views/Calender/calbtn.svg"/></a>
+</div>
+</div>
+</div>
+<div class="col-md-2" id="Enddate1">
+<div class="form-group">
+<div class="dflex">
+<input class="form-control" id="dtBidClosing2" name="dtBidClosing2" placeholder="Bid Closing To" readonly="readonly" type="text" value=""/>
+<a class="dinline" href="javascript:void(0)" id="aHref1" runat="server"> <img align="absMiddle" alt="" border="0" id="IMG1" name="popdtp" onclick="if(self.gfPop)gfPop1.fPopCalendar(document.getElementById('dtBidClosing2'));return false;" src="/views/Calender/calbtn.svg"/></a>
+</div>
+</div>
+</div>
+<div class="col-md-2" id="Startdate">
+<div class="form-group">
+<div class="dflex">
+<input class="form-control" id="dtTenderOpening1" name="dtTenderOpening1" placeholder="Bid Start From" readonly="readonly" type="text" value=""/>
+<a class="dinline" href="javascript:void(0)" id="aHref1" runat="server"> <img align="absMiddle" alt="" border="0" id="IMG1" name="popdtp" onclick="if(self.gfPop)gfPop1.fPopCalendar(document.getElementById('dtTenderOpening1'));return false;" src="/views/Calender/calbtn.svg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-2" id="Startdate1">
+<div class="form-group">
+<div class="dflex">
+<input class="form-control" id="dtTenderOpening2" name="dtTenderOpening2" placeholder="Bid Start To" readonly="readonly" type="text" value=""/>
+<a class="dinline" href="javascript:void(0)" id="aHref1" runat="server"> <img align="absMiddle" alt="" border="0" id="IMG1" name="popdtp" onclick="if(self.gfPop)gfPop1.fPopCalendar(document.getElementById('dtTenderOpening2'));return false;" src="/views/Calender/calbtn.svg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-2" id="">
+<div class="form-group">
+<input align="middle" class="Button w80" id="Tender" onclick="advsearchBtn()" type="button" value="Apply"/>
+<input class="Button" id="VTMSBodyContent" name="ctl00$VTMSBodyContent$Clear" onclick="funclear()" type="button" value="Clear"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- advance search ends -->
+<div class="card">
+<div class="card-heading">
+<div class="card-title">
+<span>   </span>
+</div>
+<div class="card-right"></div>
+</div>
+<div class="card-body">
+<div class="table-responsive">
+<table class="display" id="pagetable13" width="100%">
+<thead>
+<tr>
+<th align="left">Department Name</th>
+<th align="left">Tender ID</th>
+<th align="left">Enquiry/IFB/Tender Notice Number</th>
+<th align="left">Tender Category</th>
+<th align="left">Name of Work</th>
+<th align="left">Estimated Contract Value</th>
+<th align="left">Published Date &amp; Time</th>
+<th align="left">Bid Submission Start Date &amp; Time</th>
+<th align="left">Bid Submission Closing Date&amp; Time</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<input id="hdnSearch4" name="hdnSearch4" type="hidden" value=""/>
+<input id="hdnSearch" name="hdnSearch" type="hidden"/>
+<input id="hdncorrigendumsDetails" name="hdncorrigendumsDetails" type="hidden" value=""/>
+<input id="hdncorrigendumsDetails1" name="hdncorrigendumsDetails1" type="hidden" value=""/>
+<input id="hdnnoSearch" name="hdnnoSearch" type="hidden" value=""/>
+<input id="hdncorrigendumsDetails2" name="hdncorrigendumsDetails2" type="hidden" value=""/>
+<input name="hdnPreviousPage" type="hidden" value=""/>
+<input name="hdnIndentID" type="hidden" value=""/>
+<input name="hdnTenderCategory" type="hidden" value=""/>
+<input name="hdnProcurementID" type="hidden" value=""/>
+<input id="hdnType" name="hdnType" type="hidden" value="current"/>
+<input id="hdnPreviousPge" name="hdnPreviousPge" type="hidden" value="TenderDetailsHome.html"/>
+<input id="hdnadvsearch" name="hdnadvsearch" type="hidden"/>
+<input name="hdnFromStatus" type="hidden" value=""/>
+<input name="typeOfWorkFromConsolidation" type="hidden" value=""/>
+<input name="popUPRequestParameter" type="hidden" value=""/>
+<input name="selectedCircleDivison" type="hidden" value=""/>
+<input name="selectedDepartmentID" type="hidden" value=""/>
+<input name="selectedProcurementType" type="hidden" value=""/>
+<input name="selectedTypeofWork" type="hidden" value=""/>
+<input id="aid" name="aid" type="hidden"/>
+<input name="CSRFToken" type="hidden" value="c78398d8-b7eb-431a-b9c7-3c30c29ca9d4"/>
+<input name="hdnEncryptNames" type="hidden" value="hdnEncryptNames"/>
+<input name="hdnEncryptValues" type="hidden" value="hdnEncryptValues"/>
+</form>
+</div>
+</div>
+</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<div class="bottomSpacer"> </div>
+<div class="bottomFooter">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" height="20px" width="50%"> 
+        Information Technology, Electronics &amp; Communications Department, Government of Telangana, India. All rights reserved.
+        </td>
+<td align="right" width="50%">
+			Server Time: 31/10/2026 08:40:00 AM    
+        </td>
+</tr>
+</table>
+</div>
+</body>
+</html>

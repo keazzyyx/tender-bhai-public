@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to eProcurement - Tender Management System - Govt
+	of ....</title>
+</head>
+<body onclick="javascript:focusPopup()" onfocus="javascript:focusPopup()">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<title>:: Telangana eProcurement Portal ::</title>
+<header class="tsHeader">
+<img alt="Welcome to Telangana State eProcurement Portal" id="tsHeaderImg" src="/views/themes/latestTheme/homepage/images/header1.jpg" title="Welcome to Telangana State eProcurement Portal" width="100%"/>
+</header>
+<div align="center" id="isOLD">
+<div align="center" class="StatusRed">This tender is published with OLD PKI component.Request the bidder to ensure their "Encryption Certificate" is mapped with old PKI</div>
+</div>
+<div class="container-fluid">
+<div>
+<div align="left" class="PageTitle">
+				View Tender Details
+				<div class="pull-right">
+<input class="btn btn-primary" onclick="fnPrint()" type="button" value="Print"/>     
+							<input align="middle" class="btn btn-primary" onclick="window.close()" type="button" value="Close"/>
+</div>
+</div>
+</div>
+<div></div>
+<div class="row">
+<div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<form action="/ViewTender.html" id="tenderForm" method="post" name="tenderForm">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="lblTenderDocFeeDetails3">Current Tender Details</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<td align="right" class="tdlight" width="20%"><span class="TextHead"> Tender ID </span></td>
+<td align="left" class="tdwhite" width="30%"><span class="TextNormal">744078</span>
+</td>
+<td align="right" class="tdlight" width="20%"><span class="TextHead"> Enquiry/IFB/Tender Notice Number </span></td>
+<td align="left" class="tdwhite" width="30%"><span class="TextNormal">ENN26O0017</span>
+</td>
+</tr>
+<tr>
+<td align="right" class="tdlight"><span class="TextHead">Name of Work </span></td>
+<td align="left" class="tdwhite"><span class="TextNormal">Hiring of a Heavy duty truck mounted vacuum based mechanical Road Sweeper for a period of three (3) years, 12 hours operation per day with 24 hours availability and monthly running slab of 1,500KM as per the specifications and scope of work of NIT for use at Naini Area, Chhendipada, Odisha on Open Enquiry basis through Tender-Cum-Reverse Auction (e-Reverse Auction - Critical mode)</span>
+</td>
+<td align="right" class="tdlight"><span class="TextHead">Tender Category</span></td>
+<td align="left" class="tdwhite" width="20%"><span class="TextNormal">Services</span>
+</td>
+</tr>
+<tr>
+<td align="right" class="tdlight"><span class="TextHead">Tender Type</span></td>
+<td align="left" class="tdwhite"><span class="TextNormal">OPEN</span>
+</td>
+<td align="right" class="tdlight"><span class="TextHead">
+												Estimated Contract Value</span></td>
+<td align="left" class="tdwhite"><span class="TextNormal">12600000.00</span>
+</td>
+</tr>
+<tr>
+<td align="right" class="tdlight"><span class="TextHead">Bid Submission Closing Date</span></td>
+<td align="left" class="tdwhite"><span class="TextNormal">16/11/2026 05:00 PM</span>
+</td>
+<td align="right" class="tdlight"><span class="TextHead">Tender Evaluation Type</span></td>
+<td align="left" class="tdwhite"><span class="TextNormal">Gen Services/OB/Coal-Sand Transpn/AMC/CMC/Turnkey Projects/SWM</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<input name="hdnProcurementID" type="hidden" value="677069"/>
+<input name="hdnIndentID" type="hidden" value="677079"/>
+<input name="hdnTenderId" type="hidden" value="744078"/>
+<input name="hdnType" type="hidden" value="101"/>
+<input name="hdnTenderCategory" type="hidden" value="104"/>
+<input name="hdnBidSubmissionClosingDate" type="hidden" value="16/11/2026 05:00 PM"/>
+<input name="CSRFToken" type="hidden" value="c78398d8-b7eb-431a-b9c7-3c30c29ca9d4"/>
+<input name="hdnEncryptNames" type="hidden" value="hdnEncryptNames"/>
+<input name="hdnEncryptValues" type="hidden" value="hdnEncryptValues"/>
+</form>
+</div>
+<div>
+<!-- Short Links Starts Here -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span>Other Links</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<div>
+<img border="0" data-toggle="tooltip" onclick="fnviewTenderDocuments('677069','677079','login.html')" src="/views/themes/currenttheme/thumb-tender-documents.png" title="View Tender Documents"/>
+</div>
+<div>
+</div>
+</div>
+</div>
+</div>
+<!-- Short Links Ends Here -->
+</div>
+</div>
+<div></div>
+<form action="/ViewTender.html" id="viewTenderBean" method="post" name="viewTenderBean">
+<div>
+<div>
+<div class="">
+<div class="panel-title">
+<span id="lblTenderDocFeeDetails3">Enquiry Particulars</span>
+</div>
+</div>
+</div>
+<div>
+<!-- -->
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblDepartmentName">Department Name</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblDepartmentNameValue">THE SINGARENI COLLIERIES COMPANY LIMITED</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblCirclediv">Circle/Division</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblCircleDivison">THE SINGARENI COLLIERIES COMPANY LIMITED-Naini-Pur</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblTenderId">Tender ID</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblTenderIdValue">744078</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblTenderNo">Enquiry/IFB/Tender Notice Number </span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblTenderNoValue">ENN26O0017</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblNameOfProject">Name of Project</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblNameOfProjectValue">Hiring of Heavy Duty Truck Mounted Vacuume Based Mechanical Road Sweeper for  a period of  three(03) years, 12 hours operation per day with 24Hrs availability and monthly running slab of 1500KM as per the specifications and scope of work of NIT for use at Naini Coal mine, Chhendipada, Odisha State</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblNameWorkMaterial">Name of Work </span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblNameWorkMaterialValue">Hiring of a Heavy duty truck mounted vacuum based mechanical Road Sweeper for a period of three (3) years, 12 hours operation per day with 24 hours availability and monthly running slab of 1,500KM as per the specifications and scope of work of NIT for use at Naini Area, Chhendipada, Odisha on Open Enquiry basis through Tender-Cum-Reverse Auction (e-Reverse Auction - Critical mode)</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblNameWorkMaterial">Estimated Contract Value(INR)</span></td>
+<td align="left" class="tdwhite" colspan="100%"><div>
+																12600000.00
+												</div> <input id="lblEcvValue" name="lblEcvValue" type="hidden" value="12600000.00"/>    
+										    <div id="amuntWords">
+										        (<span id="txtAmountinWords"></span>)
+										    </div>
+</td>
+</tr>
+<tr class="tdlight" id="VTMSBodyContent_trPackage">
+<td align="left" width="20%"><span class="Text" id="lblNameofthePackage">Package number</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblPackageNumber">N/A</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblDeliveryPeriod">Period of Completion/ Delivery Period (in months)</span></td>
+<td align="left" class="tdwhite" width="30%">
+<span id="lblDeliveryPeriodValue">36</span>
+</td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lbltypeofwork">Type of Work</span></td>
+<td align="left" class="tdwhite"><span id="lbltypeofworkvalue">Other Services</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblBiddingType">Bidding Type</span></td>
+<td align="left" class="tdwhite"><span id="lblBiddingTypeValue">OPEN</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblBidCalls">Bid Call (Numbers)</span></td>
+<td align="left" class="tdwhite" colspan="100%">
+<span id="lblBidCallsValue">3</span>
+</td>
+</tr>
+<!--Added by mahesh.04/03/2015  -->
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblTenderCategory">Tender Category</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblTenderCategoryValue">SERVICES</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblCurrencyType">Currency Type</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblCurrencyTypeValue">(INR)  </span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblCurrencySettings">Default Currency</span></td>
+<td align="left" class="tdwhite">Indian Rupee - INR</td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblEvaluationType">Evaluation Type</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblEvaluationType1">Gen Services/OB/Coal-Sand Transpn/AMC/CMC/Turnkey Projects/SWM</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblEvaluationCritieria">Evaluation Criteria</span></td>
+<td align="left" class="tdwhite" colspan="100%"><span id="VTMSBodyContent_lblEvaluationCritieria1">Based on Price
+											</span></td>
+</tr>
+<input id="hdnFileName" name="hdnFileName" type="hidden" value=""/>
+<input id="hdnFilePath" name="hdnFilePath" type="hidden" value=""/>
+<!--  
+						</tbody>
+					</table>
+					<!--  -->
+<div></div>
+<!-- end  EnquiryParticulars-->
+<!-- Hidden World Bank Works Details-->
+<div id="WorldBankDetailsHidden">
+<!--         <table cellpadding="0"  width="98%">
+			            <tr>
+			                <td width="1%" nowrap="nowrap" valign="top">
+			                    <img src="views/themes/currenttheme/images/LeftCurve.gif" />
+			                </td>
+			                <td width="3%" valign="middle" nowrap="nowrap" class="GridHeader">
+			                    <span id="VTMSBodyContent_lblSanctionHeader">World Bank Works Details</span>
+			                </td>
+			                <td width="1%" nowrap="nowrap" valign="top">
+			                    <img src="views/themes/currenttheme/images/RightCurve.gif" />
+			                </td>
+			                <td width="60%" align="right" valign="top" class="Text">
+			                </td>
+			                <td width="35%" align="right" valign="top" class="Text">
+			                    &nbsp;
+			                </td>
+			            </tr>
+			        </table> -->
+<table align="center" cellpadding="3" cellspacing="1" width="98%">
+</table>
+</div>
+<!-- end World Bank Works Details -->
+<!-- Start TenderDocFeeDetails -->
+<br/>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="lblTenderDocFeeDetails">Transaction Fee Details</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="left" class="tdlight" width="50%"><label>Transaction
+												Fee Payable to 'TSTS '
+												payable at Hyderabad.
+									                (As per G.O.Ms.No.6, Dtd 09.10.2026, IT&amp;C Dept)
+										</label></td>
+<td align="left" class="tdwhite"><span id="mTransactionFee">7434
+												(INR)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div></div>
+<!--end TenderDocument fee details  -->
+<!-- Start PreBidMeeting Hidden -->
+<div id="preBidHideArea">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblSanctionHeader">Pre Bid Meeting</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="TextHead"> Pre Bid Meeting</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblMeetingStatus">Offline
+												</span></td>
+</tr>
+<div id="PreBidDate">
+<div id="VTMSBodyContent_tblOffline">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="TextHead">Pre Bid Meeting Date &amp; Time</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblBidOpeningDateOff">02/11/2026 11:00 AM</span></td>
+</tr>
+</div>
+</div>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- End PreBidMeeting -->
+<!--Start Tender Dates -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblTenderDates">Tender Dates</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblBidDocDownStartingDate">Bid Submission Start Date &amp; Time</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblBidDocDownStartingDateValue">09/11/2026 05:00 PM</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblBidSubmissionClosingDate">Bid Submission Closing Date &amp; Time</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="lblBidSubmissionClosingDateValue">16/11/2026 05:00 PM</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="lblBidValidityPeriod">Bid Validity Period (in Days)</span></td>
+<td align="left" class="tdwhite" colspan="100%"><span id="lblBidValidityPeriodValue">180</span></td>
+</tr>
+</table>
+<br/>
+</div>
+</div>
+</div>
+<!--ender tender dates  -->
+<!-- Start PreBidMeeting Hidden -->
+<div id="preBidHideArea">
+<table>
+<tbody>
+<tr>
+<td nowrap="nowrap" valign="top" width="1%"><img height="24" src="views/themes/currenttheme/images/LeftCurve.gif" width="14"/></td>
+<td class="GridHeader" nowrap="nowrap" valign="middle" width="3%"><span id="VTMSBodyContent_lblSanctionHeader">Pre Bid Meeting</span></td>
+<td nowrap="nowrap" valign="top" width="1%"><img height="24" src="views/themes/currenttheme/images/RightCurve.gif" width="25"/></td>
+<td class="tdSpacer" valign="bottom" width="95%"> </td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="TextHead"> Pre Bid Meeting</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblMeetingStatus">Offline
+									</span></td>
+</tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" id="VTMSBodyContent_tblOffline" width="100%">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="TextHead">Pre Bid Meeting Opening Date &amp; Time</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblBidOpeningDateOff">02/11/2026 11:00 AM</span></td>
+</tr>
+</table>
+<div id="PreBidClosingdate">
+<table border="0" cellpadding="3" cellspacing="1" id="VTMSBodyContent_tblOffline" width="100%">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="TextHead">Pre Bid Meeting Closing Date &amp; Time</span></td>
+<td align="left" class="tdwhite"><span id="VTMSBodyContent_lblBidOpeningDateOff"></span></td>
+</tr>
+</table>
+<br/>
+</div>
+</div>
+<!-- End PreBidMeeting -->
+<!-- Start Tender Parameters -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblOtherDetails">Tender Parameters</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="">Category</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="">Firm order</span>
+</td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="">Nature Of Item</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="">Revenue</span>
+</td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="">No Of Sources</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="">1</span>
+</td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="">Form Of Contract</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="">Item Rate</span>
+</td>
+</tr>
+<!-- 							<tr> -->
+<!-- 								<td width="30%" align="left" class="tdlight"><span -->
+<!-- 									id="lblcorautoext" class="Text">Corrigendum Auto Extension</span></td> -->
+<!-- 								<td align="left" class="tdwhite"><span -->
+<!-- 									id="lblcorautoext"> -->
+<!-- 									</span> -->
+<!-- 								</td> -->
+<!-- 							</tr> -->
+<!-- 								<tr> -->
+<!-- 								<td width="30%" align="left" class="tdlight"><span -->
+<!-- 									id="lblnoofcorr" class="Text">No.of Auto Extensions in Corrigendum</span></td> -->
+<!-- 								<td align="left" class="tdwhite"><span -->
+<!-- 									</span> -->
+<!-- 								</td> -->
+<!-- 							</tr> -->
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="">eAuction</span></td>
+<td align="left" class="tdwhite" colspan="100%">
+<span id="">Applicable</span>
+</td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="30%"><span class="Text" id="lblcategory">Input Tax Credit</span></td>
+<td align="left" class="tdwhite" colspan="100%"><span id="valcategory">Yes</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<br/>
+</div>
+<!-- End Tender Parameters -->
+<!-- Start Tender Inviting Authority Particulars -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblOtherDetails">Tender Inviting Authority Particulars</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblOfficerInvitingBids">Officer Inviting Bids</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="VTMSBodyContent_lblOfficerInvitingBidsValue">General Manager, Naini Area</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblBidOpeningAuthority">Bid Opening Authority</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="VTMSBodyContent_lblBidOpeningAuthorityValue">General Manager, Naini Area</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblAddress">Address</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="VTMSBodyContent_lblAddressValue">The Singareni Collieries company Ltd, Turanga, Bikash Nagar, Angul. Pin: 759123</span></td>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblContactDetails">Contact Details</span></td>
+<td align="left" class="tdwhite" width="30%"><span id="VTMSBodyContent_lblContactDetailsValue">8332974875</span></td>
+</tr>
+<tr>
+<td align="left" class="tdlight" width="20%"><span class="Text" id="VTMSBodyContent_lblsEMail">Email</span></td>
+<td align="left" class="tdwhite" colspan="100%"><span id="VTMSBodyContent_lblsEMailValue">gm_naini@scclmines.com</span></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<br/>
+<!-- EMD Details  -->
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="lblTenderDocFeeDetails">Bid Security Details</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div id="EMDDetailsHidden">
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th class="tdOuter">Bid Security (INR)</th>
+<th class="tdOuter">Bid Security In Favour Of</th>
+<th class="tdOuter">Mode of Payment</th>
+<th class="tdOuter">EMD Applicable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tdwhite text-center">Rs.<span id="lblBidSecurityPayableValue">126000.00</span></td>
+<td class="tdwhite text-center"><span id="lblBidSecurityPayableValue">The General Manager, Singareni collieries company ltd, Naini Area</span></td>
+<td class="tdwhite text-center"><span id="lblBidSecurityPayableValue">Exempted,Online Payment,Challan Generation</span></td>
+<td class="tdwhite text-center"><span id="lblBidSecurityPayableValue">
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<!-- Process Fee -->
+<!-- Supporting documents required  -->
+<div id="RequiredTenderDocumentsHidden">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblRequiredTenderDocumentsDetails">Required Tender Documents Details</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered" id="VTMSBodyContent_TenderDetailsGridView">
+<thead>
+<tr>
+<th class="tdOuter" scope="col">S.No</th>
+<th class="tdOuter" scope="col">Document Name</th>
+<th class="tdOuter" scope="col">Stage</th>
+<th class="tdOuter" scope="col">Document Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" class="tdwhite" width="5%">1</td>
+<td align="center" class="tdwhite" width="15%">Acceptance of Technical Specifications and Scope of work as per Annexure-I &amp; II</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">2</td>
+<td align="center" class="tdwhite" width="15%">Letter of bid (LOB); Annexure-III</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">3</td>
+<td align="center" class="tdwhite" width="15%">Acceptance to commercial terms and Conditions; Annexure-IV</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">4</td>
+<td align="center" class="tdwhite" width="15%">Declaration, Non Banning &amp; Self Certification, Annexure-VI,VII,VIII</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">5</td>
+<td align="center" class="tdwhite" width="15%">GST Registration Certificate</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">6</td>
+<td align="center" class="tdwhite" width="15%">In case of manufacturer claiming exemption for EMD, relevant copy of NSIC/MSME</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%"> 
+												Optional</td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">7</td>
+<td align="center" class="tdwhite" width="15%">In case of manufacturer:Firm registration certificate along with valid Manufacturing license as per Factories Act/NSIC/Govt. Doc</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%"> 
+												Optional</td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">8</td>
+<td align="center" class="tdwhite" width="15%">In case of dealer:Manufacturers Firm registration certificate along with manufacturer?s valid manufacturing license as per Factories Act/NSIC/Govt. Doc and valid Authorized Dealership Certificate</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%"> 
+												Optional</td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">9</td>
+<td align="center" class="tdwhite" width="15%">Copies of Previous Purchase order placed by SCCL / Government organizations / PSUs / Subsidiaries of CIL /Private organisations mentioned</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">10</td>
+<td align="center" class="tdwhite" width="15%">Copies of Satisfactory performance report issued by Government organisations / PSUs/ Subsidiaries of CIL/Any private organisations mentioned above for the previous orders submitted</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%">
+												Mandatory
+											 </td>
+</tr>
+<tr>
+<td align="center" class="tdwhite" width="5%">11</td>
+<td align="center" class="tdwhite" width="15%">Any other documents as per NIT</td>
+<td align="center" class="tdwhite" width="10%">COMMON</td>
+<td align="center" class="tdwhite" width="5%"> 
+												Optional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<div id="LocationHide">
+</div>
+<!-- End Tender Inviting Authority Particulars -->
+<!--  Start TermsAndConditions -->
+<div id="termsAndConditionListHidden">
+<div id="VTMSBodyContent_pnlTerms">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblGenralTermsAndConditionsEligibility">General Terms and Conditions / Eligibility</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="left" class="tdlight">
+													Terms and conditions as per the NIT</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblGenralTechnicalTermsAndConditions">General Terms &amp; Conditions</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="left" class="tdlight"><span id="VTMSBodyContent_lblTechnicalTC">Terms and conditions as per the NIT</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<br/>
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblLegalTermsAndConditions">Legal Terms &amp; Conditions</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="left" class="tdlight"><span id="VTMSBodyContent_lblLegalTC">Terms and conditions as per the NIT</span></td>
+</tr>
+</tbody><tbody>
+</tbody></table>
+</div>
+</div>
+</div>
+<div id="ProcedureforBidSubmissionHidden">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblProcedureForBidSubmission">Procedure for Bid Submission</span>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody>
+<tr>
+<td align="center" class="tdlight"><a herf="#" onclick="Click_Element()"> Show Procedure for Bid Submission </a></td>
+</tr>
+</tbody>
+</table>
+<div class="modalNew" id="txtShow">
+<div class="modal-contentNew">
+<div class="modal-body">
+													The bidder shall submit his response through Bid submission to the tender on eProcurement platform at www.eprocurement.telangana.gov.in by following the procedure given below. The bidder would be required to register on the e-procurement market place https://tender.telangana.gov.in and submit their bids online. Offline bids shall not be entertained by the Tender Inviting Authority for the tenders published in e-procurement platform.
+&lt;/br&gt;
+The bidders shall submit their eligibility and qualification details, Technical bid, Financial bid etc., in the online standard formats displayed in eProcurement web site. The bidders shall upload the scanned copies of all the relevant certificates, documents etc., in support of their eligibility criteria/technical bids and other certificate/documents in the eProcurement web site. The bidder shall sign on the statements, documents, certificates, uploaded by him, owning responsibility for their correctness/authenticity. The bidder shall attach all the required documents for the specific tender after uploading the same during the bid submission as per the tender notice and bid document.
+&lt;/br&gt;
+The system would only authenticate the Encryption certificate uploaded into the Eprocurement system at the time of User Registration or updated through User profile. The bidder has to ensure that the uploaded certificate in the eprocurement system is used for the Bid submission and no other certificate though valid will not be recognized by the eprocurement system. 
+&lt;/br&gt;
+Registration with eProcurement platform: For registration and online bid submission bidders may contact HELP DESK.
+&lt;/br&gt;
+https://tender.telangana.gov.in
+&lt;/br&gt;
+Digital Certificate authentication:
+&lt;/br&gt;
+The bidder shall authenticate the bid with his Digital Certificate for submitting the bid electronically on eProcurement platform and the bids not authenticated by digital certificate of the bidder will not be accepted on the eProcurement platform. 
+For obtaining Digital Signature Certificate, you may please Contact:
+Address for submission of Application for Digital Certificate: 
+TSTS Office, 2nd floor, HACA Bhavan, Opp Public Gardens, Saifabad, Hydrabad - 500004
+Contact Helpdesk : 9177769764
+(OR)
+You may please Contact Registration Authorities of any Certifying Authorities in India. The list of CAs are available by clicking the link https://tender.telangana.gov.in/digital-signature.html#
+3. Hard copies:
+i) Vide ref. G.O.Ms.No.174, I&amp;CAD dept dated:1-9-2008, submission of original hard copies of the uploaded scanned copies of Proof of online Payment (Remittance)/BG towards EMD by participating bidders to the tender inviting authority before the opening of the price bid is dispensed forthwith.
+ii) All the bidders shall invariably upload the scanned copies of Proof of online Payment (Remittance)/BG in eProcurement system and this will be the primary requirement to consider the bid responsive.
+iii) The department shall carry out the technical evaluation solely based on the uploaded certificates/documents, Proof of online Payment (Remittance)/BG towards EMD in the eProcurement system and open the price bids of the responsive bidders.
+iv) The department will notify the successful bidder for submission of original hardcopies of all the uploaded documents Proof of online Payment (Remittance)/BG towards EMD prior to entering into agreement.
+v) The successful bidder shall invariably furnish the original Proof of online Payment (Remittance)/BG towards EMD, Certificates/Documents of the uploaded scan copies to the Tender Inviting Authority before entering into agreement, either personally or through courier or post and the receipt of the same within the stipulated date shall be the responsibility of the successful bidder. The department will not take any responsibility for any delay in receipt/non-receipt of original Proof of online Payment (Remittance)/BG towards EMD, Certificates/Documents from the successful bidder before the stipulated time. On receipt of documents, the department shall ensure the genuinity of the Proof of online Payment (Remittance)/BG towards EMD and all other certificates/documents uploaded by the bidder in eProcurement system. In support of the qualification criteria before concluding the agreement.
+4. The GO. Ms. No. 174 -I&amp;CAD dated: 1-9-2008
+Deactivation of Bidders If any successful bidder fails to submit the original hard copies of uploaded certificates/documents, Proof of online Payment (Remittance)/BG towards EMD within stipulated time or if any variation is noticed between the uploaded documents and the hardcopies submitted by the bidder, as the successful bidder will be suspended from participating in the tenders on eProcurement platform for a period of 3 years. The eProcurement system would deactivate the user ID of such defaulting bidder based on the trigger/recommendation by the Tender Inviting Authority in the system. Besides this, the department shall invoke all processes of law including criminal prosecution of such defaulting bidder as an act of extreme deterrence to avoid delays in the tender process for execution of the development schemes taken up by the government. Other conditions as per tender document are applicable.
+The bidder is requested to get a confirmed acknowledgement from the Tender Inviting Authority a proof of Hardcopies submission to avoid any discrepancy.
+5. Payment of EMD:
+It is mandatory for all participant bidders to electronically pay EMD Online by utilizing the “Payment Gateway Service on E-Procurement platform". The Electronic Payment Gateway accepts all Master and Visa Credit Cards issued by any bank and Direct Debit facility/Net Banking/NEFT payment modes through ICICI Bank and/or Axis Bank and/or INDUS IND Bank and/or Kotak Bank Payment Gateways to facilitate the transaction. This is in compliance as per G.O.Ms.No. 14 Dated: 18-09-2017. A GST of 18.00% + Bank charges on the transaction amount payable to  TSTS  shall be applicable. In addition to this, Bidders can also pay the EMD through Download of PDF format of RTGS Challan for respective Payment gateway and pay the EMD through their Parent Bank account. Once the EMD is received by the EProcurement application, Bidders can automatically continue with their Bid Submission online.
+IMPORTANT NOTE REGARDING EMD PAYMENT:
+1. Bidders are encouraged to use only Net banking facility for payment of EMDs as far as possible for faster refunds in case of unsuccessful Bids for the Tender. 
+2. Bidders are advised not to use RTGS Challan downloads at the penultimate hour of Bid submission closing as any delay by their banker would not enable Bid submission on the platform. Please allow a minimum of 60 minutes for enabling “Continuation of Bid Submission” from the time the Pool Account receives credit of the EMD from the Bidder’s Bank for both NEFT and RTGS Transfers. For RTGS Transfers, the Pool Account can get immediate credit whereas NEFT transfers would follow RBI Payment Cycle time. 
+3. Bidders are advised to pay EMD Online atleast T-1 or T-2 days before Bid submission closing date (T= Bid submission closing date) to avoid last minute delays and denials of successful Bid submission and to take care of any delays in Banking procedures.
+Un Successful Bidder EMD Refund process: -
+The bid is declared unsuccessful, under the following circumstances.
+Bid submitted by the bidder is not the lowest bid.
+Upon Finalization of the L1 Bid.
+Technical Disqualification of the Bid in case of 2 cover system.
+EMD paid but bid not submitted
+EMD refund will be initiated by the Tender Inviting Authority directly and through Online only and through the same payment channels as EMD received by the Department. (RTGS / NEFT /Credit Card /Debit Card refund), within 30 days from the date of publishing the Decision / Result. However, Vupadhi /GoTS will not be held responsible for the delays occurring due to banking channels/procedures/processes of the respective vendor.
+IMPORTANT NOTE REGARDING EMD REFUNDS:
+Bidders are requested to use discretion in their choice of payment channel for remittance of EMD.
+Time taken for Refunds under Ideal conditions:  
+1. Net Banking / NEFT / RTGS Challan:  One (1) Banking Business Day from time of initiation of refund by Tender Inviting Authority subject to RTGS/NEFT timings of RBI. 
+2. Credit card/ Debit card: 7-10 working days from time of initiation of refund by the Tender Inviting Authority. However, this may be longer in case of certain bank cards. In case of delays, bidders are requested to contact the Card issuing Bank for faster resolution.
+6. Payment of Transaction Fee: 
+It is mandatory for all the participating bidders from 1st January 2006 to electronically pay a non-refundable Transaction Fee to M/s. TSTS, the service provider, through the "Payment Gateway Service on E-Procurement Platform". The Electronic Payment Gateway accepts all MasterCard and Visa credit cards issued by any bank and Direct Debit facility/Net Banking of ICICI Bank, Axis Bank, IndusInd Bank and/or Kotak Bank to facilitate the transaction. This is in compliance with G.O. Ms. No. 13 dated 07.05.2006. A GST of 18.00% plus bank charges on the transaction amount payable to TSTS shall be applicable.
+As per G.O. Ms. No. 6, user departments shall collect 0.05% of ECV (Estimated Contract Value), with a minimum of ₹1,000 and no upper cap limit, from all participating bidders on the e-Procurement platform while participating in the e-Procurement process, in favour of the Managing Director, TSTS.
+7. Corpus Fund: 
+As per G.O. Ms. No. 6, user departments shall collect 0.05% of ECV (Estimated Contract Value), with a minimum of ₹1,000 and no upper cap limit, from successful bidders on the e-Procurement platform before entering into an agreement/issuing purchase orders, towards the e-Procurement Fund in favour of the Managing Director, TSTS.
+8. Tender Document:
+The bidder is requested to download the tender document and read all the terms and conditions mentioned in the tender Document and seek clarification if any from the Tender Inviting Authority. Any offline bid submission clause in the tender document could be neglected.
+The bidder has to keep track of any changes by viewing the Addendum/Corrigenda issued by the Tender Inviting Authority on time-to- time basis in the E-Procurement platform. The Department calling for tenders shall not be responsible for any claims/problems arising out of this. 
+9. Bid Submission Acknowledgement:
+The bidder shall complete all the processes and steps required for Bid submission. The system will generate an acknowledgement with a unique bid submission number after completing all the prescribed steps and processes by the bidder. Users may also note that the bids for which an acknowledgement is not generated by the e-procurement system are treated as invalid or not saved in the system. Such invalid bids are not made available to the Tender Inviting Authority for processing the bids. The Government of TS are not responsible for incomplete bid submission by users.</div>
+<br/>
+<div class="modal-footer" id="divFt">
+<center>
+<input class="Button" onclick="closeModel2();" type="button" value="Close"/>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br/>
+<!-- End Terms and Condition -->
+<!--Start Enquiry Forms  -->
+<div id="stageListHidden">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<div class="panel-title">
+<span id="VTMSBodyContent_lblOtherDetails">Enquiry Forms</span> <a class="pull-right" href="" id="btnShowModal">
+							Stage Details </a>
+</div>
+<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+</div>
+<div class="ui-content" data-role="popup" id="myPopup">
+<div class="web_dialog_overlay" id="overlay"></div>
+<div class="web_dialog" id="dialog">
+<table class="table">
+<tr>
+<td class="web_dialog_title">Stage Details</td>
+<td class="web_dialog_title align_right"><a href="#" id="btnClose">Close</a></td>
+</tr>
+<tr>
+<td colspan="100%">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th align="left">S.No</th>
+<th align="left">Stage Name</th>
+<th align="left">Evaluation Opening date &amp; Time</th>
+<th align="left">Evaluation Dependencies</th>
+<!-- <th align="left">Evaluation Opening date Visisbility</th> -->
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" class="tdwhite">1</td>
+<td align="left" class="tdwhite">PQ Stage</td>
+<td align="left" class="tdwhite">
+																	     16/11/2026 05:01 PM
+																		 </td>
+<td align="left" class="tdwhite"></td>
+</tr>
+<tr>
+<td align="left" class="tdwhite">2</td>
+<td align="left" class="tdwhite">Commercial Stage</td>
+<td align="left" class="tdwhite">
+																	     16/11/2026 05:02 PM
+																		 </td>
+<td align="left" class="tdwhite">PQ Stage</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="getStageFormDetailsHidden">
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th align="left">Stage</th>
+<th align="left">Form Name</th>
+<th align="left">Type of Form</th>
+<th align="left">Supporting Document Required</th>
+<th align="left">Supporting Document Encryption</th>
+<th align="left">Supporting Document Description</th>
+<th align="center" width="10%">View Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" class="tdwhite">PQ Stage</td>
+<td align="left" class="tdwhite">PQ documents required from the vendor</td>
+<td align="left" class="tdwhite">Standard</td>
+<td align="left" class="tdwhite">No</td>
+<td align="left" class="tdwhite">No</td>
+<td align="left" class="tdwhite">N/A</td>
+<td align="center" class="tdwhite">
+<a href="#" onclick="viewstageforms('677069','viewvendorstagereqdocuments.html','1004665', '142','1739506','PQ documents required from the vendor')">
+<img src="/views/themes/currenttheme/images/search.svg"/>
+</a>
+</td>
+</tr>
+<tr>
+<td align="left" class="tdwhite">Commercial Stage</td>
+<td align="left" class="tdwhite">General Services</td>
+<td align="left" class="tdwhite">Secure</td>
+<td align="left" class="tdwhite">No</td>
+<td align="left" class="tdwhite">No</td>
+<td align="left" class="tdwhite">N/A</td>
+<td align="center" class="tdwhite">
+<a href="#" onclick="viewstageforms('677069','viewgeneralservicesitemdetails.html','1004666', '1166','1739507','General Services')">
+<img src="/views/themes/currenttheme/images/search.svg"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div></div>
+<!-- <table class="table table-bordered">
+			          <tbody>
+			            <tr>
+			              <td width="1%" nowrap="nowrap" valign="top"><img src="views/themes/currenttheme/images/LeftCurve.gif" width="14" height="24"></td>
+			              <td width="3%" valign="middle" nowrap="nowrap" class="GridHeader">Icons Representation</td>
+			              <td width="1%" nowrap="nowrap" valign="top"><img src="views/themes/currenttheme/images/RightCurve.gif" width="25" height="24"></td>
+			              <td width="95%" valign="top" align="right" class="tdSpacer" > </td>
+			            </tr>
+			          </tbody>
+			        </table>
+			       <table  >
+			        <tr>
+			          <td class="tdOuter"><table cellpadding="3" cellspacing="1" width="100%" border="0">
+							<tr>
+								<td align="center" width="5%" class="tdlight"><img
+									src="views/themes/currenttheme/images/search.svg" /></td>
+								<td align="left" width="28%" class="tdwhite">View Stage Details</td>
+							</tr>
+						</table>
+					</td>
+					</tr>
+					</table> -->
+<!-- End Enquiry Forms -->
+</div>
+</div>
+</div>
+<br/>
+<!-- Start Links -->
+<br/>
+<!-- 		<applet id="signerApplet"
+			code="com.vupadhi.digitalverification.DigitalSignerApplet"
+			archive="DigitalSignerApplet.jar" width="1" height="1"> </applet> -->
+<!-- End Links -->
+<input name="hdnProcurementID" type="hidden" value="677069"/>
+<input name="hdnIndentID" type="hidden" value="677079"/>
+<input name="hdnTenderCategory" type="hidden" value="104"/>
+<input name="hdnPreviousPage" type="hidden" value="login.html"/>
+<input id="hdnScheduleID" name="hdnScheduleID" type="hidden"/>
+<input id="hdnScheduleName" name="hdnScheduleName" type="hidden" value=""/>
+<input name="hdnredirect" type="hidden" value=""/>
+<input id="hdnType" name="hdnType" type="hidden" value=""/>
+<input id="hdnStageID" name="hdnStageID" type="hidden"/>
+<input id="nTenderFormID" name="nTenderFormID" type="hidden"/>
+<input id="hdnFormID" name="hdnFormID" type="hidden"/>
+<input id="hdnPreviousPge" name="hdnPreviousPge" type="hidden" value=""/>
+<input id="hdnImmediatePreviousPage" name="hdnImmediatePreviousPage" type="hidden" value="login.html"/>
+<input name="popUPRequestParameter" type="hidden" value=""/>
+<input name="hdnCorrigendum" type="hidden" value="fromnit"/>
+<input id="hdnFormName" name="hdnFormName" type="hidden"/>
+<input id="hdnEnc" name="hdnEnc" type="hidden" value="0"/>
+<input id="hdnNotifactionFlag" name="hdnNotifactionFlag" type="hidden"/>
+<input name="CSRFToken" type="hidden" value="c78398d8-b7eb-431a-b9c7-3c30c29ca9d4"/>
+<input name="hdnEncryptNames" type="hidden" value="hdnEncryptNames"/>
+<input name="hdnEncryptValues" type="hidden" value="hdnEncryptValues"/>
+</div>
+<!-- container-fluid Ends Here -->
+<div></div>
+<!DOCTYPE html>
+<br/>
+</tbody></table></div></div></form></div></body>
+</html>

@@ -1,0 +1,3 @@
+# Root requirements = what Vercel installs for the webhook function (kept light on purpose).
+# The GitHub Actions worker installs requirements-worker.txt (Playwright, pdfplumber, bs4, lxml).
+-r requirements-vercel.txt

@@ -1,0 +1,1934 @@
+<html><body><object classid="CLSID:B5A28AB9-BB60-4270-9457-0437BE31733B" codebase="nCodePKIDSC.CAB#version=2,0,0,0" id="SnVn_EnDn">
+</object>
+<title>(n)Procure</title>
+<!--001-->
+<!--002-->
+<form action="Authentication.asp" id="Form1" method="post" name="frmIndex" onsubmit="return CheckUser()"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="234"><img height="74" src="/Nprocure_images/Main/nprocure.jpg" width="234"/></td>
+<!--<td><img src ="/nprocure_images/holi.gif"></td>-->
+<td><!--<p style="text-align: center"> <span style="font-size: 16pt; font-weight: 700"> <font color="#FF3300">e</font><font color="#000000">-</font>Procurements</span>
+     <p style="text-align: center"> <span style="font-size: 16pt; font-weight: 700"> <font color="#FF3300">e</font><font color="#000000">-</font></span><span style="font-weight: 700; font-size: 14pt">Tenders </span><span style="font-size: 16pt; font-weight: 700"> <font color="#FF3300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e</font><font color="#000000">-</font></span><span style="font-weight: 700; font-size: 14pt">Auctions</span>-->
+<img src="/nprocure_images/Main/banner_nprocure.jpg" valign="top"/>
+</td>
+<!--<td> <img src ="/nprocure_images/3.gif" width="75" height="75">
+		</td>-->
+<td align="right" width="234"><img height="66" src="/Nprocure_images/Main/gnfclogo.gif" width="75"/></td>
+</tr>
+<tr>
+<td colspan="4"><table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr>
+<td width="70%"><span id="holder"> </span></td>
+<td width="30%"><div align="right"><img border="0" height="17" onclick="window.external.AddFavorite(location.href, document.title);" src="/Nprocure_images/Main/add2Fav.gif" width="123"/>
+</div></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<input id="controlstring" name="controlstring" type="hidden"/>
+<input id="hashstring" name="hashstring" type="hidden"/>
+<input id="homepage_Shorttender" name="homepage_Shorttender" type="hidden"/>
+<input name="tid" type="hidden"/><input name="deptid" type="hidden"/>
+<input name="ProcurementID" type="hidden"/>
+<input name="hdnProcurementID" type="hidden"/>
+<!--Added By Happy IST CR 23.07.2012-->
+<input id="hdntimezoneclient" name="hdntimezoneclient" type="hidden"/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr valign="top">
+<td width="20%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td><img border="0" height="30" src="/images/sidelinks/newsevents.jpg" width="185"/></td>
+</tr>
+<tr>
+<td align="center" height="140">
+<marquee behavior="scroll" direction="up" height="140" scrollamount="1">
+<table border="0" cellpadding="2" cellspacing="1" height="140" id="Table1" width="98%">
+<tr>
+<td align="center" class="HeaderTxt" height="20" valign="top">:: </td>
+<td class="small" height="20" valign="top"><font>Government e-Marketplace: As per Gr No. SPO-102015-691093-CH dated: 01.10.2018 of I&amp;M Department, the Government e-Marketplace Portal is to be used for all item purchases by all Govt. Departments, Heads of Departments, Boards, Corporations, Nigams. If purchase items are not available on the Government e-Marketplace Portal, it is necessary to take the prior approval from Principal Secretary, Industries &amp; Mines Department or Industries Commissioner for purchase of the items through e-Tendering by submitting the details of initiated process and non availability of items on the Government e-Marketplace Portal with proper justifications</font></td>
+</tr>
+<tr>
+<td align="center" class="HeaderTxt" height="20" valign="top">:: </td>
+<td class="small" height="20" valign="top"><font>(n)Procure Portal Requirement : (1) Computer with Windows (with full Administrative rights, All upgrades and .Net Framework-2) (2) Internet Explorer version 7.0 and above (3) Legally valid class 3 Digital Signature Certificate. i.e. 2 Separate Certificates-Signing &amp; Encryption under Indian Root CA chain.</font></td>
+</tr>
+</table>
+</marquee>
+</td>
+</tr>
+<tr>
+<td background="Nprocure_images/main/hori.gif" height="5"><img height="5" src="Nprocure_images/main/hori.gif" width="5"/></td>
+</tr>
+<tr>
+<!--<td background="/images/sidelinks/aoc.jpg" height="30">-->
+<td><a href="asp/home/AOCDetailsHome.asp" target="_new"><img border="0" height="30" src="/images/sidelinks/aoc.jpg" width="185"/></a></td>
+</tr>
+<tr>
+<td background="Nprocure_images/main/hori.gif" height="5"><img height="5" src="Nprocure_images/main/hori.gif" width="5"/></td>
+</tr>
+</table>
+<table align="right" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td><img border="0" height="30" src="/images/sidelinks/news-header.gif" width="185"/></td>
+</tr>
+<!--
+<td colspan="2"><a href="/nprocure_inc/news/UT_eProcurement_GR.pdf"  target="_new"><img src="/nprocure_inc/news/stripanim.jpg" border=0></a></td>
+<tr><td colspan="2" height="3"></td></tr>
+-->
+<!--<tr><td colspan="2" align="left"><a href="/html/GoG_e_Procurement_GRs.pdf" target="_new"><img src="/Nprocure_images/Main/egogrso.jpg" border="0"></td></tr>
+<tr><td colspan="2" height="3"></td></tr>
+<tr><td colspan="2" align="left"><a href="/html/GoG_e_Procurement_GRs.pdf" target="_new"><img src="/Nprocure_images/Main/mandatoryepro.jpg" border="0"></td></tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="0"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<img src="/images/sidelinks/news-header.gif" width="185" height="30" border="0"></td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<tr>
+<td><table border="0" cellpadding="0" cellspacing="0" width="97%">
+<tr valign="top">
+<td class="menu" width="6%"><strong>»</strong></td>
+<td class="small" width="94%">
+<font color="Brown" size="-1"><b>Latest News:</b></font><br/><br/>
+<!--<font color="Midnightblue" size = -1><b><img src="/nprocure_images/new.gif" border=0><font color="red" size="3">You may reach to our Helpdesk through the New Toll Free Number: <br>7359 021 663 from 27th August, 2020 onward.</font> All are requested to take a note that old Toll Free Number 1800 419 4632 of (n)Procure Helpdesk will be discontinued after 31st August, 2020.</b></font><br><br>-->
+<font color="Red" size="-1"><b><font color="Midnightblue">
+<p align="center">WELCOME <br/> (n)Procure NEW PORTAL</p></font><font color="Midnightblue">
+	Dear Customers, We're glad to inform you that our New e-Tendring Portal is ready for Go-Live. </font><br/><br/>
+<a "="" href="/nprocure_inc/news/new_portal.pdf" target="_new"><font color="Blue">https://tender.nprocure.com</font></a>
+<br/><br/>Now, Govt. Departments can avail our New Portal services and publish their up-coming Tenders. <br/><br/>
+<!--<font color="Red" size="-1"><b>Dear Customers, we are committed and will continue to provide our services. However considering <font color="Blue">ongoing Covid-19 Pandemic</font>, there is a possibility of services getting impacted. Although we have taken all due care but in odd cases you might find things not working as expected. Do let us know. We will endeavour to restore the service at the earliest. We regret any such inconvenience. Request you all to bear with us in this time of crisis.<br><br>
+ 			<!--<font size=-1><b>Announcement for Name Change:</b></font><br>-->
+</b></font></td>
+</tr>
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr valign="top">
+<td class="menu" width="6%"><strong>»</strong></td>
+<td class="small" width="94%">
+<font color="Brown" size="-1"><b>Important Notice:</b></font><br/>
+<font color="Midnightblue" size="-1"><b>From 1st July, 2017 onwards, we accept Portal Charges through Online (Net Banking/Credit/Debit Card) only</b></font><br/><br/>
+<a href="/nprocure_inc/news/Pragati_G_All_Department_Letter.pdf" target="_new">
+<font color="red" size="-1"><b>CM Dash Board Letter.</b></font></a><br/><br/>
+</td>
+</tr>
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr valign="top">
+<td class="menu" width="6%"><strong>»</strong></td>
+<td class="small" width="94%">
+<a href="/nprocure_inc/news/n_Procure Troubleshooting.pdf" target="_new">
+<font color="Green" size="-1"><b>(n)Procure Troubleshooting.</b></font></a><br/>
+<a href="/nprocure_inc/news/Troubleshooting New Component Installation.pdf" target="_new">
+<font color="red" size="-1"><b>- Steps for (n)procure New Component Troubleshooting</b></font></a><br/>
+			(Remove old PKI component version 3.0.0 from Add/Remove Programs and install new downloaded PKI Component version 3.1.1)
+<br/>
+<a href="NprocureBrowserSettings.zip" target="_new">
+<font color="Midnightblue" size="-1">-	Browser Settings</font></a><br/>
+<!--<a href="/nprocure_inc/news/KB 968730 for SHA-2.zip"  target="_new">  			
+			<font color="Midnightblue" size=-1>-	SHA2 Compatibility</font></a><br>-->
+<a href="/nprocure_inc/news/Microsoft Dot Net Framework Version 2.zip" target="_new">
+<font color="Midnightblue" size="-1">-	Framework - 2(x32)</font></a><br/>
+<a href="/nprocure_inc/news/Net Framework Version 2 (x64).zip" target="_new">
+<font color="Midnightblue" size="-1">-	Framework - 2(x64)</font></a><br/>
+<a href="/nprocure_inc/news/nCodeDSCInstall_07122018.msi" target="_new">
+<font color="Midnightblue" size="-1">-	(n)Procure Old Component</font></a><br/>
+<a href="/nCodeDSCInstall.msi" target="_new">
+<font color="Midnightblue" size="-1">-	Browser Compatibility</font></a><br/>
+<a href="/(n)Procure Tool.zip" target="_new">
+<font color="Midnightblue" size="-1">-	Download (n)Procure Tool</font></a><br/>
+</td></tr>
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr valign="top">
+<td class="menu" width="6%"><strong>»</strong></td>
+<td class="small" width="94%">
+<font color="Brown" size="-1"><b>GNFC:</b></font><br/>
+<a href="/nprocure_inc/news/office-space-available-on-rent-at-gnfc-infotower.pdf" target="_new">
+<font color="Midnightblue" size="-1"><br/>OFFICE SPACE AVAILABLE ON RENT AT GNFC INFOTOWER</font></a><br/>
+<a href="/nprocure_inc/news/Tender_Notice_24.02.2024.pdf" target="_new">
+<font color="Midnightblue" size="-1"><br/>TENDER NOTICE FOR PROCUREMENT OF NATURAL GAS THRO� GNFC e-TENDER PORTAL</font></a><br/>
+<a href="/nprocure_inc/news/Tender_Notice_29.02.2024.pdf" target="_new">
+<font color="Midnightblue" size="-1"><br/>TENDER NOTICE FOR PROCUREMENT OF NATURAL GAS THRO� GNFCe-TENDER PORTAL</font></a><br/>
+<!--<a href="/nprocure_inc/news/Tender Notice_Fuel Oil.pdf"  target="_new">
+		<font color="Midnightblue" size=-1>Requirement of �Fuel oil� at GNFC, Bharuch complex.</font></a><br><br>
+		<a href="/nprocure_inc/news/GNFC_TDI.zip"  target="_new">
+		<font color="Midnightblue" size=-1>Industrial Painting at TDI-II Dahej 2020-21.</font></a><br><br>
+		<a href="/nprocure_inc/news/Toluene_Enquiry_Notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Toluene� for the production of Toluene-Di-Isocyanate at TDI-I Bharuch and TDI-II Dahej plants</font></a><br>
+		<a href="/nprocure_inc/news/DEA-SDS_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS)� for Ethyl Acetate Plant</font></a><br>
+		<a href="/nprocure_inc/news/Web notice_2107.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for  Vessel Chartering for Rock Phosphate (Bulk)  from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI)  Loading Laycan Period: 15~20 August 2023</font></a><br>
+		<a href="/nprocure_inc/news/e-_Notice_Ammonia-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 1000 MT Liquid Anhydrous Ammonia</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_dtd._25.12.2023_for_requirement_of_Imported_Coal.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Imported Coal� for Steam & Power Generation plant of GNFC Limited, Bharuch</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd._25.12.2023_for_requirement_of_Impo....pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum to the Tender Notice dtd. 25.12.2023 for requirement of Imported Coal</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice-2.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for  Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI) Laycan : 15~20 February 2024</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd_25.12.2023_for_requirement_of_Impo-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum to the tender notice for requirement of Imported Coal</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>TENDER NOTICE FOR PROCUREMENT OF NATURAL GAS THRO� GNFC</font></a><br>
+		<a href="/nprocure_inc/news/e-_Notice_Ammonia-3.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 1,500 MT Liquid Anhydrous Ammonia</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_14.02.2024.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>TENDER NOTICE FOR PROCUREMENT OF NATURAL GAS THRO� GNFC e-TENDER PORTAL</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_Feb_2024.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 9,000 MT Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+-->
+<!--
+		<a href="/nprocure_inc/news/E_tender_notice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>TENDER NOTICE FOR PROCUREMENT OF NATURAL GAS THRO� GNFC e-TENDER PORTAL</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_Dec_23.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 17,500 MT Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_for_procurement_of_various_services_related_to_mobilization_of_Indian_coal_supplies_from_the_collieries_of_SECL-Bilaspur_to_GNFC-Bharuch.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender enquiry for procurement of services related to Indian coal supplies</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd_24-08-2023_for_requirement_of_Hydrogen_Compressor.zip"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum for �Requirement of Complete Hydrogen Compressor Package unit for our ASGP Plant� on GNFC</font></a><br>
+		<a href="/nprocure_inc/news/Inland_handling_services.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender enquiry for Inland Handling services of Imported Denatured Ethyl Alcohol cargo discharged at port and its transportation from port to GNFC Site-Bharuch</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Toluene� for the production of Toluene-Di-Isocyanate at TDI-I Bharuch and TDI-II Dahej plants</font></a><br>
+		<a href=""  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br> Last date for sending request e-mail for issue of Tender enquiry to the concern officers has been extended up to 18.11.2023 12.00 Hrs IST</font></a><br>
+		<a href="/nprocure_inc/news/e-_Notice_Ammonia-2.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 1000 MT Liquid Anhydrous Ammonia</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_-_Neem_Oil_-_2023.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 500 MT Neem Oil for Urea Coating at GNFC Bharuch plant, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_Methanol_-_7-10-23.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 20,000 MT Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd._24.08.2023_for_requirement_of_Hydrogen_Compressor.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Complete Hydrogen Compressor Package unit for our ASGP Plant</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI) Laycan : 20~25 October 2023</font></a><br>
+		<a href="/nprocure_inc/news/DEA-SDS_WebNotice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS)� for Ethyl Acetate Plant</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_web_notice-2.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 3,000 MT (+/-10% at discretion of GNFC) TOLUENE</font></a><br>
+		<a href="/nprocure_inc/news/e-Auction_Notice_HDPE_PP__bags.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intends to procure HDPE & PP bags under Annual Rate Contracts (ARCs)</font></a><br>		
+		<a href="/nprocure_inc/news/Toluene_web_notice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 2,000 MT (+/-10% at discretion of GNFC) TOLUENE</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_Hydrogen_Compressor.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Complete Hydrogen Compressor Package unit for our ASGP Plant.</font></a><br>
+		<a href="/nprocure_inc/news/GNFC1.zip"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Installation of VAM units for suction air chilling of Process Air Compressor 10-K-001 (Filter House 10-F-002) and Absorption Tower 10-C-001) on lump sum turnkey (LSTK) basis</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_Methanol.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 17,000 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/WNA_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 19,440 MT WNA � Weak Nitric Acid (61.5% ~ 68% concentration)</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_-_CSL-CL2.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Caustic Soda Lye and Liquid Chlorine</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_Methanol_-_31-5-23-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 16,000 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 2,000 MT (+/-10%) TOLUENE</font></a><br>
+-->
+<!--	
+		<a href="/nprocure_inc/news/e-_Notice_Ammonia.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 1500 MT Liquid Anhydrous Ammonia</font></a><br>
+		<a href="/nprocure_inc/news/EOI_for_Facelift_of_GNFC_Infotower.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Expression of Interest for �Empanelment of consultants for architecture and civil related work for face-lifting of GNFC Infotower located at S G Highway Ahmedabad� 
+		<br>EOI publishing date: 17th April 2023<br>Pre-submission meeting & Site Visit date: 1500 Hrs on 21st April 2023
+		<br>EOI submission on or before: 1700 Hrs on 5th May 2023<br>EOI submission date extended till : 1700 Hrs on 12th May 2023</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for  Vessel Chartering for Rock Phosphate (Bulk)  from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI)</font></a><br>
+		<a href="/nprocure_inc/news/NIT.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>AMC for Oracle Exadata SW (with OS & DB) and HW (Platinum Support)</font></a><br>
+		<a href="/nprocure_inc/news/NIT-1.PDF"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>ATS for Oracle Database with RAC</font></a><br>
+		<a href="/nprocure_inc/news/e-Tender_Notice_HM_HDPE__EA_Barrels.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 235 lit. HM-HDPE Barrels</font></a><br>
+		<a href="/nprocure_inc/news/e-Auction_Notice_Ammonia.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 4000 MT Liquid Anhydrous Ammonia</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_Feb_23.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 24,500 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_Imported_coal_241222.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Imported Coal� for Steam & Power Generation plant of GNFC Limited, Bharuch</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd._24.12.2022_for_requirement_of_Imported_Coal.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>CORRIGENDUM</font></a><br>
+		<a href="/nprocure_inc/news/Sulphuric_Acid_tender_notice1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 25,200 MT (�10%) of Sulphuric Acid (98% min)</font></a><br>
+		<a href="/nprocure_inc/news/e-Auction_Notice_PP__bags.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>e-auction Notice Procurement of PP bags</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_web_notice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 1,500 MT (+/-10%) TOLUENE</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_Rock_Vessel_Chartering.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for  Vessel Chartering for Rock Phosphate (Bulk)  from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI)  Period: 10~15 February 2023 OR 17~22 February 2023</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_-_Caustic_and_Chlorine.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 3,114 MT (+/-10%) of Caustic Soda Lye (on 100% Concentration basis) and 34,211 MT (+/-10%) of Liquid Chlorine</font></a><br>
+		<a href="/nprocure_inc/news/DEA-SDS_WebNotice-1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS)� for Ethyl Acetate Plant</font></a><br>
+-->
+<!--<a href="/nprocure_inc/news/Sulphuric_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 15,000 MT (+/-10%) SULPHURIC ACID</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Toluene� for the production of Toluene-Di-Isocyanate at TDI-I Bharuch and TDI-II Dahej plants</font></a><br>
+		-->
+<!--<a href="/nprocure_inc/news/Notice_on_web_Methanol_Nov_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 25,100 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_webnotice_Nov_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 1,500 MT (+/-10%) TOLUENE</font></a><br>
+		<a href="/nprocure_inc/news/Invitation-of-Expression_GNFC_infotower-1_compressed.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Invitation of Expression of Interest for Facelift of GNFC Infotower</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 1,500 MT (+/-10%) TOLUENE</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_Methanol.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 16,500 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/DEA-SDS_WebNotice1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS) for Ethyl Acetate plant</font></a><br>
+-->
+<!--<a href="/nprocure_inc/news/GNFC-27.zip"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Industrial Painting at TDI-II, Dahej</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 13,500 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+-->
+<!--
+		<a href="/nprocure_inc/news/PD-PT_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Palladium-Platinum based Catalyst� for Aniline Plant</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_July-Aug_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 12,500 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_CSL.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 6,380 MT (+/-10%) Caustic Soda Lye (on 48% Concentration basis)</font></a><br>
+	-->
+<!--<a href="/nprocure_inc/news/Toluene_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of  1,500 MT of TOLUENE during June�22</font></a><br>
+		<a href="/nprocure_inc/news/e-Auction_Notice_HDPE__Carboys_2022-23.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of HDPE Carboys</font></a><br>
+		<a href="/nprocure_inc/news/DEA-SDS_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS)� for Ethyl Acetate Plant</font></a><br>
+		-->
+<!-- <a href="/nprocure_inc/news/Toluene-notice_020522.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Inland Handling Services of Imported Toluene and its transportation from Pipavav/Hazira/Dahej /Kanadla/JNPT port to GNFC Site �Bharuch/Dahej</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_for_requirement_of_Imported_Steam_Coal.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of �Imported Coal� for Steam & Power Generation plant of GNFC Limited, Bharuch</font></a><br>-->
+<!--<a href="/nprocure_inc/news/Toluene_web_notice.pdf"  target="_new">  					<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 1,500 MT (�10%) of TOLUENE on FOR GNFC, Dahej site basis as per the Technical Specifications mentioned hereunder at �Annexure-A�</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_March-April_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Methanol</font></a><br>
+		<a href="/nprocure_inc/news/Toluene_web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 1,500 MT (�5%) of TOLUENE on FOR GNFC, Dahej</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_May-July_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 20,000 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_-_CSL.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 1,218 MT (+/-5%) Caustic Soda Lye (on 100% Concentration basis)</font></a><br>-->
+<!--<a href="/nprocure_inc/news/Web_Notice_Pd-Pt_salts_2022.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Palladium Chloride & Platinum Chloride Catalyst for GNFC Dahej Plant</font></a><br>
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_March_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>GNFC intend to procure approximately 8,000 MT (+ or - 5%) Methanol for its plant located at Bharuch, Dist. Bharuch, Gujarat</font></a><br>-->
+<!--
+		<a href="/nprocure_inc/news/Notice_on_web_Methanol_Jan_22.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Methanol</font></a><br>
+		<a href="/nprocure_inc/news/Tender_Notice_for_requirement_of_Imported_Coal.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Imported Coal</font></a><br>
+		<a href="/nprocure_inc/news/Web_notice_1.pdf"  target="_new">		
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI) Laycan Period: 20 ~ 25 December, 2021</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_to_the_Tender_Notice_dtd_17-11-2021_for_requirement_of_Impo.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br> Corrigendum to the Tender Notice dtd. 17.11.2021 for requirement of Imported Coal</font></a><br>-->
+<!--<a href="/nprocure_inc/news/DEA-SDS_Notice_191021.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Inland Handling Services of Imported Denatured Ethyl Alcohol and its transportation of from Pipavav/Hazira/ Dahej port to GNFC Site -Bharuch</font></a><br>
+		<a href="/nprocure_inc/news/pdf.rar"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>E-Tender- Industrial Painting at TDI-II Dahej 2021-22</font></a><br>
+		<a href="/nprocure_inc/news/Web_Notice_Methanol_Nov-21.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Methanol - Nov 2021</font></a><br>-->
+<!--<a href="/nprocure_inc/news/Notice-on-web-Methanol_Sept-21.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 4200 MT Methanol</font></a><br>
+		<a href="/nprocure_inc/news/Notice-on-web-Methanol_Oct-21.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 8700 MT Methanol</font></a><br>-->
+<!--<a href="/nprocure_inc/news/e-Auction_Notice_HDPE__bags.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of HDPE & PP bags</font></a><br>-->
+<!--<a href="/nprocure_inc/news/Web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 >Tender Enquiry / Request for Quotation for Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI) Period: Last week of September, 2021</font></a><br>-->
+<!--<a href="/nprocure_inc/news/Web_Notice_Pd-Pt__salts_December_2020.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Palladium Chloride & Platinum Chloride </font></a><br><br>-->
+<!--<a href="/nprocure_inc/news/DEA-SDS_WebNotice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of Denatured Ethyl Alcohol (DEA) / Special Denatured Spirit (SDS) for Ethyl Acetate plant</font></a><br><br>-->
+<!--<a href="/nprocure_inc/news/Sulphuric_Acid_tender_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 25,800 MT (�10%) of Sulphuric Acid (98% min). THE LAST DATE FOR CONTACTING CONCERNED OFFICERS BY THE INTERESTED SUPPLIERS  OF SULPHURIC ACID HAS BEEN EXTENDED UPTO 22.01.2021 17.00 HRS. IST IN PLACE OF 18.01.2021 17.00 HRS. IST</font></a><br><br>-->
+<!--<a href="/nprocure_inc/news/2021-01-28_1355.zip"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>REPLACEMENT OF 10000MT CAPACITY SINGLE WALL AMMONIA STORAGE TANK (D-1003A) BY DOUBLE WALL STORAGE TANK AT AMMONIA PLANT ON LUMP SUM TURNKEY (LSTK) BASIS</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum2.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 2</font></a><br>
+		<a href="/nprocure_inc/news/GNFC PRE BID meeting on 09.02.2021 for tender ID 447303.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Pre-bid Meeting E-tender ID: - 447303 for Replacement of 10000MT capacity single wall ammonia storage tank (D-1003A) by double wall storage tank at ammonia plant on lump sum turnkey (LSTK) basis</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum3.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 3</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_4_E-tender_447303_.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 4</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_5_Due_date_extension_.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 5</font></a><br>
+		<a href="/nprocure_inc/news/Extention_replacement_10000MT.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum</font></a><br>
+		<a href="/nprocure_inc/news/Clarification_for_BOCW_Cess_.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 >Clarification</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_7_Due_date_extension.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 7</font></a><br>
+		<a href="/nprocure_inc/news/Corrigendum_8_Regarding_tank_Foundation.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Corrigendum - 8 - Replacement of 10000MT capacity single wall ammonia storage tank (D-1003A) by double wall storage tank at ammonia plant on lump sum turnkey (LSTK) basis</font></a><br>-->
+<!--<a href="/nprocure_inc/news/e-Tender Notice_HM_HDPE _EA_Barrels_30062018.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of 235 lit. HM-HDPE Barrels</font></a><br><br>
+		<a href="/nprocure_inc/news/e-Notice_MS welded & un-welded barrel.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Procurement of M.S. welded barrels & un-welded barrels with seaming compound</font></a><br><br>
+		<a href="/nprocure_inc/news/Toluene_WebNotice1.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of 1,500 MT (�10%) Toluene" on GNFC</font></a><br><br>-->
+<!--<a href="/nprocure_inc/news/Tender Notice for requirement of Imported Coal.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Requirement of "Imported Coal" for Steam & Power Generation plant of GNFC Limited, Bharuch</font></a><br><br>
+		<a href="/nprocure_inc/news/Web_notice_for_Vessel_Chartering_-_April-21.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>Tender Enquiry / Request for Quotation for Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI) Period: End April or early May, 2021</font></a><br><br>
+		-->
+</td>
+</tr>
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GNFC:</b></font><br><br>		          				
+	<a href="/nprocure_inc/news/GNFC_TDI.zip"  target="_new">
+		<font color="Midnightblue" size=-1>Industrial Painting at TDI-II Dahej 2020-21.</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GNFC:</b></font><br>		          				
+		<a href="/nprocure_inc/news/office-space-available-on-rent-at-gnfc-infotower.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 ><br>OFFICE SPACE AVAILABLE ON RENT AT GNFC INFOTOWER</font></a><br><br>
+		<a href="/nprocure_inc/news/Web_notice.pdf"  target="_new">  			
+		<font color="Midnightblue" size=-1 >Tender Enquiry / Request for Quotation for Vessel Chartering for Rock Phosphate (Bulk) from Aqaba, Jordan to APPPL, Dahej / AHPPL, Hazira (WCI)</font></a><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Metro Rail Corporation (GMRC) Limited:</b></font><br><br>		          				
+		<a href="/nprocure_inc/news/20210104_NIT.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>DEVELOPMENT AND CONSTRUCTION OF DREAM CITY DEPOT INCLUDING METRO BHAVAN, OCC AND ASSOCIATED E&M WORKS UNDER CORRIDOR C1, SARDHANA TO DREAM CITY, IN CONNECTION WITH SURAT METRO RAIL, PHASE � I, PACKAGE DC - 01</font></a><br><br>
+		<a href="/nprocure_inc/news/20210109_NIT.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>DETAILED DESIGN CONSULTANCY SERVICES FOR SUBWAY ENVIRONMENT SIMULATION (SES) STUDIES & COMPUTATIONAL FLUID DYNAMICS (CFD) ANALYSIS AND SIZING OF TUNNEL VENTILATION SYSTEM AND MAJOR ECS EQUIPMENT FOR ENTIRE UNDERGROUND SECTION OF SURAT MRTS PH-1 FOR GUJARAT METRO RAIL CORPORATION (GMRC) LIMITED</font></a><br><br>
+		<a href="/nprocure_inc/news/20210113_Addendum_1.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Addendum-1</font></a><br><br>
+		<a href="/nprocure_inc/news/1._20210520_NIT_UPS.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Comprehensive Annual Maintenance Contract of UPS installed at Apparel Park Depot and 4 Elevated stations of E-W-1 Corridor of Phase-1 for Gujarat Metro Rail Corporation Ltd.</font></a><br><br>
+		<a href="/nprocure_inc/news/2._20210520_CAMC_HVAC.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Comprehensive Annual Maintenance Contract of Variable Refrigerant Flow (VRF) System & split AC Unit installed at Apparel Park Depot and 4 elevated stations of E-W Corridor of Phase-1 for Gujarat Metro Rail Corporation Ltd.</font></a><br><br>
+		<a href="/nprocure_inc/news/3._20210520_NIT_DG_Set.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Comprehensive Annual Maintenance Contract of DG Set (B-Check) installed at Apparel Park Depot and 4 Elevated stations of E-W-1 Corridor of Phase-1 for Gujarat Metro Rail Corporation Ltd.</font></a><br><br>
+		<a href="/nprocure_inc/news/4._20210520_NIT-_Fire_Alarm_System.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Comprehensive Annual Maintenance Contract of Fire alarm System, Inergen Gas & Gas flooding System installed at Apparel Park Depot and 4 Elevated stations of E-W-1 Corridor of Phase-1 for Gujarat Metro Rail Corporation Ltd.</font></a><br><br>
+		<a href="/nprocure_inc/news/5._20210520_NIT_-_RC_E_M.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Annual Rate Contract of E&M Works of Apparel Park Depot and 4 Elevated stations of E-W-1 Corridor of Phase-1 for Gujarat Metro Rail Corporation Ltd.</font></a><br>
+		<a href="/nprocure_inc/news/2021008_NIT.PDF"  target="_new">  
+		<font color="Midnightblue" size=-1>Architectural finishing, roofing, plumbing, signage etc. from Kadarsha Ni Nal to Dream City dead end of Corridor-1, Surat Metro Rail, Phase-I</font></a><br>
+		<a href="/nprocure_inc/news/20230429_Sale_of_Renault_duster.pdf"  target="_new">  
+		<font color="Midnightblue" size=-1>Sale of old Vehicle</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>SHA-2 Digital Signature Certificates:</b></font><br>
+			<a href="/nprocure_inc/news/CCA-Notification.pdf"  target="_new">
+			<font color="Midnightblue" size=-1>-	CCA Notification</font></a><br>
+			<a href="/nprocure_inc/news/SHA2 for Windows.pdf"  target="_new"> 
+			<font color="Midnightblue" size=-1>-	SHA2 for Windows</font></a><br>
+			<a href="/nprocure_inc/news/KB 968730 for SHA-2.zip"  target="_new">  			
+			<font color="Midnightblue" size=-1>-	SHA2 Compatibility</font></a><br>
+			<a href="/nprocure_inc/news/Microsoft Dot Net Framework Version 2.zip"  target="_new">   			
+			<font color="Midnightblue" size=-1>-	Framework - 2(x32)</font></a><br>
+			<a href="/nprocure_inc/news/Net Framework Version 2 (x64).zip"  target="_new">   			
+			<font color="Midnightblue" size=-1>-	Framework - 2(x64)</font></a><br>
+			<font color="Midnightblue" size=-1>As stipulated in the Union Budget 2012 -2013, Service Tax @ 12.36 % shall be charged extra on sale of DSC�s with effect from 01.07.2012</font></a><br>
+            </font></font></font></font></font></font></font>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GMSCL:</b></font><br>
+		<a href="http://www.deendayaldrugs.com" target="_new">
+		<font color="Midnightblue" size = -1>To submit your online application for Deendayal Drug Store Franchise click here</font> <img src="/nprocure_images/new.gif" border=0><br>
+			        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Vidyapith:</b></font><br>		          				
+		<a href="/nprocure_inc/news/Gujarat Vidhyapith.rar"  target="_new">  			
+			<font color="Midnightblue" size=-1>Construction of Activity Centre at Kochrab Ashram, Ahmedabad.</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Gujarat Tourism Opportunity Limited </b><br></font>
+            	<a href="/nprocure_inc/news/ANNULMENT OF BIDDING PROCESS (For Selection of Event Management Agency For Rann Utsav 2014-15).PDF"  target="_new">
+		<font color="Midnightblue" size = -1>: NOTICE FOR, ANNULMENT OF BIDDING PROCESS(For Selection of Event Management Agency For :Rann Utsav 2014-15).</font><br></a>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>C P Office - Rajkot</b><br></font>
+            	<a href="/nprocure_inc/news/Rajkot.zip"  target="_new">
+		<font color="Midnightblue" size = -1>eAuction for Scrap Material</font><br><br></a>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>GIFT:</b><br></font>
+		<font color="Midnightblue" size = -1>Extension of dates for the physical submission and opening of Technical bids for the works. "Area Development Works around STP & AWCS Plants in GIFT City"  (BID REFERENCE NO.  GIFT/ENG/WT/WC/2015/05). - 02/09/2015 &  "RAW WATER SUPPLY PIPELINE FOR CONSTRUCTION AND IRRIGATION PURPOSE INCLUDING 3 YEARS OF O & M  IN THE GIFT CITY "  (BID REFERENCE NO.   GIFT/ENG/WT/WC/2015/04) - 03/09/2015. </font><br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>DGVCL:</b></font><br><br>
+			<a href="/nprocure_inc/news/DGVCL_Corrigendum20.pdf"  target="_new"> 
+			<font color="Midnightblue" size = -1>Corrigendum for extension of Hard copy submission date & opening of Technical & Commercial Date.</font></a><br><br>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>GSECL, Vadodara:</b></font><br>
+			<a href="/nprocure_inc/news/Corrigendum II Final Tender details  UGBPS for GSECL and nprocure Web site.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Corrigendum- II (Extension of dates with Revised Base price) Forward e-auction for Sale of 1X 135 MW CCPP-I Unit of Gas Based Power Station at Utran as is where is basis.</font></a><br><br>
+<a href="/nprocure_inc/news/Corrigendum III Final Tender details  UGBPS for GSECL and nprocure Web site.pdf"  target="_new">
+			<font color="Midnightblue" size = -1> Corrigendum- III (Extension of Dates)
+Forward e-auction for Sale of 1X 135 MW CCPP-I Unit of Gas Based Power Station at Utran as is where is basis.</font></a><br><br>
+	</td>
+	</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>G I L:</b></font><br>
+			<a href="/nprocure_inc/news/EoI IFMS Phase II 28-01-15.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Development of IFMS Phase II for Finance Department, Government of Gujarat</a><br> 
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>GCERT, Gandhinagar:</b></font><br>				
+			<a href="/nprocure_inc/news/GCERT tender17-18.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Tender to provide accomodation facility, tea, breakfast and meal at one place.</font></a><br> 
+			<br>
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b> DIRECTORATE OF SCHEDULE CASTE WELFARE- Gandhinagar:</b></font><br><br>
+			<a href="/nprocure_inc/news/Dir_ScheduleCast.pdf"  target="_new">
+			<font color="Midnightblue" size = -1> Important Notice : Tender For Providing Anaj Kariyana, Vegetables and Milk supply</font></a><br><br>
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>Sports, Youth and Cultural Activities Department:</b></font><br><br>
+		<a href="/nprocure_inc/news/EOI_for_National_Games_Expo_2022.docx"  target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest for Registration and participation in National Games Expo 2022 for 36th National Games, Gujarat 2022</a><br><br>
+		<a href="/nprocure_inc/news/Addendum No 1.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest for Registration and participation in National Games Expo 2022 for 36th National Games, Gujarat 2022 ADDENDUM NO. 1</a><br><br>
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>GUJARAT MINERAL DEVELOPMENT CORPORATION LIMITED</b></font><br><br>				
+			<a href="/nprocure_inc/news/gmdc.zip"  target="_new">
+			<font color="Midnightblue" size = -1>Sale of NPG Bauxite through e-Auction</a><br><br>
+			<a href="/nprocure_inc/news/CORRIGENDUM_IN_e_AUCTION_NO_GS-BX_01_2021_22_1.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Corrigendum-1</a><br><br>
+			<a href="/nprocure_inc/news/Corrigendum-II.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Corrigendum-2</a><br><br>
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>GNLU:</b></font><br>				
+			<a href="/nprocure_inc/news/Cancellation_Notice_Tender_Notice_No_PC-07_2021.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Cancellation of the Tender - PC-07/2021, Tender for 24 X 7 Operating of Cafeteria at Gujarat National Law University</a><br><br>
+  </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GUDC, Gandhinagar :</b></font><br><br>
+		<a href="/nprocure_inc/news/Amendment_01_to_Tender_Notice_RFP_PMC.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Amendment 01 to Tender Notice RFP</font></a><br>
+		<a href="/nprocure_inc/news/Amendment-02 ROB-RUB projects.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>AMENDMENT 02 Ref.No.GUDC/ e-TENDERING/ SJMMSVY/ROB-RUB/01to20.</font></a><br><br>
+		<a href="/nprocure_inc/news/Amendment_03_English_ROB-RUB_projects.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>AMENDMENT 03 Ref.No.GUDC/e-TENDERING/SJMMSVY/ROB-RUB/01to20</font></a><br><br>
+		<a href="/nprocure_inc/news/Amendment 04_English_ROB-RUB_projects.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>AMENDMENT 04  Ref. No. GUDC/e-TENDERING/SJMMSVY/ROB-RUB/01to20</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_Appointment_of_EIA.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI for Appointment of EIA Consultant for preparation of Environmental Impact Assessment and assistance in getting Environmental Clearance for newly identified 255 Ha of land in Ambaji under Proposed City Development Project</font></a><br><br>
+		<a href="/nprocure_inc/news/amendment.zip"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Urban Development Company Ltd. invites online tenders by e-tendering for the 1) Gondal ROB LC NO. 38: Rs. 20.37 Cr , 2) Anand ROB LC NO. 4 : Rs.29.11 Cr, 3) Visnagar ROB LC NO. 18X: Rs. 46.27 Cr, 4) Vadnagar RUB LC NO. 36-C: Rs.11.35 Cr, 5) Damnagar ROB LC NO. 11-C: Rs. 26.64 Cr, 6) Sihor ROB LC NO. 205 B: Rs. 25.96 Cr, 7) Khambhaliya ROB LC NO. 233: Rs. 31.21Cr, 8) Dhoraji ROB LC NO. 67B: Rs. 29.94 Cr, 9) Savarkundla ROB LC NO. 67:Rs. 53.77 Cr, 10) Anklav ROB LC NO. 13A: Rs. 24.48 Cr, 11) Halvad ROB LC NO. 65: Rs. 39.76 Cr, 12) Dhrangadhra ROB LC NO. 48 A:Rs. 20.00 Cr, 13) Anjar ROB LC NO. 12: Rs. 45.45 Cr and 14) Morbi ROB LC NO. 34B : Rs. 52.91 Cr on EPC basis</font></a><br>
+		<a href="/nprocure_inc/news/Amendment_-_2.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gudc Amendment - 2</font></a><br>
+		<a href="/nprocure_inc/news/Amendment_-_3.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gudc Amendment - 3</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Gas Limited:</b></font><br><br>
+		<a href="/nprocure_inc/news/002_EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_EMPANELMENT_ACROSS_GGL-Updated.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>GGL/EOI/2022-23/002 (PHASE-4) -  CONTRACTOR EMPANELMENT FOR PE-PNG PROJECT WORKS AT ACROSS GGL </font></a><br><br>
+		<a href="/nprocure_inc/news/1-EOI_-_DCS_O_M.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1> Operation And Maintenance Of Existing/Upcoming Decompression Stations (DCS) Across GGL</font></a><br><br>
+		<a href="/nprocure_inc/news/2-EOI_-_CNG__Booster.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Supply Of Booster CNG Compressor And Comprehensive Operation & Maintenance Services For 10 Years</font></a><br><br>
+		<a href="/nprocure_inc/news/3-EOI_-_CNG__Dispenser.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Supply Of CNG Dispenser And Comprehensive Annual Maintenance For 10 Years</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Supply_Of_Appliance_Valve.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Invitation for Expression of Interest (EOI) For Empanelment of Vendors For Supply of Appliance Valve of various GGL locations (REF. NO. GGL/EOI/2023-24/029)</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_O2_analyser.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Supplier Empanelment For Supply, Comprehensive Maintenance, Calibration/Testing Of O2 (Oxygen) Analyser at various GGL locations"</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_UPS_Battery.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>(GGL/EOI/2023-24/021)  EOI FOR EMPANELMENT OF CONTRACTORS FOR SUPPLY OF  UPS BATTERIES ACROSS GGL OPERATING LOCATIONS</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Hydrotesting_of_Seamless_Steel_CNG_cylinder_cascades_for_Thane.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1> (Ref: GGL/EOI/2022-23/006) Hydrotesting of Seamless Steel CNG Cylinder Cascades at Palghar District Thane Rural Ga- Maharashtra</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_Booster_Comp_Contr_Dev-2nd_Cut_off.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for Contractor Development for �CNG Booster Compressors�.</font></a><br><br>		
+		<a href="/nprocure_inc/news/EOI_PE-PNG_PRJWORKS_CONTRACTOR_DEV-Rnd2.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Contractor Development for PE-PNG Project Works.�.</font></a><br><br>
+-->
+<!--<a href="/nprocure_inc/news/2_EOI_Branding_Tower_Phase-II.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �supply & installation of branding works for GGL owned/franchisee CNG/L -CNG/LNG Stations".</font></a><br><br>
+-->
+<!--<a href="/nprocure_inc/news/EOI_-_Branding_Tower_-_Phase-III.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>INVITATION FOR EXPRESSION OF INTEREST (EOI) FOR EMPANELMENT OF CONTRACTORS FOR SUPPLY & INSTALLATION OF BRANDING WORKS FOR GGL OWNED/FRANCHISEE CNG/L-CNG/LNG STATIONS</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Branding_Tower.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Supply & Installation Of Branding Works For GGL Owned/Franchisee CNG/L-CNG/LNG Stations�</font></a><br>
+-->
+<!--<a href="/nprocure_inc/news/EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_DEVELOPMENT-THANE.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Contractor Development for PE-PNG Project Works at Palghar district and Thane Rural GA�</font></a><br>
+		<a href="/nprocure_inc/news/EOI_-_Hydrotesting_of_Seamless_Steel_CNG_cylinder_cascades.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �HYDROTESTING OF SEAMLESS STEEL CNG CYLINDER CASCADES�</font></a><br>
+		<a href="/nprocure_inc/news/007_EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_DEVELOPMENT-THANE_-R4.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Contractor Development for PE-PNG Project Works at Palghar district and Thane Rural GA�</font></a><br><br>
+		<a href="/nprocure_inc/news/007_EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_DEVELOPMENT-THANE_-R5.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �Contractor Development for PE-PNG Project Works at Palghar district and Thane Rural GA�</font></a><br><br>
+-->
+<!--
+		<a href="/nprocure_inc/news/EOI_-_Hydrotesting_of_Seamless_Steel_CNG_cylinder_cascades_-_Phase_2-REV.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) from interested & capable contractors for �HYDROTESTING OF SEAMLESS STEEL CNG CYLINDER CASCADES- PHASE 2�</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Phase_7-_Electrical_Works.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) for EMPANELMENT OF CONTRACTORS FOR ELECTRICAL WORKS ACROSS GGL � PHASE 7</font></a><br><br>
+-->
+<!--<a href="/nprocure_inc/news/EOI-GGL-EOI-2022-23-001.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) for �Contractor Development for PE-PNG Project Works at across GGL�</font></a><br><br>
+		-->
+<!--<a href="/nprocure_inc/news/EOI-GGL-EOI-2022-23-002.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) for �PE-PNG Project Works at Various Geographical Areas across GGL�</font></a><br><br>
+		-->
+<!--<a href="/nprocure_inc/news/EOI_-_Hydrotesting_of_Seamless_Steel_CNG_cylinder_cascades_for_Punjab_and_Haryana.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Hydrotesting of Seamless Steel CNG Cylinder Cascades at Punjab and Haryana</font></a><br><br>
+		-->
+<!--<a href="/nprocure_inc/news/EOI_-_Hydrotesting_of_Seamless_Steel_CNG_cylinder_cascades_-_Phase_3_June22.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Hydrotesting of Seamless Steel CNG Cylinder Cascades at Gujarat, Maharashtra, Madhya Pradesh & Rajasthan</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_DEVELOPMENT-ACROSS_GGL.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) for �Contractor Development for PE-PNG Project Works at across GGL�</font></a><br><br>
+-->
+<!--	<a href="/nprocure_inc/news/EOI_-_Phase_9-_Empanelment_of_Civil_Contractors_for_Construction_of_CNG_and_LCNG_Stations-R2.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Gujarat Gas Limited invites Expression of Interest (EOI) for Empanelment Of Civil Contractors For Construction Of CNG And LCNG Stations-Phase 9</font></a><br>
+		<a href="/nprocure_inc/news/EOI-PE.zip"  target="_new">               				
+		<font color="Midnightblue" size = -1>Contractor Empanelment For PE-PNG Project Works at across GGL </font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Mora_Terminal.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI FOR NON-COMPREHENSIVE ANNUAL OPERATION & MAINTENANCE CONTRACT FOR TERMINAL GAS COMPRESSORS & ASSOCIATED EQUIPMENTS INSTALLED AT GUJARAT GAS MORA, SURAT, GUJARAT</font></a><br><br>		
+		<a href="/nprocure_inc/news/Revised_-002_EOI_-_PE-PNG_O_M_WORKS_CONTRACTOR_EMPANELMENT_ACROSS_GG.rar"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI for Contractor Empanelment for PE-PNG Operation & Maintenance Works (O&M) across GGL</font></a><br><br>     
+		<a href="/nprocure_inc/news/EOI_-_Supply_Of_FRP_Sleeper.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI For Supply of FRP sleeper at various GGL locations</font></a><br><br>
+		<a href="/nprocure_inc/news/008_EOI_-_LNG_SYSTEMS_CONTRACTOR_EMPANELMENT_ACROSS_GGL.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>GGL/EOI/2023-24/008 - EOI for Contractor Empanelment for Supply, Installation, Testing Commissioning and Comprehensive Operation & Maintenance of LNG storage and regasification system & associated facilities</font></a><br><br>
+		<a href="/nprocure_inc/news/009_EOI_-_Welded_Approach_CONTRACTOR_EMPANELMENT_ACROSS_GGL.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>GGL/EOI/2023-24/009 - EOI for Contractor Empanelment for Welded Common Approach in Basement Area for Domestic and Welded installation of Industrial & Commercial Connections</font></a><br><br>
+		<a href="/nprocure_inc/news/002_EOI_-_PE-PNG_PROJECT_WORKS_CONTRACTOR_EMPANELMENT_ACROSS_GGL-1.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Invitation for Expression of Interest (EOI) For CONTRACTOR EMPANELMENT FOR PE-PNG PROJECT WORKS AT ACROSS GGL REF. NO. GGL/EOI/2022-23/002 (PHASE-3)</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_-_Supply_Of_Methane_gas_detector.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI for Supply of Methane Gas Detector across GGL</font></a><br><br>
+		<a href="/nprocure_inc/news/eoi_document_1690286589.pdf.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>EOI for Supply of Above Ground DRS across GGL Including AMC</font></a><br><br>
+	</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>UTTAR GUJARAT VIJ COMPANY LIMITED:</b></font><br><br>
+		<a href="/nprocure_inc/news/Doc_1_Tender_Notice.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Appointment of SCADA/DMS implementation Agency (SIA) for implementation of SCADA/DMS project under Revamped Distribution Sector Scheme (RDSS) for UGVCL</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Home Department:</b></font><br><br>
+		<a href="/nprocure_inc/news/26-2022.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>GIR SOMNATH 26TH JANUARY-2022 DINING ARRANGEMENT TENDER</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Sabarmati Gas Limited:</b></font><br><br>
+		<a href="/nprocure_inc/news/sgl_151121.zip"  target="_new">               				
+		<font color="Midnightblue" size = -1>Open tender for hiring services of PESO approved hydro testing agency for periodic hydro testing of CNG cascades for the period of 3 years</font></a><br>
+		<a href="/nprocure_inc/news/Tender downloading link SGL TEND 10 2022-23 rev.0.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Open tender for hiring services of PESO approved hydro testing agency for periodic hydro testing of CNG cascades for the period of 3 years</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Fibre Grid Network Limited:</b></font><br><br>
+		<a href="/nprocure_inc/news/RFP for Various Connectivity_GFGNL_v7.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Request for Proposal (RFP) for Selection of Project Implementation Agency (PIA) for Various Connectivity through BharatNet Network</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GUJARAT WATER RESOURCES DEVELOPMENT CORPORATION LTD:</b></font><br><br>
+		<a href="/nprocure_inc/news/00-27.8.21-TENDER_DETAILS.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>Pizometer Atal Bhujal Yojana</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Vanita Vishram:</b></font><br><br>
+		<a href="/nprocure_inc/news/etener_tradefair.zip"  target="_new">               				
+		<font color="Midnightblue" size = -1>E tender for organizing Trade Fair/Mela/Exhibition</font></a><br>
+		<a href="/nprocure_inc/news/E-TENDER_2022-2023__GUJARATI_.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>E tender for organizing Trade Fair/Mela/Exhibition</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GEDA:</b></font><br>
+		<a href="/nprocure_inc/news/EOI_Steel_Pipeline_Construction__less_than_5_kms.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1> Expression of Interest (EOI) from interested & capable contractors for �STEEL PIPELINE EXTENSION & ASSOCIATED ACTIVITIES FOR GAS PIPELINE NETWORK.</font></a><br><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>ITI Daman:</b></font><br>
+		<a href="/nprocure_inc/news/DDSDMS 2018-19.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1> Expression of Interest (EoI) for empanelment of Training Partner (TPs) for Implementation of the Scheme "Pradhan Mantri Kaushal Vikas Yojana.</font></a><br><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>The High Court of Gujarat :</b></font><br>
+		<a href="/nprocure_inc/news/E-Auction Document.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>E-Auction Document of Specified Plant & Machinery of Baroda Rayon Corporation by The High Court of Gujarat.</a><br>		
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+			<font color= "Brown" size=-1><b>N.W.R - Irrigation Mech Dn-4</b></font><br><br>
+		<a href="/nprocure_inc/news/Irri.Mech.Division N04-abad.zip"  target="_new">               				
+			<font color="Midnightblue" size = -1> e-Auction for unserviceable Machinery/vehicles/Spare parts/scrap materials of Irri.Mech.Division N0.-4,Ahmedabad.</font></a><br><br>	
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>G R I M C O:</b></font><br>
+			<a href="/nprocure_inc/news/Result of AsstTech-Grimco-2013.pdf"  target="_new">               								
+			<font color="Midnightblue" size = -1>Result of Asst_Tech_-Grimco-2013</font></a><br>
+		<a href="/nprocure_inc/news/FinalTender_Revised1.zip"  target="_new">               								
+		<font color="Midnightblue" size = -1>Empanelment of Agencies for Storage and Transportation of Toolkits at. District Level (29 District)</font></a><br><br>
+		<a href="/nprocure_inc/news/FinalTender_Revised2.zip"  target="_new">               								
+		<font color="Midnightblue" size = -1>Empanelment of Agencies for Storage and Transportation of Toolkits at. District Level (4 District)</font></a><br><br>
+		<a href="/nprocure_inc/news/Option-2_Tender__Storage_.pdf"  target="_new">               								
+		<font color="Midnightblue" size = -1>Emplament of Tool Kit storage and maintenance</font></a><br><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>GIDC - Notified Area Saputara:</b></font><br>
+			<a href="/nprocure_inc/news/BOATING_E-AUCTION-3-2016.pdf"  target="_new"> 
+			<font color="Midnightblue" size = -1>e-auction for boating at Saputara</font></a><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b> R.N.S.B. :</b></font><br>
+			<a href="/nprocure_inc/news/tenderdocrnsb.zip"  target="_new">               							
+			<font color="Midnightblue" size = -1>CONSTRUCTION OF R.N.S.B. BRANCH BUILDING AT JAMNAGAR.</font></a>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>Roads And Building:</b></font><br>
+			<a href="/nprocure_inc/news/ROADS AND BUILDINGS.zip"  target="_new">               							
+			<font color="Midnightblue" size = -1>Construction of 08 New Court Building in the City Civil Court at Bhadra Ahmedabad. (Providing, Fixing and Arranging Furniture)</font></a>
+			<a href="/nprocure_inc/news/CamScanner_02082021.zip"  target="_new">               							
+			<font color="Midnightblue" size=-1>Collection of toll from Toll Plaza near Bamanbore Junction (By Using Computerised Toll collection System/Manual System),and near Bagodara on Ahmedabad-Kandla road on NH-47 (OldNH-8A)</font></a><br /><br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+        <td width="94%" class="small">
+			<font color= "Brown" size=-1><b>GUJARAT WATER SUPPLY AND SEWERAGE BOARD:</b><br></font><br>
+            	<a href="/nprocure_inc/news/GWSSBDec2020.zip"  target="_new">
+			<font color="Midnightblue" size = -1>TENDER NOTICE FOR PVC FIX QUANTITY CONTRACT-2021</font></a><br>
+			<a href="/nprocure_inc/news/CID Joint Rate Contract Tender 2021-22.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>CID Joint Rate Contract Tender 2021-22</font></a><br><br>
+			<a href="/nprocure_inc/news/Rate Contract Tender for CI Sluice valve for the year 2021-22.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Rate Contract Tender for CI Sluice valve for the year 2021-22</font></a><br><br>			
+			<a href="/nprocure_inc/news/Rate Contract Tender for Supply of Air valves for the year 2021-22.pdf"  target="_new">
+			<font color="Midnightblue" size = -1>Rate Contract Tender for Supply of Air valves for the year 2021-22</font></a><br>			
+	</td>
+</tr> 
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr> -->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Biotechnology University:</b></font><br><br>		          				
+		<a href="/nprocure_inc/news/GBU.zip"  target="_new">
+		<font color="Midnightblue" size=-1>EMPANELMENT FOR PURCHASE OF CHEMICALS, CONSUMABLES, MINOR EQUIPMENTS AND LABORATORY MODULES</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Deendayal Port Trust:</b></font><br><br>		          				
+		<a href="/nprocure_inc/news/deendayalport.zip"  target="_new">
+		<font color="Midnightblue" size=-1>Augmentation of Liquid Cargo Handling Capacity by Revamping of Existing Pipeline Network at Oil Jetty Area, Deendayal Port Trust, Kandla</font></a><br><br>
+		<a href="/nprocure_inc/news/Final_Dahej_TenderPDF.pdf"  target="_new">
+		<font color="Midnightblue" size=-1>OPERATION OF FERRY SERVICES FROM DAHEJ,DIST: BHARUCH GUJARAT</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>The Surendranagar People's Co.op. Bank ltd.,(u/l)</b></font><br><br> 
+		<a href="/nprocure_inc/news/Surendranagar.zip"  target="_new">
+		<font color="Midnightblue" size=-1>corrigendum of Tender No : 517403, 517404 & 517405 regarding jaher nivdida published online on  date : 12/04/2022</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Directorate of Employment & Training</b></font><br><br>		          				
+		<a href="/nprocure_inc/news/EOI_for_Audit_SDC-22.01.2021.pdf"  target="_new">
+		<font color="Midnightblue" size=-1>EMPANELMENT OF AGENCIES FOR PROVIDING GOVERNMENT INTERNAL AUDIT FOR VARIOUS GOVERNMENT OFFICES OF GUJARAT UNDER DIRECTORATE OF EMPLOYMENT & TRAINING</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Dr. Baba saheb Ambedkar Open University</b></font><br><br>		          				
+		<a href="/nprocure_inc/news/BAOU.rar"  target="_new">
+		<font color="Midnightblue" size=-1>Civil construction work of Proposed Special Learner Support Centre (�ATTRI�), Model Learner Support Center (�GURUKUL�), Research Center and Gujarat Samite center and Museum Building at B.A.O.U., Ahmedabad</font></a><br><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	     <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>Statue of Unity Area Development and Toursim Governance Authority - Kevadia:</b></font><br><br>
+			<a href="/nprocure_inc/news/RFP_Consultancy_Services_for_Preparation_of_Vision_Plan_for_SoU_Final.pdf"  target="_new">          
+			<font color="Midnightblue" size = -1>Request for Proposal For Selection of Agency for offering Consultancy Services for Preparation of Vision Plan for Statue of Unity Area
+			</font></a><br><br>
+			</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>GSCSCL, Gandhinagar:</b></font><br><br>
+		<a href="/nprocure_inc/news/Expression of Interest for Appointment of Chartered Accountant Firm.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest for Appointment of Chartered Accountant Firm for Central Internal Audit (Including Pre-Audit) for F.Y.2020-21
+</font><br><br>
+		<a href="/nprocure_inc/news/Expression of Interest for Appointment of Chartered Accountant Firm for District Internal Audit.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest for Appointment of Chartered Accountant Firm for District Internal Audit (Including Pre-Audit) for F.Y.2020-21
+</font><br><br>
+		<a href="/nprocure_inc/news/Pre-Bid_Meeting_Adv_15.05.2021.pdf" target="_new">
+		<font color="Midnightblue" size = -1>GSCSCL-Pre-Bid Meeting for Transport and Labour Contracts via Google Meet" on 18.05.2021</font><br>
+		<a href="/nprocure_inc/news/GPS_and_other_technical_queries_Google_Meet_20.05.2021.pdf" target="_new">
+		<font color="Midnightblue" size = -1>GSCSCL- Google Meet GPS and other technical queries for Transport & Labour Tender 2021-23" on 20.05.2021</font><br>
+			        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+		<td width="94%" class="small">
+		<font color="Brown" size =-1><b>ICDS, Gandhinagar:</b></font><br>
+		<a href="/nprocure_inc/news/1 ICDS Badge Tender Document.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>1. ICDS Badge Tender</font></a><br>
+		<a href="/nprocure_inc/news/2 ICDS Nutri Candy Tender Document.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>2. ICDS Nutri Candy Tender</font></a><br>
+		<a href="/nprocure_inc/news/3  ICDS Pre School Kit (Games) Tender Document.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>3. ICDS Pre School Kit (Games) Tender</font></a><br>
+		<a href="/nprocure_inc/news/4 ICDS Pre School Kit (Toys) Tender Document.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>4. ICDS Pre School Kit (Toys) Tender</font></a><br>
+		<a href="/nprocure_inc/news/5 ICDS Sabla KSY Tender Document.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>5. ICDS Sabla KSY Tender</font></a><br>
+		</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+		<td width="94%" class="small">
+		<font color="Green" size =-1><b>CMSO, Gandhinagar:</b></font><br>
+		<a href="/nprocure_inc/news/Revised Technical SpecificationsB-65.pdf"  target="_new">
+		<font color = "Midnightblue" size =-1>Revised Technical Specifications - 92513</font></a>
+			</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+		<td width="94%" class="small">
+		<font color="Brown" size=-1><b>(n)Code Solutions, Ahmedabad</b></font><br>
+		<font color = "Midnightblue" size =-1>Tender published for Mass monitoring and surveillance solution project for 4 Yatradhams in Gujarat (Pavitra Yatradham Vikas Board).</font></a>
+		<a href="/nprocure_inc/news/VehicleAnnexure.zip" target="_new">
+		<font color = "Midnightblue" size =-1>Limited (Closed) tender for rendering of ANNUAL RATE CONTRACT FOR �(ARC) for Hiring various type of vehicles on casual basis/on call basis & monthly basis for GNFC ,GIFT City Office Gandhinagar and Info Tower, Ahmedabad<br/>
+		Important Note - We request all interested bidders to participate in the pre-bid meeting for this tender, scheduled on 7th October, 2023, at 15:00 hours at our GIFT office. Interested bidders are requested to communicate their user ID to ggparmar@ncode.in to enable us to allow participation in this closed tender published on (n)procure i.e. www.nprocure.com or https://tender.nprocure.com. <br/>For any assistance regarding the (n)procure portal, please contact our support helpdesk at the numbers mentioned below.<br/><br/>
+		(n)procure Support Helpdesk Numbers<br/>
++91-79-40007517, 40007514, 40007515.<br/>
+E-mail : nprocure@ncode.in, nprocure@ncode.in
+		</font></a><br/>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+        <td width="94%" class="small">
+			<font color= "Brown" size=-1><b>Tourism Corporation of Gujarat Limited:</b><br></font><br>
+            	<a href="/nprocure_inc/news/PMC_for_cleaning_work_TB.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>SELECTION OF PROJECT MONITORING AGENCY FOR MONITORING & SUPERVISING THE CLEANING & SANITATION SERVICES AT VARIOUS LOCATIONS OF GUJARAT</font></a><br>
+	</td>
+</tr> 
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr> -->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+		<td width="94%" class="small">
+		<font color="Brown" size =-1><b>NAGARPALIKA (ALL NAGARPALIKA GUJARAT)-PARDI NAGARPALIKA:</b></font><br>
+		<a href="/nprocure_inc/news/For_Tender_Date_expand.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>Last date of Submission of Documents extended up to 28.05.2020 for Tender Id 404450 and 404335.</font></a><br><br>
+</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+		<td width="94%" class="small">
+		<font color="Brown" size =-1><b>PIU, Gandhinagar:</b></font><br><br>
+		<a href="/nprocure_inc/news/Recruitment of Deputy Executive Engineer (Ele).pdf" target="_new">
+		<font color = "Midnightblue" size =-1>Recruitment of Deputy Executive Engineer (Ele.)-Adv-and-Details-Qualifications</font></a><br>
+		<a href="/nprocure_inc/news/PIU_Recrutment-2022.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>Recruitment Notice</font></a><br><br>
+		<a href="/nprocure_inc/news/PIU_Revised_Recruitment_Advertisement.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>Recruitment of Staff for PIU Department</font></a><br><br>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>Gujarat Agro Industries Corporation Ltd.:</b></font><br>
+		<a href="/nprocure_inc/news/TenderDocuments_Gujagro.zip" target="_new">
+		<font color = "Midnightblue" size =-1>Tender Documents.</font></a><br>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>G E T C O:</b></font><br>
+		<a href="/nprocure_inc/news/2258 Package.zip" target="_new">
+		<font color = "Midnightblue" size =-1>Tender notice no. 2258.</font></a><br><br>
+		<a href="/nprocure_inc/news/TenderNoticeNo2259.zip" target="_new">
+		<font color = "Midnightblue" size =-1>Tender notice no. 2259</font></a><br>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>GSPHC:</b></font><br><br>
+		<a href="/nprocure_inc/news/New_Doc_2020-05-26_124501.pdf" target="_new">
+		<font color = "Midnightblue" size =-1>Extension of the physical submission date of Notice number 16 of 2019-20.</font>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>DMF:</b></font><br>
+		<a href="/nprocure_inc/news/EOI Project Shashwat.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Request for Expression of Interest (REOI) For Selection of service providers to promote overseas employment opportunities for the youth in Gujarat under Project Shashwat</font>
+		</a><br><br>
+		<a href="/nprocure_inc/news/Corrigendum Shashwat.pdf"  target="_new">
+		<font color = "Midnightblue" size =-1>Corrigendum - I</font>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>BHAVNAGAR MUNICIPAL CORPORATION:</b></font><br>
+		<a href="/nprocure_inc/news/Physical Submmission.pdf"  target="_new">
+		<font color = "Midnightblue" size =-1>Date Extended of physical submission ( BMC/SJMMSVY/Project/DR/02-2015 or Tender Id -185729)</font>
+		</a>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="brown" size =-1><b>GUJARAT MARITIME BOARD:</b></font><br>
+			<a href="/nprocure_inc/news/RFP_03072019_Clean.pdf"  target="_new">			
+		<font color ="Midnightblue" size =-1>Request for Proposal - Selection of Operator for Ferry Services for the routes
+Gogha-Hazira across Gulf of Cambay, and Rozi-Old Mundra & Okha-Mandvi across Gulf of Kutch, Gujarat</font>
+</a>
+		<br><br>
+	</td>
+</tr>
+<tr>
+	<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>Junagadh Agriculture University:</b></font><br>
+		<a href="/nprocure_inc/news/JAU_ncode.pdf"  target="_new">
+		<font color = "Midnightblue" size =-1> Corrigendum for Extension of physical document submission date</font></a><br><br>
+	</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Brown" size =-1><b>S P Office, Surendranagar</font><br>
+		<a href="/nprocure_inc/news/Vehicle e-auction notice.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Vehicle e-auction notice.</font></a><br>
+	</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="Green" size =-1><b>G S R T C:</b></font><br>
+		<font color="Midnightblue" size =-1><b>Development of 14 GSRTC Bus Terminal under PPP</font><br>
+		<a href="/nprocure_inc/news/Section I and II _Information to Bidder and DCA.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section I and II _Information to Bidder and DCA</font></a><br>
+		<a href="/nprocure_inc/news/Section III_Schedules_PartA.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section III_Schedules_PartA</font></a><br>
+		<a href="/nprocure_inc/news/Section III_Schedules_PartB.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section III_Schedules_PartB</font></a><br>
+		<a href="/nprocure_inc/news/Section III_Schedules_PartC.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section III_Schedules_PartC</font></a><br>
+		<a href="/nprocure_inc/news/Section III_Schedules_PartD.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section III_Schedules_PartD</font></a><br>
+		<a href="/nprocure_inc/news/Section III_Schedules_PartE.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section III_Schedules_PartE</font></a><br>
+		<a href="/nprocure_inc/news/Section IV_Conceptual.zip"  target="_new">
+		<font color = "Midnightblue" size =-1>Section IV_Conceptual</font></a><br>
+	</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="brown" size =-1><b>A.P.M.C. - Bhesan:</b></font><br>
+		<a href="/nprocure_inc/news/EOI - APMC Bhesan.pdf"  target="_new">		
+		<font color = "Midnightblue" size =-1>EOI for development work of APMC, Bhesan. Submit Technical Bid before 05/08/2016 5.00pm.</font></a><br>
+		</td>
+</tr>
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">		
+		<font color="brown" size =-1><b>A.P.M.C. - Visavadar:</b></font><br>
+		<a href="/nprocure_inc/news/apmc - visavadar.zip"  target="_new">		
+		<font color = "Midnightblue" size =-1>Expression of Interest</font></a><br>
+		</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+	<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	<td width="94%" class="small">
+		<font color="brown" size =-1><b>GSPC PIPAVAV POWER COMPANY LIMITED:</b></font><br>
+		<a href="/nprocure_inc/news/EOI Document _GPPC.zip"  target="_new">		
+		<font color = "Midnightblue" size =-1>Expression of Interest (EOI) for execution of Improvement / Modification / Enhancement in Sea Water intake system for 2x351.43 MW Combined Cycle Power Plant.</font></a><br>
+		<a href="/nprocure_inc/news/2016 08 03 Ammended Section 1 to EOI.pdf"  target="_new">		
+		<font color = "Midnightblue" size =-1>Amendment Section 1 to EOI.</font></a><br>
+		<a href="/nprocure_inc/news/2016 08 20 Amendment No. 2 date change for PRe-Bid meeting.pdf"  target="_new">		
+		<font color = "Midnightblue" size =-1>Pre-Bid meeting is postponed till further notified Date.</font></a><br>
+		</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Forest and Environment Department:</b></font><br><br>
+		<a href="/nprocure_inc/news/CORRIGENDUM_DANG_SOUTH.pdf" target="_new"> 
+		<font color="Midnightblue" size = -1> Pre-Bid Clarification for the tenders of �Sahyadri Eco-tourism Projects"</font><br>
+		<a href="/nprocure_inc/news/4-Empanlment.pdf" target="_new"> 
+		<font color="Midnightblue" size = -1>Empanelment of bidders for various forestry activity at Social Forestry Division, Nadiad Dist.Kheda</font><br>
+		<a href="/nprocure_inc/news/Consultant_Safari_Gir_East_New_23.pdf" target="_new"> 
+		<font color="Midnightblue" size = -1>FOR SELECTION OF CONSULTANT (S) / CONSULTANCY FIRM (S) FOR PREPARATION, MODIFICATION OF MASTER PLAN AS PER CZA APPROVAL, PREPARATION OF DPR, DESIGNS, PLANS AND ESTIMATES OF VARIOUS ANIMAL ENCLOSURES CONTOUR MAPPING, FENCING, GATES AND OTHER ALLIED FACILITIES OF PROPOSED SAFARI PARK, NALIYA MANDVI, GIR EAST FOREST DIVISION, DHARI</font><br>
+		<a href="/nprocure_inc/news/Consultant_Safari_Gir_East_New_23-1.pdf" target="_new"> 
+		<font color="Midnightblue" size = -1>SELECTION OF CONSULTANT (S) / CONSULTANCY FIRM (S) FOR PREPARATION, MODIFICATION OF MASTER PLAN AS PER CZA APPROVAL, PREPARATION OF DPR, DESIGNS, PLANS AND ESTIMATES OF VARIOUS ANIMAL ENCLOSURES CONTOUR MAPPING, FENCING, GATES AND OTHER ALLIED FACILITIES OF PROPOSED SAFARI PARK, NALIYA MANDVI, GIR EAST FOREST DIVISION, DHARI</font></a><br>
+	</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr> 
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>AMC :</b></font><br><br>
+		<a href="/nprocure_inc/news/AMC2019.zip" target="_new">
+		<font color="Midnightblue" size = -1>Tender Documents for Augmentation Work with SITC work of Electrical, Mechanical & instrumentation equipment with Comprehensive maintenance and repair for a period of 60 months for Existing WDS at CHANDLODIA and SATTADHAR North/SouthWest Zone of Ahmedabad Municipal Corporation (AMC) Ahmedabad</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI-_Phase-II_Barrage_cum_Bridge.zip" target="_new">
+		<font color="Midnightblue" size = -1>AMC (SRFDCL): EXPRESSION OF INTEREST: SELECTION OF A CONSULTANT FOR DESIGNING OF BARRAGE CUM BRIDGE ACROSS THE SABARMATI RIVER CONNECTING TORRENT POWER PLANT ON WEST BANK TO CAMP SADAR BAZAR ON EAST BANK, AHMEDABAD</font></a><br><br>
+		<a href="/nprocure_inc/news/amc_corrigendum1.zip" target="_new">
+		<font color="Midnightblue" size = -1>Corrigendum1</font></a><br><br>
+		<a href="/nprocure_inc/news/Parking_Plan_EOI.rar" target="_new">
+		<font color="Midnightblue" size = -1>EoI for Selection of Agency for Parking Plan preparation, its implementation and management in Ahmedabad City</font></a><br><br>
+		<a href="/nprocure_inc/news/EOI_Road.zip" target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest (EOI) for Empanelment ( Road Project )</font></a><br><br>
+		<a href="/nprocure_inc/news/Design_city_Square_final_DTP.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Expression of Interest (EOI) for Empanelment for the Preparation of Architectural, Theme Design & Planning, with Urban Design and Techno financial feasibility study report of �Ahmedabad City Square (Structure of Identity), Place Making, Iconic Road, Food Park, Vegetable Market, Bridge Under Space Development, Street Urban Planning & Designing and Other Planning and Designing at Different Location of Amdavad Municipal Corporation</font></a><br><br>
+		<a href="/nprocure_inc/news/Corrigendum-1_for_n-procure_.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Corrigendum related to EoI (AMC/Estate-CO/Parking Plan/2023) for Selection of Agency for Parking Plan preparation, its implementation and management in Ahmedabad City</font></a><br><br>
+	        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Department of Health & Family Welfare:</b></font><br>
+		<a href="/nprocure_inc/news/EOI for Thalassemia (FINAL).pdf" target="_new">
+		<font color="Midnightblue" size = -1>EOI for Call for expression of interest for screening for Thalassemia in population of Gujarat State.</font><br>
+					        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>District Development Office:</b></font><br>
+		<a href="/nprocure_inc/news/District Panchayat - Kheda Printing Tender.zip" target="_new">
+		<font color="Midnightblue" size = -1>District Panchayat - Kheda Printing Tender</font><br>
+					        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Housing Board : </b></font><br><br>
+		<a href="/nprocure_inc/news/STRUCTURAL AUDIT TENDER.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Conducting of Structural Audit of Old Housing Colonies under Gujarat Housing Board - Surat Division.</font></a><br><br>
+		<a href="/nprocure_inc/news/STRUCTURAL AUDIT TECHNICAL BID_24_9.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Tender For Conducting of Structural Audit of Old Housing Colonies under Gujarat Housing Board - Rajkot Division</font></a><br><br>
+		<a href="/nprocure_inc/news/GHB Ahmedabad.rar" target="_new">
+		<font color="Midnightblue" size = -1>Tender For Conducting Structural Audit of GHB Old Housing Colonies and Slum Clearance Cell under Gujarat Housing Board - Ahmedabad Division.</font></a><br><br>
+		<a href="/nprocure_inc/news/STRUCTURAL_AUDIT_TECHNICAL_BID_Vadodara.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Tender For Conducting of Structural Audit of Old Housing Colonies under Gujarat Housing Board - Vadodara Division.</font></a><br><br>
+		<a href="/nprocure_inc/news/Redevelop_policy.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment Of Integrated Group Housing Facility at 195HIG Amar Apt. and 180 HIG Suramya Apt., Sola Road, Naranpura, Ahmedabad Gujaraton PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/100 HIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment Of Integrated Group Housing Facility at 100 HIG + 60 SHOPS + 3 STALLS, SHRADDHADEEP COMPLEX at Shastrinagar, Naranpura, Ahmedabad Gujarat On PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/132 MIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment Of Integrated Group Housing Facility at 132 MIG Surya Apartment Part-2 Sola Road, Ahmedabad, Gujarat On PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/1.24 MIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment of Integrated Group Housing Facility for 24 MIG, M-5 Block No. 22 to 24, Shastrinagar, Naranpura, Ahmedabad, Gujarat on PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/2.48 MIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment of Integrated Group Housing Facility for 48MIG, M-5 Block No. 40 to 45, Shastrinagar, Naranpura, Ahmedabad, Gujarat on PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/3.64 MIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Re-Development Of Integrated Group Housing Facility for 64 MIG Abhishek Appartment, Sola Road , Ahmedabad, Gujarat on PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/4.96 MIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment of Integrated Group Housing Facility for 96 MIG, M-5 Block No. 25 to 36, Shastrinagar, Naranpura, Ahmedabad, Gujarat on PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/5.120 MIG-1.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment of Integrated Group Housing Facility for 120 MIG Surya Apartment Part-1, SolaRoad, Sola, Ahmedabad, Gujarat on PPP Basis</font></a><br><br>
+		<a href="/nprocure_inc/news/6.300 HIG.zip" target="_new">
+		<font color="Midnightblue" size = -1>Redevelopment Of Integrated Group Housing Facility At 300 HIG + 18 Shops, Nirmal Apartment,Naranpura, Ahmedabad On PPP Basis</font></a><br><br>
+	        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Gujarat Urban Development Mission : </b></font><br><br>
+		<a href="/nprocure_inc/news/REOI-CUI_GUDM__25-Nov.pdf" target="_new">
+		<font color="Midnightblue" size = -1>REQUEST FOR EXPRESSIONS OF INTEREST FOR SELECTION OF AN AGENCY TO PREPARE BUSINESS PLAN FOR DEVELOPMENT OF GUJARAT CENTRE OF URBAN INNOVATION (CUI)</font></a><br><br>
+		<a href="/nprocure_inc/news/RFP_for_preparation_of_Business_Plan_for_CUI-1_7_feb_2023_master.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Consulting Services for preparation of Business plan for development of Gujarat Centre of Urban Innovation (CUI)</font></a><br><br>
+	        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>HEALTH AND FAMILY WELFARE DEPARTMENT</b></font><br><br>
+		<a href="/nprocure_inc/news/GMERS SOLA - Dates Extension Tender notice - 2020-21.pdf" target="_new">
+		<font color="Midnightblue" size = -1>Dates Extension of Tender Notice 2020-21</font><br>
+			        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>Dept. of Tourism, Daman :</b></font><br>
+			Expression of Interest(EOI) for <br>
+			<a href="/nprocure_inc/news/EOI-for-water sports activities.pdf"  target="_new"> 
+			<font color="MIdnightblue" size = -1>1. Water Sports Activities</font></a><br>
+			<a href="/nprocure_inc/news/EOI DOCUMENTS FOR  Panel Ads.pdf"  target="_new"> 
+			<font color="MIdnightblue" size = -1>2. Installation of Advertisement Panels at Daman </font></a><br>
+			<br>
+        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Commissionerate of Fisheries:</b></font><br><br>
+		<a href="/nprocure_inc/news/cofgog.zip" target="_new">
+		<font color="Midnightblue" size = -1>EXPRESSION OF INTEREST FOR THE PURPOSE OF CARRYING OUT MAINTENANCE DREDGING WORK AT VARIOUS NOTIFIED FISHING CENTRES.</font><br>
+			        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Ahmedabad Central Jail:</b></font><br>
+		<a href="/nprocure_inc/news/03 tender form bekary  2014 -15.pdf" target="_new">
+		<font color="Midnightblue" size = -1>E03 tender form bekary 2014 -15.pdf</font><br>
+		<a href="/nprocure_inc/news/04 tender form retion 2014-15.pdf" target="_new">
+		<font color="Midnightblue" size = -1>04 tender form retion 2014-15.pdf</font><br>
+		<a href="/nprocure_inc/news/05 tender form  canteen 2014 -15.pdf" target="_new">
+		<font color="Midnightblue" size = -1>05 tender form  canteen 2014 -15.pdf</font><br>
+			        </td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Collector Office, Dahod:</b><br></font>
+            	<a href="/nprocure_inc/news/VOL CCC RFP DSCDL Dahod.zip"  target="_new">
+		<font color="Midnightblue" size = -1>REQUEST FOR PROPOSAL (RFP) For Selection of System Integrator for Implementation of Integrated Command and Control Centre (ICCC) and Smart Solutions in Dahod City For Dahod Smart City Development Limited (DSCDL).</font><br></a><br><br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>COMMISSIONER OF COMMERCIAL TAX:</b><br></font>
+            	<a href="/nprocure_inc/news/e-Tender-converted.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>Providing white coloured Power steered Non A.C. vehicles with Drivers on hire basis for Mobile squad locations.</font><br></a><br><br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Gujarat JHM Hotels Limited</b><br></font>
+            	<a href="/nprocure_inc/news/Tender DocumentsJHM.zip"  target="_new">
+		<font color="Midnightblue" size = -1>GJHM invites bids for Fixed Interior Works for Gateway Taj Hotel at Ambika Niketan, Surat.</font><br></a>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>Indian Audit and Accounts Department</b></font><br>
+			<a href="/nprocure_inc/news/final_tender_to_be_uploaded.pdf"  target="_new"> 
+			<font color="Midnightblue" size = -1>Supply and Installation of Modular Furniture at Office of Principal Director of Audit (Central), Ahmedabad</font></a><br>
+</td>	
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 			<font color="Brown" size=-1><b>VMC Department:</b></font><br>
+			<a href="/nprocure_inc/news/VMC E-Auction.zip"  target="_new"> 
+			<font color="Midnightblue" size = -1>VMC E-Auction : Forward Auction of various lots of Scrap Materials of VMC Stores on As Is Where Is basis.
+			</font></a><br><br>
+</td>	
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Gujarat Pollution Control Board, Gandhinagar:</b></font><br><br>
+            	<a href="/nprocure_inc/news/Tendar_GPCB.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>Tender Documents</font><br></a>
+		<br>
+<br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>G A C L:</b><br></font>
+            	<a href="/nprocure_inc/news/GACL.zip"  target="_new">
+		<font color="Midnightblue" size = -1>HM HDPE CARBOUY 35 LTR CAPACITY FOR PAP TECHNICAL AND COMMERCIAL BID DOCUMENTS</font><br></a>
+		<br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>CGM-GMRDS:</b></font><br><br>
+            	<a href="/nprocure_inc/news/gmrds2020.zip"  target="_new">
+		<font color="Midnightblue" size = -1>TENDER DOCUMENT FOR EMPANELMENT OF CONSULTANTS FOR INFRASTRUCTURE WORKS AT VARIOUS LOCATION IN GUJARAT.</font><br></a>
+		<br><br>
+            	<a href="/nprocure_inc/news/GMRDS_corrigendum.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>Corrigendum.</font><br></a>
+		<br><br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    <td width="94%" class="small">
+ 		<font color="Brown" size=-1><b>Government Transport Service - Gandhinagar :</b></font><br>
+		<a href="/nprocure_inc/news/for_mail.pdf"  target="_new">               				
+		<font color="Midnightblue" size = -1>  E-Auction Document of Vehicle e-auction by Government Transport Service -Gandhinagar
+</a><br>
+</td>
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Saurashtra University:</b><br></font>
+            	<a href="/nprocure_inc/news/Tender Document sauuni.rar"  target="_new">
+		<font color="Midnightblue" size = -1>Tender Document.</font><br></a>
+		<br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>NATIONAL INSTITUTE OF DESIGN:</b><br></font>
+            	<a href="/nprocure_inc/news/Tender_CarpentaryandWoodenWorks_2018.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>Carpentry works for Providing & fixing of wooden ducting for Air conditioning system (Phase IV) at 2nd Floor NID, Ahmedabad".(Including labor, materials, tools, plants, scaffolding etc. complete).</font><br></a>
+		<br><br>
+		<a href="/nprocure_inc/news/EOI-ERP-NID-AHD-Draft__2_.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>EXPRESSION OF INTEREST (EOI) NON-COMMITTAL FOR ERP SYSTEM/SOFTWARE FOR NATIONAL INSTITUTE OF DESIGN AHMEDABAD AND EXTENSION CAMPUSES - GANDHINAGAR AND BENGALURU</font></a>
+		<br><br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+<!--
+<tr valign="top">
+		<td width="6%" class="menu"><strong>&raquo;</strong></td>
+	    	<td width="94%" class="small">
+		<font color= "Brown" size=-1><b>Jamnagar Municipal Corporation:</b><br></font>
+            	<a href="/nprocure_inc/news/E AUCTION VEHICLE TENDER FORM _RETENDER_.pdf"  target="_new">
+		<font color="Midnightblue" size = -1>E-Auction Document of Different kind of scrap vehicle.</font><br></a>
+		<br>
+</td>		
+</tr>
+<tr>
+		<td background="/Nprocure_images/Main/hori.gif" colspan="2"><IMG height=5 src="/Nprocure_images/Main/hori.gif" width=5></td>
+</tr>
+-->
+</table></td>
+</tr>
+</table>
+</td>
+<td background="Nprocure_images/Main/verti.gif" width="0%"> </td>
+<td width="80%">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+<tr>
+<td height="4"><img height="1" src="Nprocure_images/Main/dot.gif" width="1"/></td>
+</tr>
+</table>
+<table align="center" background="Nprocure_images/Main/SHBack.gif" border="0" cellpadding="0" cellspacing="0" height="23" width="99%">
+<!--<tr background="Nprocure_images/Main/SHBack.gif">
+						<td width="1%" align="left"><IMG height=30 src="Nprocure_images/Main/SHL.gif" width=3></td>
+						<td width="78%"><IMG height=30 src="Nprocure_images/Main/SerHead.gif" width=111></td>-->
+<!--<td width="20%">&nbsp;</td>-->
+<!--<td width="1%" align="right"><IMG height=30 src="Nprocure_images/Main/SHL.gif" width=3></td>
+                  </tr>-->
+<tr>
+<td bgcolor="#ffffff"> </td>
+<td align="left" bgcolor="#ffffff" height="40">
+<select class="DeptSelBorder" id="dir" name="dir" onchange="JavaScript:callPage(document.frmIndex.dir.value)">
+<option value="0">Select Department </option><option value="https://acd.nprocure.com">AGRICULTURE AND CO-OPERATIVE DEPARTMENT (0)</option><option value="https://au.nprocure.com">AGRICULTURE UNIVERSITY (0)</option><option value="https://amc.nprocure.com">AHMEDABAD MUNICIPAL CORPORATION (0)</option><option value="https://amts.nprocure.com">AHMEDABAD MUNICIPAL TRANSPORT SERVICE (0)</option><option value="https://auda.nprocure.com">AHMEDABAD URBAN DEVELOPMENT AUTHORITY (AUDA) (0)</option>
+</select>
+						<!--<img style="cursor:hand" onClick="JavaScript:callPage(document.frmIndex.dir.value)" src="Nprocure_images/Main/submit.gif" border=0 name=button >--></td><td bgcolor="#ffffff"></td>
+<td bgcolor="#ffffff"> </td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="99%">
+<tr>
+<td background="Nprocure_images/Main/hori.gif"><img height="5" src="Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+</table>
+<table width="100%">
+<tr>
+<td colspan="4">
+<table align="center" background="Nprocure_images/Main/SHBack.gif" border="0" cellpadding="0" cellspacing="0" height="23" width="99%">
+<tr bgcolor="FFFFFF">
+<td align="right" class="small" height="30" valign="middle"><font size="2"><b>Search Tender: </b></font></td>
+<td align="left" class="small" height="30" valign="middle"><font size="2"><b>Name of Work: </b></font><input class="inputType" id="txtSearch" name="txtSearch" onpaste="return false" size="30" type="text"/></td>
+<td align="left" class="small" height="30" valign="middle"><font size="2"><b>Tender Id: </b></font><input class="inputType" id="txtTenderID" maxlength="9" name="txtTenderID" ondrop="return false" onkeypress="if (event.keyCode &lt; 48 || event.keyCode &gt; 57) event.returnValue = false;" onpaste="return false" size="14" type="text"/></td>
+<td height="30"> <input class="BUTTON_ALL" name="btnSubmit" onclick="Search()" title="Enter any word from NAME OF WORK or Tender Id and click on Search Button" type="button" value="Search"/></td>
+</tr>
+</table>
+<table align="center" background="Nprocure_images/Main/SHBack.gif" border="0" cellpadding="0" cellspacing="0" height="23" width="99%">
+<tr bgcolor="FFFFFF">
+<!--<td width="1%" align="left">&nbsp;</td>-->
+<td align="Left" class="SearchDataHeader" nowrap="" valign="middle">Number of Live Tenders:      
+																							0</td>
+<td align="Left" class="SearchDataHeader" nowrap="" valign="middle"><!--Number of Completed Tenders: &nbsp; &nbsp; --> 
+																							<!--374553--></td>
+<td align="right" valign="middle"><a href="#" onclick="GotoNewhomeTender(1,0)">																					
+																							more...
+																							</a></td>
+<!--<td  align="right" valign="middle"><a href="#" style="color:#666600" onClick="GotoAOC()">AOC...</a>
+																						</td>-->
+</tr>
+</table>
+<br/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td class="tblDataSubHeader" nowrap="" valign="middle">  Online Tenders List</td>
+<td align="right" valign="top" width="79%"><a href="#" onclick="GotoMigratedClient()">Additional Tenders</a></td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="1" class="gridBG" width="100%">
+<tr class="tblDataSubHeader">
+<td align="center" width="100"> <div align="center">IFB / Tender Notice No.</div></td>
+<td align="left" width="356"> <div align="center">Tender Brief</div></td>
+<td align="left" width="62"> <div align="center">Tender / Corrigendum Document</div></td>
+</tr></table>
+</td>
+</tr>
+</table> <table align="center" width="100%">
+<tr><td align="center">
+<a href="#top">TOP</a></td>
+</tr>
+<!--<tr>
+<td align="right"><a href="#" style="color:#666600" onClick="GotoNewhomeTender()">More Offline Tenders...</a></td>
+</tr>-->
+</table><br/>
+<!-------003 -->
+<!--------------------------------------->
+<!-- 004-->
+<center><a name="offlinetenders"></a>
+<!-- End 004-->
+<td background="Nprocure_images/Main/verti.gif" width="0%"> </td>
+<td width="19%"><table border="0" cellpadding="0" cellspacing="0" width="186">
+<tr>
+<td width="186"><img alt="Digital Signature Certificates, Trust, Security, Identity, Digital Signature, Digital Certificates, PKI, e-Tendering, online identity, form-signing, code-signing, e-intermediary, DGFT, online tax filing, CPS, PKI enabling, BS 7799, Network Security, SSL Certificates, VPN Certificates, information security, Registration Authority, Certifying Authority, Digital Passport, Online Passport, Key, token, security solutions, e-Procurement, online payment" height="30" src="Nprocure_images/Main/login-header.gif" width="185"/></td>
+</tr>
+<tr>
+<td width="186">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="186">
+<tr>
+<td width="78"><div align="right" class="small">
+<div align="right">User ID : </div>
+</div></td>
+<td width="102"><input autocomplete="off" name="username" size="13" title="User ID"/></td>
+</tr>
+<tr>
+<td width="78"><div align="right" class="small">
+<div align="right">Password : </div>
+</div></td>
+<td><input autocomplete="off" name="password" size="13" title="Password" type="password"/></td>
+</tr>
+<tr>
+<td><div align="right"></div></td>
+<td height="40"><input alt="Online tendering login" height="17" id="image1" name="image1" src="Nprocure_images/Main/but-login.gif" type="image" width="48"/></td>
+</tr>
+<tr>
+<td colspan="2">
+<div align="center">
+<!--<A href="SupplierDesclaimer.asp">New User
+							</A> <A href="/asp/tms/VendorRegistration.aspx">New User
+							</A>|
+							<A href="forgotpassword.asp">Forgot Password? </A> |
+							<br>
+							<A href="/asp/tms/PayportalLoginPage.aspx">Pay Portal Charges</A>-->
+<a href="nCodeDSCInstall.msi" target="_new" title="(n)Procure PKI Component"><b><font color="Brown">(n)Procure New Component</font></b></a><br/>
+<a href="NprocureBrowserSettings.zip" target="_new" title="Browser Setting"><b><font color="Brown">Browser Settings</font></b></a><br/>
+<!--<A href="nCodeDSCInstall_07122018.msi" title="(n)procure Old Component" target="_new"><b><font color = "Brown">(n)procure Old Component</font></b></A><br>
+<A href="/asp/tms/VendorRegistration.aspx" title="New user registration form"><b><font color = "Midnightblue">New User</font></b></A> |-->
+<a href="forgotpassword.asp" title="Reset your password"><b><font color="Midnightblue">Forgot Password?</font></b></a> <!--|<br>
+<A href="/asp/tms/payportalloginpage.aspx"  title="Pay yearly Portal charges Online or Offline"><b><font color = "Midnightblue">Pay Portal Charges</font></b></a>-->
+<br/>
+</div></td>
+</tr>
+<tr>
+<td background="Nprocure_images/Main/hori.gif" colspan="2" height="5"><img height="5" src="Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="99%">
+<tr>
+<td colspan="2"><a href="http://auction.nprocure.com/" target="_new">
+<img border="0" height="30" src="/images/sidelinks/button_eauction.jpg" width="185"/>
+</a></td>
+</tr>
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr>
+<td colspan="2"><a href="#" onclick="MM_openBrWindow('/Nprocure_inc/Prerequisites.asp','Tendering','width=500,height=300')">
+<img border="0" height="30" src="/images/sidelinks/minReq.jpg" width="185"/>
+</a></td>
+</tr>
+<!-- <tr>
+                        <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+<!--<tr>
+                        <td colspan="2" align="center"><a href="/html/IndustriesMinesDeptGRAmmendment_18-05-2011.pdf"><img src="/Nprocure_images/Main/stripaddteddate.jpg" border="0"></a></td>
+                      </tr>
+					   <tr>
+                        <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+<!--<tr>
+                        <td colspan="2" align="center"><a href="/html/UT_eProcurement_GR.pdf"><img src="/Nprocure_images/Main/stripanim.gif" border="0"></a></td>
+                      </tr>-->
+<!-- <tr>
+                        <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+<!--<tr>
+                        <td height="80" colspan="2" align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="167" height="131">
+                            <param name="movie" value="/images/nprocure.swf">
+                            <param name="quality" value="high">
+                            <embed src="/images/nprocure.swf" quality="high" pluginspage="https://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="167" height="131"></embed>
+                        </object></td>
+                      </tr>-->
+<!-- <tr>
+					     <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+<!--<tr>
+                      <td colspan="2"><a href="certs/2007.zip" src="_new">Click here to download (n)Code CA & CCA India Certificate 2007</a><br>
+                      </td></tr>
+<tr>
+                        <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>
+  <tr>
+                      <td colspan="2"><a href="certs/oldcerts.zip" src="_new">Click here to download old (n)Code CA & CCA India Certificate</a><br>
+                      </td></tr>
+                      <tr>
+					                          <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<tr>
+<!--need to put  path --> <td align="Left" colspan="2"><a href="https://www.ncodesolutions.com/etoken.asp"><img border="0" height="30" src="/Nprocure_images/Main/etokendownload.gif" width="185"/></a></td>
+</tr>
+<!-- for download DSC -->
+<tr><td></td></tr>
+<!--alt="Digital Signature Certificates, Trust, Security, Identity, Digital Signature, Digital Certificates, PKI, e-Tendering, online identity, form-signing, code-signing, e-intermediary, DGFT, online tax filing, CPS, PKI enabling, BS 7799, Network Security, SSL Certificates, VPN Certificates, information security, Registration Authority, Certifying Authority, Digital Passport, Online Passport, Key, token, security solutions, e-Procurement, online payment"-->
+<tr>
+<td background="/Nprocure_images/Main/hori.gif" colspan="2"><img height="5" src="/Nprocure_images/Main/hori.gif" width="5"/></td>
+</tr>
+<td colspan="2"><a href="/nprocure_inc/news/UT_eProcurement_GR.pdf" target="_new"><img border="0" src="/Nprocure_images/Main/stripanim.jpg"/></a></td>
+<tr><td colspan="2" height="3"></td></tr>
+<!--<tr><td colspan="2" align="left"><a href="/html/GoG_e_Procurement_GRs.pdf" target="_new"><img src="/Nprocure_images/Main/egogrso.jpg" border="0"></td></tr>
+<tr><td colspan="2" height="3"></td></tr>-->
+<!--<tr>
+                        <td height="80" colspan="2"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="186" height="80">
+                            <param name="movie" value="/swfs/digital-signature.swf">
+                            <param name="quality" value="high">
+                            <embed src="/swfs/digital-signature.swf" quality="high" pluginspage="https://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="186" height="80"></embed>
+                        </object></td>
+                      </tr>
+                     <tr>
+                        <td colspan="2" background="/Nprocure_images/Main/hori.gif"><img src="/Nprocure_images/Main/hori.gif" width="5" height="5"></td>
+                      </tr>-->
+</table>
+<!--<map name="Map">
+  <area shape="rect" coords="48,8,167,41" href="https://www.ncodesolutions.com/etoken.asp">
+  <area shape="rect" coords="16,56,113,68" href="/Nprocure_inc/main/PKIClient-x32-4.55.zip"> 
+  <area shape="rect" coords="16,76,132,91" href="/Nprocure_inc/main/eToken-Driver.zip"> 
+</map>-->
+</td>
+</center></td></tr>
+</table>
+<table align="center"><tr><td align="center">
+</td></tr>
+</table><br/>
+<!--001-->
+<table align="center"><tr><td align="center">
+<!--<B>Server Date and Time : Saturday, October 31, 2026&nbsp;06:41 hrs</b>--> <b>Server Time : <span id="clock"></span></b></td></tr>
+</table>
+<table width="100%">
+<tr>
+<td><font color="#006699"> <span class="small"><a href="/index.asp">Home</a>  |  <a href="#">Services</a>  |  <a href="#">Legal</a>  |  <a href="/html/training.asp">Training</a>  |  <a href="/html/resources.asp">Resources</a>  |  <a href="/html/Support.asp">Support</a>  |  <a href="/html/faq.asp">FAQ</a>  |  <a href="https://www.ncode.in/aboutus.html">About Us</a>  |  <a href="/html/contactus.asp">Contact Us</a>  |  <a href="/html/PrivacyDesclaimer.asp">Disclamier</a><font color="#006699"><span class="small">  |  <a href="/html/PrivacyDesclaimer.asp">Privacy</a></span></font></span></font></td>
+<td align="right"><div class="small">
+      2005 (n)Code Solutions. All Rights Reserved
+  </div></td>
+</tr>
+<tr>
+<td class="Border" colspan="2"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center"><a href="http://www.c1india.com" target="_blank"><b>Powered By: C1 India Private Limited</b></a></td>
+<td> </td>
+</tr>
+</table></td>
+</tr>
+</table>
+<input id="SubjectDN" name="SubjectDN" type="hidden"/>
+<input id="SerialNo" name="SerialNo" type="hidden"/>
+<input id="CertIssuer" name="CertIssuer" type="hidden"/>
+<input id="CertFile" name="CertFile" type="hidden"/>
+<input id="CerValidto" name="CerValidto" type="hidden"/>
+<input id="CerValidFrom" name="CerValidFrom" type="hidden"/>
+<input id="CertThumPrint" name="CertThumPrint" type="hidden"/>
+<input id="certOwnername" name="certOwnername" type="hidden"/>
+<input id="DisplayType" name="DisplayType" type="hidden" value="Display"/>
+<input id="hdnreferer" name="hdnreferer" type="hidden" value="../../index.asp"/>
+<!--002-->
+<input id="hdnRandom" name="hdnRandom" type="hidden" value="94"/>
+<input name="ddlDept" type="hidden" value=""/>
+<input id="signString" name="signString" size="1200"/>
+<input name="loginMode" type="hidden" value="secure"/>
+</form>
+<form action="/asp/home/new_home_tenders.asp" id="frmNewHome" method="post" name="frmNewHome">
+<input id="Hidden7" name="Pdept" type="hidden" value=""/>
+<input id="Hidden8" name="ddlDept" type="hidden" value=""/>
+<input id="hdnNameoftheWork" name="hdnNameoftheWork" type="hidden" value=""/>
+<input id="Hidden9" name="txtCategory" type="hidden" value=""/>
+<input id="Hidden10" name="controlstring" type="hidden"/>
+<input id="Hidden11" name="hashstring" type="hidden"/>
+<input id="Hidden12" name="hdnIsPostBack" type="hidden" value="posted"/>
+<input id="hdntimezoneclient1" name="hdntimezoneclient1" type="hidden"/>
+</form>
+</body></html>

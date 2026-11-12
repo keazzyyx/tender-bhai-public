@@ -1,0 +1,746 @@
+<html><head>
+<!DOCTYPE html>
+<title>Bihar Govt. eProcurement</title>
+<!-- Bootstrap Core CSS -->
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head><body ng-app="login" ng-controller="LoginDiv">
+<div class="container-fluid">
+<div class="col-md-12">
+<img class="img-responsive" src="/EPSV2Web/images/bihar/banner1.jpg?version=6.5"/>
+</div>
+</div>
+<div id="loading">
+<div id="overlay"></div>
+<div id="spinnerholder">
+<div class="spinner"></div>
+<div class="spinner-text ng-binding">Please Wait...</div>
+</div>
+</div>
+<form action="/EPSV2Web/login/loginDashboard.action" id="pageNavigateForm" method="post" name="pageNavigateForm">
+<input id="Authorization" name="Authorization" type="hidden" value=""/>
+<input id="userCode" name="userCode" type="hidden" value=""/>
+<input id="orgId" name="orgId" type="hidden" value=""/>
+<input id="loginSignHash" name="loginSignHash" type="hidden" value=""/>
+<input id="loginDetailsUpdateId" name="loginDetailsUpdateId" type="hidden" value=""/>
+<input id="pkiEnabledFlag" name="pkiEnabledFlag" type="hidden" value=""/>
+<input id="loginSignUserId" name="loginSignUserId" type="hidden" value=""/>
+<input id="serverDateValue" name="serverDateValue" type="hidden" value=""/>
+</form>
+<!-- Navigation -->
+<nav class="navbar navbar-default-danger" role="navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/EPSV2Web/">Eproc2.0 Govt. of Bihar</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">How to Start <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Manuals <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="javascript:void(0)" ng-click="download('system_requirement')" rel="noopener noreferrer">System Requirement Manuals</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('pki_install_manual')" rel="noopener noreferrer">How to Install PKI Component</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('bidder_registration_manual')" rel="noopener noreferrer">Vendor Portal Registration Manual</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('reset_password')" rel="noopener noreferrer">How to Reset Password</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('procurement_manual')" rel="noopener noreferrer">Procurement Manual of Govt. of Bihar</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Audio-Video Help <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<!-- <li>
+                                        <a href="https://youtu.be/TpuYrppiDNs" rel="noopener noreferrer" target="_blank">Portal Registration Process for Existing (Eproc1.0) Vendors</a>
+                                    </li> -->
+<li>
+<a href="https://youtu.be/y15DLGfccXM" rel="noopener noreferrer" target="_blank">Portal Registration Process for Fresh/New Vendors</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('system_requirement')" rel="noopener noreferrer">System Requirement Manual</a>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button" target="_blank">Install DSC PKI Component <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Permanent Installation <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="javascript:void(0)" ng-click="download('32_pki')" rel="noopener noreferrer">32 bit Version</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('64_pki')" rel="noopener noreferrer">64 bit Version</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('web_start')" rel="noopener noreferrer">Temporary Execution</a>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('system_requirement')" rel="noopener noreferrer">How to Install ?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" ng-click="download('faq')" rel="noopener noreferrer">FAQ</a>
+</li>
+<li>
+<a ng-click="goToBidderReg()" rel="noopener noreferrer">Vendor Registration (Portal)</a>
+</li>
+<li>
+<a ng-click="goToTenderList()" rel="noopener noreferrer">Tenders</a>
+</li>
+<li>
+<a href="https://www.eproc.bihar.gov.in/BELTRON" rel="noopener noreferrer" target="_blank">Eproc 1.0</a>
+</li>
+<li>
+<a data-target="#contactUsModal" data-toggle="modal" href="javascript:void(0)" rel="noopener noreferrer">Contact Us</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<!-- Header Carousel -->
+<!-- Page Content -->
+<div class="container-fluid" ng-init="clientPage = 'HOME'">
+<div class="row">
+<div class="col-lg-12">
+<!--<marquee width="100%" direction="left" height="20px" id="display_msg">
+          </marquee>-->
+<div class="marquee-container">
+<div class="marquee-text" id="display_msg"></div>
+</div>
+</div>
+</div><hr/>
+<!-- Marketing Icons Section -->
+<div class="row">
+<div class="col-md-3">
+<div class="login-form">
+<form autocomplete="off" id="loginForm" method="post" name="loginForm" ng-submit="loginEvent(login)" novalidate="">
+<h2 class="text-center">Log in</h2>
+<div class="form-group" ng-class="{ 'has-error' : (loginForm.userCode.$invalid &amp;&amp; !loginForm.userCode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.userCode.$dirty)}">
+<label class="control-label" ng-show="(loginForm.userCode.$invalid &amp;&amp; !loginForm.userCode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.userCode.$dirty)">LogIn name is required.</label>
+<label class="control-label" ng-hide="(loginForm.userCode.$invalid &amp;&amp; !loginForm.userCode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.userCode.$dirty)">Username <small class="required">*</small></label>
+<input autocomplete="new-password" class="form-control" id="userCodeLogin" name="userCode" ng-model="login.userCode" placeholder="Login" required="" type="text"/>
+</div>
+<div class="form-group" ng-class="{ 'has-error' : (loginForm.userCode.$invalid &amp;&amp; !loginForm.userCode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.userCode.$dirty)}">
+<label class="control-label" ng-show="(loginForm.passcode.$invalid &amp;&amp; !loginForm.passcode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.passcode.$dirty)">Password is required.</label>
+<label class="control-label" ng-hide="(loginForm.passcode.$invalid &amp;&amp; !loginForm.passcode.$pristine) || (isFormInvalid &amp;&amp; !loginForm.passcode.$dirty)">Password <small class="required">*</small></label>
+<input autocomplete="new-password" class="form-control" name="passcode" ng-enter="loginEvent(login)" ng-model="login.password" placeholder="Password" required="" type="password"/>
+</div>
+<div class="row form-group" ng-class="{ 'has-error' : (loginForm.captcha.$invalid &amp;&amp; !loginForm.captcha.$pristine) || (isVenFormValid &amp;&amp; !loginForm.captcha.$dirty &amp;&amp; !editModeFlag &amp;&amp; !editModeFlag) }">
+<div id="RecaptchaField1"></div>
+<input class="hiddenRecaptcha" id="firstCaptcha" name="firstCaptcha" type="hidden"/>
+<!-- <div class="col-md-6">
+                            <label ng-show="(loginForm.captcha.$invalid && !loginForm.captcha.$pristine) || (isFormInvalid && !loginForm.captcha.$dirty)" class="control-label">Captcha
+                                <small class="required"> *</small></label>
+                        <label for="dtp_input2" class="control-label" ng-hide="(loginForm.captcha.$invalid && !loginForm.captcha.$pristine) || (isFormInvalid && !loginForm.captcha.$dirty && !editModeFlag)">
+                                    Captcha
+                                    <small class="required"> *</small>
+                                </label>
+                        <input type="text" autocomplete="off"  name="captcha" ng-model="login.captcha" class="form-control" required minlength="5" maxlength="6">
+                        </div>
+                        <div class="col-md-4" style="padding:0px;">
+                        <label>&nbsp</label><loading style="text-align: center; "></loading>
+                        <div ng-show="showCaptcha" ng-init="getClientSideCaptcha()" style="font-weight:bold" id="captcha">
+                             <input type="text" autocomplete="off" id="captcha" ng-model="captcha" class="form-control" readonly="readonly">
+                        </div>
+                        </div>
+                        <div class="col-md-2" >
+                        <label>&nbsp</label>
+                            <i class="fa fa-refresh" style="padding-top: 3px; font-size: 20px; color: #0092e0; cursor: pointer;" aria-hidden="true" ng-click="refreshClientSideCaptcha()"></i>
+                        </div> -->
+</div>
+<div class="form-group">
+<button class="btn btn-primary btn-block" id="login" ng-disabled="disableLoginBtn || loginForm.$invalid">Log in</button>
+</div>
+<div class="clearfix">
+<label class="pull-left checkbox-inline"><input id="remember_me" name="check" ng-click="rememberMeEvent($event)" ng-model="login.rememberme" type="checkbox"/> Remember me</label><br/>
+<a href="javascript:void(0);" ng-click="forgotPassword()">Forgot Password?</a>
+</div>
+</form>
+</div>
+<div class="panel panel-success">
+<div class="panel-heading panel-heading-sm">
+<h4><span class="glyphicon glyphicon-file"></span> Downloads</h4>
+</div>
+<div class="panel-body">
+<ul>
+<li><a href="javascript:void(0)" ng-click="download('data_collection_form')">On-boarding Data Collection Form</a></li>
+<li><a href="javascript:void(0)" ng-click="download('dsc_application_form')">DSC application form</a></li>
+</ul>
+<!-- <a href="#" class="btn btn-default">Learn More</a> -->
+</div>
+</div>
+<div class="panel panel-info">
+<div class="panel-heading panel-heading-sm">
+<h4><span class="glyphicon glyphicon-file"></span>List of Departments</h4>
+</div>
+<div class="panel-body">
+<ul>
+<li><a href="javascript:void(0)" ng-click="download('departments')">Download</a></li>
+</ul>
+</div>
+</div>
+<div class="panel panel-danger">
+<div class="panel-heading panel-heading-sm">
+<h4><span class="glyphicon glyphicon-list-alt"></span> News</h4>
+</div>
+<div class="panel-body">
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+<div class="panel-heading panel-heading-sm">
+<h4><i class="fa fa-fw fa-gift"></i> Welcome </h4>
+</div>
+<div class="panel-body">
+<p>Government of Bihar was a pioneer State
+							in the implementation of electronic tendering for procurements in
+							2009 for augmenting transparency, confidentiality and security in
+							public procurement domain. Bihar State Electronics Development
+							Corporation (BSEDC), a Government of Bihar undertaking, is the
+							Nodal agency for its implementation. To address the ever changing
+							needs of Government in the procurement domain, a new
+							e-Procurement platform (e-Proc2.0) is being implemented. This
+							will have features to further enhance security and
+							confidentiality; fully automated payments and refunds mechanism
+							that which shall be implemented in phases; online authentication/
+							validations, etc. The new platform is envisaged to provide a host
+							of features that will bring process efficiencies and facilitate
+							ease of use.</p>
+</div>
+</div>
+<div class="panel panel-primary">
+<div class="panel-body">
+<div class="col-md-12" ng-if="!showCounts">
+<button class="btn btn-primary btn-lg btn-block animate_btn" ng-click="showCount($event)" type="button">Click Here For Counts</button>
+</div>
+<div class="col-md-4" ng-if="showCounts">
+<div class="well nomarging-bottom colour1">
+<!--  <div class="incremental-counter counter1" data-value="2020"></div> -->
+<div class="counter" duration="5000" effect="'easeOutQuart'" to="activeTenderCount" value="autoStartVar1">{{autoStartVar1 | number:0}}</div>
+<div class="service-icon">
+<i class="fa fa fa-check"></i>
+</div>
+<p class="text-center"><strong>Published Tenders</strong></p>
+</div>
+</div>
+<div class="col-md-4" ng-if="showCounts">
+<div class="well nomarging-bottom colour2">
+<!-- <div class="incremental-counter counter2" data-value="150"></div> -->
+<div class="counter" duration="5000" effect="'easeOutQuart'" to="tenderClosingCount" value="autoStartVar2">{{autoStartVar2 | number:0}}</div>
+<div class="service-icon">
+<i class="fa fa-clock-o"></i>
+</div>
+<p class="text-center"><strong>Tenders Closing Today</strong></p>
+</div>
+</div>
+<div class="col-md-4" ng-if="showCounts">
+<div class="well nomarging-bottom colour3">
+<!-- <div class="incremental-counter counter1" data-value="0219"></div> -->
+<div class="counter" duration="5000" effect="'easeOutQuart'" to="auctionCount" value="autoStartVar3">{{autoStartVar3 | number:0}}</div>
+<div class="service-icon">
+<i class="fa fa-calendar-times-o"></i>
+</div>
+<p class="text-center"><strong>Upcoming Auctions</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="panel panel-primary">
+<div class="panel-body">
+<ul class="nav nav-tabs" role="tablist">
+<li class="active">
+<a data-toggle="tab" href="#latestTenders" role="tab">
+                                                Latest Tenders
+                                            </a>
+</li>
+<li>
+<a data-toggle="tab" href="#cancelTenders" role="tab">
+                                                Latest Cancelled Tenders
+                                            </a>
+</li>
+<li>
+<a data-toggle="tab" href="#corrigendumTenders" role="tab">
+                                                Tenders with Corrigendum
+                                            </a>
+</li>
+<li>
+<a data-toggle="tab" href="#upcomingTenders" role="tab">
+                                                Upcoming Tenders
+                                            </a>
+</li>
+<li>
+<a data-toggle="tab" href="#pastTenders" role="tab">
+                                                Past Tenders
+                                            </a>
+</li>
+</ul>
+<div class="tab-content clearfix">
+<div class="tab-pane fade active in" id="latestTenders">
+<p>Below is the list of all active tenders for which bids are invited. For further details, click
+                                                    <a class="btn btn-link" href="javascript:void(0)" ng-click="goToTenderList('latestTenders')">here</a> </p>
+</div>
+<div class="tab-pane fade" id="cancelTenders">
+<p>For further details, click
+                                                    <a class="btn btn-link" href="javascript:void(0)" ng-click="goToTenderList('cancelTenders')">here</a> </p>
+</div>
+<div class="tab-pane fade" id="corrigendumTenders">
+<p>Corrigendum Below is the list of all tenders where Tender Authority has issued corrigendum. For further details, click
+                                                        <a class="btn btn-link" href="javascript:void(0)" ng-click="goToTenderList('corrigendumTenders')">here</a> </p>
+</div>
+<div class="tab-pane fade" id="upcomingTenders">
+<p>List of tenders that will shortly be published on the portal. For further details, click
+                                                      <a class="btn btn-link" href="javascript:void(0)" ng-click="goToTenderList('upcomingTenders')">here</a></p>
+</div>
+<div class="tab-pane fade" id="pastTenders">
+<p>For further details, click
+                                                      <a class="btn btn-link" href="javascript:void(0)" ng-click="goToTenderList('pastTenders')">here</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="panel panel-info">
+<div class="panel-heading panel-heading-sm">
+<!-- <h4><i class="fa fa-fw fa-check"></i> DSC</h4> -->
+</div>
+<div class="panel-body">
+<!-- <p>e-Proc2.0 platform supports class II & III Digital Signature Certificate (DSC) usage. All users must map their DSC to their login-id for performing operations in the portal.</p> -->
+<!--<a href="#" class="btn btn-success">More</a>-->
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="panel panel-primary">
+<div class="panel-heading panel-heading-sm">
+<h4><i class="fa fa-fw fa-check"></i> Registration</h4>
+</div>
+<div class="panel-body">
+<p>All users must register on the portal for accessing the workflow of e-Proc2.0 platform. For step-by-step registration process and to complete it, please click </p>
+<a class="btn btn-success" href="javascript:void(0)" ng-click="goToBidderReg()" rel="noopener noreferrer">here</a>
+</div>
+</div>
+</div>
+<!-- <div class="col-md-3">
+                <div class="panel panel-danger">
+                    <div class="panel-heading panel-heading-sm">
+                        <h4><i class="fa fa-fw fa-check list-of-depart"></i>List of Departments</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi</p>
+                        <a href="#" class="btn btn-success">More</a>						
+                    </div>
+                </div>
+            </div> -->
+</div>
+</div>
+<div class="col-md-3">
+<div class="panel">
+<!-- <font size="5">Statistics</font> -->
+<div class="">
+<ul class="nav nav-tabs" role="tablist">
+<li class="active"><a data-toggle="tab" href="#ctenderChart" role="tab">Tenders Published</a></li>
+<li><a data-toggle="tab" href="#corrigenChart" role="tab">Auction</a></li>
+<!--  <li><a href="#ucomtender" role="tab" data-toggle="tab">Order</a></li> -->
+</ul>
+<div class="tab-content clearfix">
+<div class="tab-pane active" id="ctenderChart">
+<canvas height="400" id="myChart" width="400"></canvas>
+</div>
+<div class="tab-pane" id="corrigenChart">
+<canvas height="400" id="myChart2" width="400"></canvas>
+</div>
+<!--  <div class="tab-pane" id="ucomtender">
+                                                	<canvas id="myChart3" width="400" height="400"></canvas>                                                   
+                                                </div> -->
+</div>
+</div>
+</div>
+<!--   <div class="panel panel-danger">
+                    <div class="panel-heading panel-heading-sm">
+                        <h4><span class="glyphicon glyphicon-file"></span> Tenders Published</h4>
+                    </div>
+                    <div class="panel-body">
+                            <div id="chartContainer" style="height: 310px; width: 100%;"></div>
+                        <div id="chartdiv"></div>
+                        <a href="#" class="btn btn-success">Live</a>
+						<a href="#" class="btn btn-primary">Corrigendum</a>
+                    </div>
+                </div> -->
+<div class="panel panel-info">
+<div class="panel-heading panel-heading-sm">
+<h4><span class="glyphicon glyphicon-link"></span> Other Links</h4>
+</div>
+<div class="panel-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item"> <span class="glyphicon glyphicon-arrow-right"></span><a href="https://eprocure.gov.in/eprocure/app" rel="noopener noreferrer" target="_blank"> CPP Home page</a></li>
+<li class="list-group-item"> <span class="glyphicon glyphicon-arrow-right"></span><a href="javascript:void(0);" ng-click="download('vendor_online_training')"><b>Online Vendor Training Schedule</b></a></li>
+</ul>
+</div>
+</div>
+<div class="panel panel-success">
+<div class="panel-heading panel-heading-sm">
+<h4><span class="glyphicon glyphicon-file"></span> Recommendations</h4>
+</div>
+<div class="panel-body">
+<p>Recommended Google Chrome Version : 97.x and above </p>
+</div>
+</div>
+</div>
+</div>
+<!-- /.row -->
+<hr/>
+<!-- <div class="row">            
+            <div class="col-md-6">
+                <div class="panel panel-danger">
+                    <div class="panel-heading panel-heading-sm">
+                        <h4><i class="fa fa-fw fa-check"></i> News</h4>
+                    </div>
+                    <div class="panel-body">
+                        <marquee width="100%" direction="up" height="100px">
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news scroll text that has scrolls in the upper direction.</marquee>      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading panel-heading-sm">
+                        <h4><i class="fa fa-fw fa-gift"></i> Department</h4>
+                    </div>
+                    <div class="panel-body">
+                        <marquee width="100%" direction="up" height="100px">
+* This is a sample news for auction scroll text that has scrolls in the upper direction.<br> <br>
+* This is a sample news scroll text that has scrolls in the upper direction.</marquee>      
+                    </div>
+                </div>
+            </div>
+        </div> -->
+<!-- /.row -->
+<!-- Features Section -->
+<!-- /.row -->
+<!--div class="row" align="center">
+                <div class="col-md-3"> 
+                        <div class="slide imgbnk"><img src="images/hdfc.png"></div>        
+                  </div>
+                  <div class="col-md-3"> 
+                        <div class="slide imgbnk"><img src="images/axisbank.png"></div>        
+                  </div>
+                  <div class="col-md-3"> 
+                        <div class="slide imgbnk"><img src="images/icici-bank.png"></div>        
+                  </div>
+                  <div class="col-md-3"> 
+                        <div class="slide imgbnk"><img src="images/indusind.png"></div>        
+                  </div> 
+		</div-->
+<div align="center" class="row">
+<div class="col-md-4">
+<div class="slide">
+<a href="https://digitalindia.gov.in/" rel="noopener noreferrer" target="_blank">
+<img src="/EPSV2Web/images/bihar/1.png"/>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="slide">
+<a href="https://www.mygov.in/" rel="noopener noreferrer" target="_blank">
+<img src="/EPSV2Web/images/bihar/3.png"/>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="slide">
+<a href="https://www.india.gov.in/" rel="noopener noreferrer" target="_blank">
+<img src="/EPSV2Web/images/bihar/8.png"/>
+</a>
+</div>
+</div>
+<!--div class="col-md-2">
+        <div class="slide"><img src="images/sldr1.png"></div>
+    </div-->
+<!-- <div class="col-md-3">
+        <div class="slide imgbnk"><img src="/EPSV2Web/images/bihar/indusind.png"></div>
+    </div>  -->
+</div>
+<hr/>
+<!-- Footer -->
+<footer>
+<div class="row">
+<div class="col-md-12">
+<center><p>All functionalities will work in: Chrome 97.x and above, Firefox 95.x and above, Edge and above </p></center>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<p>Copyright © Beltron  | Supported by <a href="https://www.mjunction.in" rel="noopener noreferrer" target="_blank">mjunction</a></p>
+<p>Build Version:4.2</p>
+</div>
+<div class="col-md-6">
+<p align="right">Toll Free Number: 1800 572 6571 | Email Id: eproc2support@bihar.gov.in | Working Hours: 8AM to 7PM (All days in week except Sunday and few selected state holidays)
+                    </p></div>
+</div>
+</footer>
+<!--  for dept Show  -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myDeptModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">x</button>
+<h4 class="modal-title" id="myModalLabel">Select {{departmentSelectText}}</h4>
+</div> <!-- modal-header -->
+<div class="modal-body" id="myModalBody">
+<form role="form">
+<div class="form-group">
+<div class="input-group">
+<select class="form-control" ng-model="login.usedFieldModel" ng-options="usedField.organizationId as usedField.organizationName for usedField in usedFields">
+<option value="">-- Select {{departmentSelectText}}--</option>
+</select>
+<label class="input-group-addon glyphicon glyphicon-lock" for="uPassword"></label>
+</div> <!-- /.input-group -->
+</div> <!-- /.form-group -->
+</form>
+</div> <!-- /.modal-body -->
+<div class="modal-footer">
+<button class="form-control btn btn-primary" id="deptlogin" ng-click="loginEvent2(login)" ng-model="login.usedFieldModel">Ok</button>
+<div class="progress">
+<div aria-valuemax="100" aria-valuemin="1" aria-valuenow="1" class="progress-bar progress-bar-primary" role="progressbar">
+<span class="sr-only">progress</span>
+</div>
+</div>
+</div> <!-- /.modal-footer -->
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- End Dept Show -->
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="forgotPasswordModal" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Forgot Password</h4>
+</div>
+<div class="modal-body">
+<form class="form" name="forgotPass">
+<div class="row">
+<div class="col-md-12">
+<div class="form-group" ng-class="{ 'has-error' : (forgotPass.loginid.$invalid &amp;&amp; !forgotPass.loginid.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.loginid.$dirty &amp;&amp; !editModeFlag)}">
+<label class="control-label" for="dtp_input2" ng-hide="(forgotPass.loginid.$invalid &amp;&amp; !forgotPass.loginid.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.loginid.$dirty &amp;&amp; !editModeFlag)">
+									Username
+									<small class="required">*</small>
+</label>
+<label class="control-label" for="dtp_input2" ng-show="(forgotPass.loginid.$invalid &amp;&amp; !forgotPass.loginid.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.loginid.$dirty &amp;&amp; !editModeFlag)">
+									Login id is required
+								</label>
+<div class="form-group" id="">
+<input class="form-control" name="loginid" ng-model="user.loginId" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<label class="control-label" for="dtp_input2">
+									Choose Email or Mobile or PAN
+									<small class="required">*</small>
+</label>
+<div class="form-group" id="">
+<input name="active" ng-model="user.active" ng-value="'email'" required="" type="radio"/><span>Email</span>
+<input name="active" ng-model="user.active" ng-value="'mobile'" required="" type="radio"/><span>Mobile</span>
+<input name="active" ng-model="user.active" ng-value="'PAN'" required="" type="radio"/><span>PAN</span>
+</div>
+</div>
+</div>
+<div class="col-md-12" ng-if="user.active=='email'">
+<div class="form-group" ng-class="{ 'has-error' : (forgotPass.email.$invalid &amp;&amp; !forgotPass.email.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.email.$dirty &amp;&amp; !editModeFlag)}">
+<label class="control-label" for="dtp_input2" ng-hide="(forgotPass.email.$invalid &amp;&amp; !forgotPass.email.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.email.$dirty &amp;&amp; !editModeFlag)">
+									Registered Email
+									<small class="required">*</small>
+</label>
+<label class="control-label" for="dtp_input2" ng-show="(forgotPass.email.$invalid &amp;&amp; !forgotPass.email.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.email.$dirty &amp;&amp; !editModeFlag)">
+									Email is required
+								</label>
+<div class="form-group" id="">
+<input class="form-control" name="email" ng-model="user.email" ng-pattern="/^[a-zA-Z0-9!#$%&amp;'*+=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'*+=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+([a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?){2}/" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="col-md-12" ng-if="user.active=='mobile'">
+<div class="form-group" ng-class="{ 'has-error' : (forgotPass.mobileno.$invalid &amp;&amp; !forgotPass.mobileno.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.mobileno.$dirty &amp;&amp; !editModeFlag)}">
+<label class="control-label" for="dtp_input2" ng-hide="(forgotPass.mobileno.$invalid &amp;&amp; !forgotPass.mobileno.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.mobileno.$dirty &amp;&amp; !editModeFlag)">
+									Regd. Mobile<span>[Applicable for Indian Vendors]</span>
+<small class="required">*</small>
+</label>
+<label class="control-label" for="dtp_input2" ng-show="(forgotPass.mobileno.$invalid &amp;&amp; !forgotPass.mobileno.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.mobileno.$dirty &amp;&amp; !editModeFlag)">
+									Mobile is required
+								</label>
+<div class="form-group" id="">
+<input class="form-control" maxlength="20" minlength="1" name="mobileno" ng-model="user.phoneno" ng-pattern="^[1-9][0-9]*$" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="col-md-12" ng-if="user.active=='PAN'">
+<div class="form-group" ng-class="{ 'has-error' : (forgotPass.pan.$error.pattern &amp;&amp; !forgotPass.pan.$pristine) || (isVenFormValid &amp;&amp; !forgotPass.pan.$dirty &amp;&amp; !editModeFlag &amp;&amp; !editModeFlag) }">
+<label class="control-label" for="dtp_input2" ng-hide="(forgotPass.pan.$invalid &amp;&amp; !forgotPass.pan.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.pan.$dirty &amp;&amp; !editModeFlag)">
+									PAN <span>[Applicable for Indian Vendors]</span>
+<small class="required"> *</small>
+</label>
+<label class="control-label" for="dtp_input2" ng-show="(forgotPass.pan.$invalid &amp;&amp; !forgotPass.pan.$pristine) || (isFormInvalid &amp;&amp; !forgotPass.pan.$dirty &amp;&amp; !editModeFlag)">
+									PAN is required
+								</label>
+<div class="form-group" id="">
+<input class="form-control" maxlength="10" minlength="10" name="pan" ng-model="user.pan" ng-pattern="/^[A-Z]{5}\d{4}[A-Z]{1}$/" pan="pan" required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="col-md-12">
+<div id="RecaptchaField2"></div>
+<input class="hiddenRecaptcha" id="secondCaptcha" name="secondCaptcha" type="hidden"/>
+</div>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary btn-block" id="orgAddlist" ng-click="saveUserData(user)" ng-disabled="forgotPass.$invalid" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="forgotPasswordMobileModal" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Forgot Password</h4>
+</div>
+<div class="modal-body">
+<form class="form" name="authorizedForm">
+<div class="">
+<input class="form-control" maxlength="3" minlength="1" name="otpMobile" ng-minlength="3" ng-model="mobileOTP" ng-pattern="/^[0-9]{1,20}$/" required="" type="text"/>
+<label class="control-label" ng-show="(authorizedForm.otpMobile.$error.required &amp;&amp; !authorizedForm.otpMobile.$pristine)">
+							OTP is required.
+						</label>
+<label class="control-label" ng-hide="(authorizedForm.otpMobile.$error.required &amp;&amp; !authorizedForm.otpMobile.$pristine)"></label>
+</div>
+<div class="greyText" ng-show="showOtpStatus">Resend button
+						will be active in {{countOtpValidDuration}} sec(s)</div>
+</form>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary btn-block" ng-click="verifyOTP(mobileOTP)" ng-disabled="(authorizedForm.otpMobile.$invalid)" type="button">Submit</button>
+<button class="btn btn-primary btn-block" ng-click="resendOTP(user)" ng-disabled="disableResendLink" ng-if="showResendLink" type="button">
+<i class="fa fa-share"></i>
+						Resend OTP
+					</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="generateResetPassLink" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Choose Your Mail for Reset Link</h4>
+</div>
+<div class="modal-body">
+<form class="form" name="generateLinkForm">
+<div class="col-md-12">
+<div class="form-group">
+<div class="form-group" id="">
+<input name="option" ng-model="user.option" ng-value="'email'" required="" type="radio"/>{{userDetailsForForgotPass.email}}
+									<input name="option" ng-model="user.option" ng-value="'altEmail'" required="" type="radio"/>Alternate Email
+								</div>
+</div>
+</div>
+							<div class="col-md-12" ng-if="user.option == 'altEmail' ">
+<label>Enter Alternate Email:</label>
+<input class="form-control" name="verifyEmail" ng-model="user.verifiedEmail" ng-pattern="/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,4})$/" required="" type="email"/>
+<label class="control-label" ng-show="(generateLinkForm.verifyEmail.$error.required &amp;&amp; !generateLinkForm.verifyEmail.$pristine ) || (verifyReg &amp;&amp; !generateLinkForm.verifyEmail.$dirty)">E-mail is Required</label>
+<label class="control-label" ng-show="(generateLinkForm.verifyEmail.$error.pattern &amp;&amp; !generateLinkForm.verifyEmail.$pristine) || (verifyReg &amp;&amp; !generateLinkForm.verifyEmail.$dirty)">E-mail is invalid</label>
+<label class="control-label" ng-hide="(generateLinkForm.verifyEmail.$error.pattern &amp;&amp; !generateLinkForm.verifyEmail.$pristine) || (verifyReg &amp;&amp; !generateLinkForm.verifyEmail.$dirty)"></label>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary btn-block" ng-click="generateResetPassword(user)" ng-disabled="generateLinkForm.$invalid" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="contactUsModal" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Contact Us</h4>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12">
+<p><i class="fa fa-phone"></i> Toll Free Number: 1800 572 6571</p><p>
+</p><p><i class="fa fa-envelope"></i> Email Id: eproc2support@bihar.gov.in</p>
+<p><i class="fa fa-clock-o"></i> Working Hours: 8AM to 7PM (All days in week except Sunday and few selected state holidays)</p>
+<p><i class="fa fa-home"></i> eProc 2.0 Help Desk Address: RJ Complex, 2nd Floor, 
+Opposite Vidyapeeth Institute,
+Khajpura, Ashiana Road, 
+P.S. - Shastri Nagar, Patna 800 014, Bihar.
+                           (supported by mjunction)
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.container -->
+<input id="signHash" type="hidden" value=""/>
+<input id="loginDetailId" type="hidden" value=""/>
+<input id="loginDetails" type="hidden" value=""/>
+<input id="serverDate" name="serverDate" type="hidden" value="31/10/2026 06:47 +0530"/>
+<!-- jQuery -->
+<!-- Script to Activate the Carousel -->
+<!-- Resources -->
+<!-- Chart code -->
+<!-- HTML -->
+</body></html>

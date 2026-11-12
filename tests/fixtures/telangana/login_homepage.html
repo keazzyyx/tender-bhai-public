@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Telangana State eProcurement Portal </title>
+</head>
+<body oncontextmenu="return false;">
+<!-- HeaderTop Starts Here -->
+<div class="container-fluid">
+<div class="row tsFooterDown" id="myDIV-1">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="footer-social-icons">
+<ul class="social-icons">
+<li><a class="social-icon" href="#"> <i class="fa fa-facebook"></i></a></li>
+<li><a class="social-icon ico-bg-color" href="#"> <i class="ico-twitter"> </i> </a> </li>
+<li><a class="social-icon" href="#"> <i class="fa fa-youtube"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="topTxtLinks">
+<div class="dropdown-wrapper" id="langDropdown">
+<button aria-expanded="false" aria-haspopup="listbox" class="dropdown-togglelang" type="button">
+<span class="dropdown-label">
+<i class="fa fa-globe"></i>
+<span class="lang-text">
+									    Select Language
+									  </span>
+</span>
+<i class="fa fa-angle-down dropdown-arrow"></i>
+</button>
+<ul class="dropdown-menu" role="listbox">
+<li data-value="en" role="option">
+							      English
+							    </li>
+<li data-value="te" role="option">
+							      తెలుగు
+							    </li>
+</ul>
+</div>
+<div class="skipContentBox"> <a href="#skipContentBox"> Skip to Content</a> </div>
+<div class="btn-group">
+<a class="btn2" href="#" onclick="fnPreLogin('screen-reader.html')" title=""><i class="fa fa-wheelchair"> </i></a> <a class="decrease btn2" href="#" title="Decrease font size"><i class="fa fa-font size1"> <i class="fa fa-minus minus"> </i>
+</i></a> <a class="resetMe btn2" href="#" title="Default font size"><i class="fa fa-font size1"> </i></a> <a class="increase btn2" href="#" title="Increase font size"><i class="fa fa-font size1"> <i class="fa fa-plus plus"> </i>
+</i></a> <a class="white btn2" href="#" onclick="btnGrayScale()"><i class="fa fa-font white size1"> </i></a> <a class="whiteR btn2" href="#" onclick="btnNormalScale()"><i class="fa fa-font size1"> </i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- HeaderTop Starts Here -->
+<div id="wrapper">
+<div class="tsHeader">
+<div class="tsHomePage-left">
+</div>
+<div class="tsHomePage-center">
+</div>
+<div class="tsHomePage-right">
+</div>
+</div>
+<form action="/login.html" id="loginForm" method="post" name="loginForm" onkeypress="loginKeyPress(event);" onsubmit="return formclick()">
+<nav class="navbar navbar-inverse">
+<div class="navPattern" id="myDIV-2">
+<div class="container-fluid">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" id="showmenu" type="button">
+<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navv navbar-nav">
+<li><a class="customAct" href="https://eprocurement.telangana.gov.in/"><i aria-hidden="true" class="fa fa-home"></i></a></li>
+<li><a href="#" onclick="fnPreLogin('eprocurement-guidelines.html')"><i aria-hidden="true" class="fa fa-file-text"></i>Guidelines</a></li>
+<li><a href="#" onclick="misReport()"> <i aria-hidden="true" class="fa fa-bar-chart"></i>MIS Reports
+								</a></li>
+<li><a href="#" onclick="fnPreLogin('news-government-orders.html')"><i aria-hidden="true" class="fa fa-list-alt"></i> G.O.s</a></li>
+<li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i aria-hidden="true" class="fa fa-question-circle"></i> FAQ's <i aria-hidden="true" class="fa fa-caret-down"></i></a>
+<ul class="dropdown-menu">
+<li><a href="#" onclick="fnPreLogin('faqs.html')">General</a></li>
+<li><a href="#" onclick="fnPreLogin('contractors-faqs.html')">Contractors</a></li>
+<li><a href="#" onclick="fnPreLogin('departments-faqs.html')">Departments</a></li>
+</ul></li>
+<li><a href="#" onclick="fnPreLogin('downloads.html')"><i aria-hidden="true" class="fa fa-download"></i> Downloads</a></li>
+<li><a href="#" onclick="fnPreLogin('helpdesk.html')"> <i class="fa fa-headphones"></i>  Technical HelpDesk</a></li>
+<li><a href="#" onclick="fnPreLogin('feedback-suggestions.html')"><i aria-hidden="true" class="fa fa-comments"></i>Suggestions</a></li>
+<li><a href="#" onclick="fnPreLogin('certificateReset.html')"><i aria-hidden="true" class="fa fa-certificate"></i>Reset DSC</a></li>
+<li>
+<!-- DROPDOWN LOGIN STARTS HERE  -->
+<ul class="nav navbar-nav navbar-right" id="signInDropdown">
+<li class="dropdown">
+<button aria-expanded="false" class="btn btn-info navbar-btn dropdown-toggle btnLogin" data-toggle="dropdown" id="flipp" type="button">
+<i class="fa fa-user"></i> Login  <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" id="panelll">
+<li class="formBoxTs">
+<div class="gb_lb"></div>
+<div class="panel with-nav-tabs panel-primary">
+<div class="panel-heading">
+<ul class="nav nav-tabs nav-justified">
+<div>Department/Bidder Login</div>
+</ul>
+</div>
+<div class="panel-body">
+<div class="tab-pane fade in active" id="tab10default">
+<div align="center">
+</div>
+<div class="form-group">
+<input autocomplete="off" class="form-control" id="userName" name="userName" placeholder="User Name" type="text" value=""/>
+</div>
+<div class="form-group">
+<input autocomplete="off" class="form-control" id="password" name="password" onpaste="return false" placeholder="User Password" type="password" value=""/>
+</div>
+<div class="form-group">
+<input class="btn tsCustomBtn pull-right" id="btnLogin" onclick="return formclick()" type="button" value="Login"/>
+</div>
+<div class="form-group">
+<a href="#" onclick="fnPreLogin('forgotPassword.html')"><i aria-hidden="true" class="fa fa-lock"></i> Forgot Password</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- DROPDOWN LOGIN ENDS HERE  -->
+</div>
+</div>
+</div>
+</nav>
+<section class="section mr10" id="myDIV-6">
+<div class="container-fluid">
+<div class="row">
+<!-- -->
+<div class="col-md-9">
+<div class="section-content">
+<div class="tsLatestNews box-shadow">
+<div class="tsLatestLabel">
+<strong>Important Alerts</strong>
+</div>
+<div class="tsLatestViews">
+<ul>
+<marquee behavior="scroll" scrollamount="5">
+<li><img src="/views/themes/latestTheme/homepage/images/ico-bullet-1.gif"/>
+<span><font color="#ff0000">KIND ATTENTION USERS: As per G.O. Ms. No. 6, dated 09.10.2026, the revised Transaction Fee and eCorpus Fund rules will take effect for tenders published on or after 15.10.2026. Please refer to the Government Order available in the G.O.s section for detailed guidelines.</font></span>
+</li>
+</marquee>
+</ul>
+</div>
+</div>
+<!-- -->
+<div class="tsCitizenServices box-shadow" id="skipContentBox">
+<div class="panel with-nav-tabs panel-default">
+<div class="panel-heading">
+<ul class="nav nav-tabs">
+<li class="active"><a aria-expanded="false" data-toggle="tab" href="#tab1default" title="Only for tenders where Bid Submission start date &amp; time reached can be viewed here.">Live Tenders</a></li>
+<li class=""><a aria-expanded="true" data-toggle="tab" href="#tab2default" onclick="fnCorrigendumHomepage()">Corrigendums</a></li>
+</ul>
+</div>
+<div class="panel-body">
+<div class="tab-content">
+<div class="tab-pane fade active in" id="tab1default">
+<div align="right">
+<a class="viewCurrentall" href="#" id="viewCurrentall">
+															More...</a>
+</div>
+<div class="update-nag updateNag">
+<div class="tenderClosingData">Bid Closing Date</div>
+<div class="update-split">
+<h4>November</h4>
+<h4>16</h4>
+<h4>05:00 PM</h4>
+</div>
+<div class="update-text">
+<!-- -->
+<!-- -->
+<p>
+																	Tender ID: <a class="tCurrent" href="#" onclick="viewtender(677069)" title="(Hiring of Heavy Duty Truck Mounted Vacuume Based Mechanical Road Sweeper for  a period of  three(03) years, 12 hours operation per day with 24Hrs availability and monthly running slab of 1500KM as per the specifications and scope of work of NIT for use at Naini Coal mine, Chhendipada, Odisha State)">744078</a>
+</p>
+<p>
+																	Enquiry/IFB/Tender Notice Number: <a class="tUpcomingNo" href="#" onclick="viewtender(677069)">ENN26O0017</a>
+</p>
+<p>
+<a class="" href="#" onclick="viewtender(677069)">Hiring of Heavy Duty Truck Mounted Vacuume Based Mechanical Road Sweeper for  a period of  three(03) years, 12 hours operation per day with 24Hrs availability and monthly running slab of 1500KM as per the specifications and scope of work of NIT for use at Naini Coal mine, Chhendipada, Odisha State in Division
+																		No:Naini-Pur. </a>
+</p>
+</div>
+</div>
+<div class="update-nag updateNag">
+<div class="tenderClosingData">Bid Closing Date</div>
+<div class="update-split">
+<h4>November</h4>
+<h4>26</h4>
+<h4>03:00 PM</h4>
+</div>
+<div class="update-text">
+<!-- -->
+<!-- -->
+<p>
+																	Tender ID: <a class="tCurrent" href="#" onclick="viewtender(676895)" title="(Procurement of O.T. Lights)">743904</a>
+</p>
+<p>
+																	Enquiry/IFB/Tender Notice Number: <a class="tUpcomingNo" href="#" onclick="viewtender(676895)">Plng/152/2025/OT Lights/NSICU</a>
+</p>
+<p>
+<a class="" href="#" onclick="viewtender(676895)">Procurement of O.T. Lights in Division
+																		No:NIZAMS INSTITUTE OF MEDICAL SCIENCES. </a>
+</p>
+</div>
+</div>
+<div class="update-nag updateNag">
+<div class="tenderClosingData">Bid Closing Date</div>
+<div class="update-split">
+<h4>November</h4>
+<h4>17</h4>
+<h4>05:00 PM</h4>
+</div>
+<div class="update-text">
+<!-- -->
+<!-- -->
+<p>
+																	Tender ID: <a class="tCurrent" href="#" onclick="viewtender(676338)" title="(Comprehensive Annual Maintenance Contract(CAMC) of Air Conditioners, Water Coolers and Refrigerators working at Yellandu Area for  a period of 2(two) Years -Reg)">743347</a>
+</p>
+<p>
+																	Enquiry/IFB/Tender Notice Number: <a class="tUpcomingNo" href="#" onclick="viewtender(676338)">EYL26O0020</a>
+</p>
+<p>
+<a class="" href="#" onclick="viewtender(676338)">Comprehensive Annual Maintenance Contract(CAMC) of Air Conditioners, Water Coolers and Refrigerators working at Yellandu Area for  a period of 2(two) Years -Reg in Division
+																		No:YLD-Pur. </a>
+</p>
+</div>
+</div>
+<div class="update-nag updateNag">
+<div class="tenderClosingData">Bid Closing Date</div>
+<div class="update-split">
+<h4>November</h4>
+<h4>20</h4>
+<h4>04:30 PM</h4>
+</div>
+<div class="update-text">
+<!-- -->
+<!-- -->
+<p>
+																	Tender ID: <a class="tCurrent" href="#" onclick="viewtender(677362)" title="(Inverter)">744371</a>
+</p>
+<p>
+																	Enquiry/IFB/Tender Notice Number: <a class="tUpcomingNo" href="#" onclick="viewtender(677362)">HD/Tender/104/2026-27, Dt: 03.10.2026 (1st Call) of SE PR Siddipet</a>
+</p>
+<p>
+<a class="" href="#" onclick="viewtender(677362)">Inverter in Division
+																		No: TELANGANA-SE PRED PR SIDDIPET. </a>
+</p>
+</div>
+</div>
+<div class="update-nag updateNag">
+<div class="tenderClosingData">Bid Closing Date</div>
+<div class="update-split">
+<h4>November</h4>
+<h4>9</h4>
+<h4>03:00 PM</h4>
+</div>
+<div class="update-text">
+<!-- -->
+<!-- -->
+<p>
+																	Tender ID: <a class="tCurrent" href="#" onclick="viewtender(678006)" title="(Modernization and construction of Automated Driving Testing Tracks (ADTT) across Five (05) locations in Telangana)">745016</a>
+</p>
+<p>
+																	Enquiry/IFB/Tender Notice Number: <a class="tUpcomingNo" href="#" onclick="viewtender(678006)">HMDA/DEV/CE/20/01/2026-27, Dt: 26.10.2026</a>
+</p>
+<p>
+<a class="" href="#" onclick="viewtender(678006)">Modernization and construction of Automated Driving Testing Tracks (ADTT) across Five (05) locations in Telangana in Division
+																		No:SE-LAKES . </a>
+</p>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab2default">
+<div align="right">
+<a href="#" id="viewCorrigendumall"> More...</a>
+</div>
+<div class="" id="tableDiv"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tsMeeSavaPortal box-shadow">
+<h3>Welcome to Telangana State eProcurement Portal</h3>
+<div>
+<p class="welcomeNote">The **eProcurement Project** is a core e-Governance initiative of the Government of Telangana and serves as the common electronic procurement platform for Government Departments, Public Sector Undertakings, Urban Local Bodies, Universities and other Government entities across the State. The platform has brought greater **transparency, efficiency and standardisation** to public procurement, while contributing to competitive price discovery, cost savings and reduction in tender processing time..</p>
+</div>
+<p align="right">
+<a href="#" onclick="fnPreLogin('about-tseProcurement.html')">read more</a>
+</p>
+<!--<p>Government of Telangana has always been at the forefront of implementing e-Governance, having pioneered popular projects like <strong>CARD, eSeva, Mee Seva, E-Procurement.</strong> To take the evolution of E-Procurement to the next level, it is felt essential to have a comprehensive, elaborated new E-Procurement solution for providing better services to citizens and businesses.    <br> <a href="#"><strong>read more</strong></a>-->
+<p></p>
+</div>
+<div class="tsMeeSavaPortal tsMeeSevaSlides box-shadow">
+<div class="slider1">
+<div class="slide">
+<a href="https://www.t-hub.co/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-1" title="T Hub" src="images/tsProjects-1.png"> -->
+<div class="tsProjects-1"></div>
+</a>
+</div>
+<div class="slide">
+<a href="https://twallet.telangana.gov.in/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-2" title="T Wallet" src="images/tsProjects-2.png"> -->
+<div class="tsProjects-2"></div>
+</a>
+</div>
+<div class="slide">
+<a href="http://www.it.telangana.gov.in/digital-telangana-program/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank" title="ITE &amp; C - Telangana">
+<!-- <img id="tsProjects-3" src="images/tsProjects-3.png"> -->
+<div class="tsProjects-3"></div>
+</a>
+</div>
+<div class="slide">
+<a href="https://india.gov.in/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-10" title="Govt of India" src="images/tsProjects-10.png"> -->
+<div class="tsProjects-10"></div>
+</a>
+</div>
+<div class="slide">
+<a href="http://tg.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank" title="MeeSeva Portal - Telangana">
+<!-- <img id="tsProjects-4" src="images/tsProjects-4.png"> -->
+<div class="tsProjects-4"></div>
+</a>
+</div>
+<div class="slide">
+<a href="https://www.task.telangana.gov.in/Login" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-5" title="TASK" src="images/tsProjects-5.png"> -->
+<div class="tsProjects-5"></div>
+</a>
+</div>
+<div class="slide">
+<a href="#" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank" title="Right to Information Act"> <!-- <img id="tsProjects-6" src="images/tsProjects-6.png"> -->
+<div class="tsProjects-6"></div>
+</a>
+</div>
+<div class="slide">
+<a href="https://digilocker.gov.in/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-7" title="Digi Locker" src="images/tsProjects-7.png"> -->
+<div class="tsProjects-7"></div>
+</a>
+</div>
+<div class="slide">
+<a href="https://uidai.gov.in/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-8" title="UIDAI - AADHAAR" src="images/tsProjects-8.png"> -->
+<div class="tsProjects-8"></div>
+</a>
+</div>
+<div class="slide">
+<a href="http://www.it.telangana.gov.in/" onclick="return confirm('This is an external link. Are you sure you want to continue?');" target="_blank"> <!-- <img id="tsProjects-9" title="ITE & C - Telangana" src="images/tsProjects-9.png">  -->
+<div class="tsProjects-9"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="tsQuickLinks box-shadow dnone">
+<div class="tsMeeSavaTitle">
+<i aria-hidden="true" class="fa fa-tasks"></i>
+										   Downloads <i aria-hidden="true" class="fa fa-angle-down" id="flip"></i>
+</div>
+<div class="panel-body" id="panell">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xsx-6">
+<div class="serviceBox pink">
+<div class="service-icon">
+<span><i class="fa fa-list-alt"></i></span>
+</div>
+<div class="service-content">
+<h3 class="title">Government Orders</h3>
+<a class="read-more fa fa-arrow-down" data-toggle="tooltip" href="#" onclick="fnPreLogin('news-government-orders.html')" title="Download PDF"></a>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xsx-6">
+<div class="serviceBox green">
+<div class="service-icon">
+<span><i class="fa fa-desktop"></i></span>
+</div>
+<div class="service-content">
+<h3 class="title">
+															Technical Guidelines <br/>  
+														</h3>
+<a class="read-more fa fa-arrow-down" data-toggle="tooltip" href="views/tsPages/downloads/technical-guidelines.pdf" title="Download PDF"></a>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xsx-6">
+<div class="serviceBox orange">
+<div class="service-icon">
+<span><i class="fa fa-tablet"></i></span>
+</div>
+<div class="service-content">
+<h3 class="title">New Registration</h3>
+<a class="read-more fa fa-arrow-down" data-toggle="tooltip" href="views/tsPages/downloads/supplier-registration.pdf" title="Download PDF"></a>
+</div>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xsx-6">
+<div class="serviceBox blue">
+<div class="service-icon">
+<span><i class="fa fa-shopping-cart"></i></span>
+</div>
+<div class="service-content">
+<h3 class="title">DSC Installation Process</h3>
+<a class="read-more fa fa-arrow-down" data-toggle="tooltip" href="views/tsPages/downloads/DSC-InstallationProcess.pdf" title="Download PDF"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="row customRow">
+<aside class="aside">
+<!-- -->
+<!--CM Photo Start Here-->
+<div class="tsQuickLinks box-shadow">
+<a href="#">
+<div class="thumbKTR"></div>
+</a>
+</div>
+<!--CM Photo Start Here-->
+<!--Supplier Registration-->
+<button class="btn-3d" onclick="fnPreLogin('TermsAndConditions.html')" type="button">
+<div class="thumbRegistration">
+											  New Registration    
+											  <div class="circleArrow">➜</div>
+</div>
+</button>
+<!-- Forgot User ID -->
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i class="fa fa-lock"></i>
+<a href="#" onclick="fnPreLogin('forgotUserId.html')">Forgot User ID?</a>
+</div>
+</div>
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i class="fa fa-ticket"></i>
+<a href="#" onclick="checktoken()">Check your DSC Token</a>
+</div>
+</div>
+<!-- Forgot User ID -->
+<!-- refund status -->
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i class="fa fa-inr"></i> <a href="#" onclick="refundOrTransferClick()">Check EMD status</a>
+</div>
+<div id="refundOrTransfer">
+<span id="errmsg"></span> <br/> <span id="spanHide">  Payment ID:</span>
+<input class="num" id="paymentId" name="paymentId" type="text" value=""/>
+<!-- <button id="searchBtn" onclick="paymentSearch()">Search</button> -->
+<input id="paymentBtn" onclick="paymentSearch()" type="button" value="Submit"/>
+<div id="refundResponse"></div>
+<div id="refundResponse2"></div>
+<div id="refundResponse3"></div>
+<!-- <div id="refundResponseInitiated"></div>
+											<div id="noPaymentId"></div> -->
+<!-- <div id="refundDateSpan">Refund Date</div>	<div id="refundDate"></div>
+										<div id="refundAmount">Amount</div>	<div id="amount"></div> -->
+<table id="transferStatusTable">
+<tr>
+<td>Initiated Date and Time:</td>
+<td><div id="refundDate"></div></td>
+</tr>
+<tr>
+<td>Amount:</td>
+<td><div id="amount"></div></td>
+<!-- 	<tr><td>Credited to registered bank account:</td><td><div id="sCreditAccNo"></div></td> -->
+</tr><tr>
+<td><div id="accountRef"></div></td>
+<td><div id="sCreditAccNoRef"></div></td>
+</tr>
+</table>
+<br/>
+</div>
+</div>
+<!--Supplier Registration-->
+<!-- -->
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i aria-hidden="true" class="fa fa-file-text"></i>Tenders @ a glance !
+										</div>
+<ul>
+<li> Live Tenders <span>1982</span> </li>
+<li> Tenders Closing Today <span>39</span> </li>
+</ul>
+</div>
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i class="fa fa-link"></i>QUICK LINKS
+										</div>
+<ul>
+<li><a href="#" onclick="fnPreLogin('digital-signature.html')">  Digital Signature
+											</a></li>
+<li><a href="#" onclick="fnPreLogin('blocked-suppliers.html')">  Blocked Suppliers
+											</a></li>
+</ul>
+</div>
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i aria-hidden="true" class="fa fa-building-o"></i>Districts Wise Tenders
+										</div>
+<a alt="Districts Wise Tenders" class="viewCurrentall" href="#" id="viewCurrentall" title="Districts Wise Tenders">
+<div class="text-center p5">
+<div class="tsMapTitle"> </div>
+</div>
+</a></div>
+<!-- <div class="thumbDist text-center"></div> -->
+</aside></div>
+<div class="tsQuickLinks box-shadow">
+<div class="rightTitle">
+<i aria-hidden="true" class="fa fa-newspaper-o"></i>Latest Updates
+										</div>
+<div class="demo5 demof">
+<ul>
+<li><a href="#" onclick="fnPreLogin('TermsAndConditions.html')">
+<i aria-hidden="true" class="fa fa-hand-o-right"></i> The eProcurement Project is a core eGovernance initiative and the platform of the Telangana State Government and is being used by all Government Departments, Public Sector Undertakings, Urban Local Bodies and Universities in the State.
+												</a></li>
+</ul>
+</div>
+</div>
+<!--CM Photo Start Here-->
+<div class="tsQuickLinks box-shadow">
+<a href="#">
+<div class="thumbCM"></div>
+</a>
+</div>
+<!--CM Photo Start Here-->
+<!-- -->
+<div class="tsAwwardRecagnigation tsHelpDesk box-shadow text-center">
+<a alt="Click Here for Telangana State eAuction Platform" href="https://auction.telangana.gov.in/" target="_blank" title="Click Here for Telangana State eAuction Platform">
+<div class="thumbeAuctionPortal"></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section></form></div>
+<input name="popUPRequestParameter" type="hidden" value=""/>
+<input name="hdnPage" type="hidden"/>
+<input name="hdnProcurementID" type="hidden"/>
+<input name="hdnType" type="hidden"/>
+<input id="hdnRandomVal" name="hdnRandomVal" type="hidden"/>
+<input name="hdnPublicKey" type="hidden" value=""/>
+<input name="hdnOwnerName" type="hidden" value=""/>
+<input name="hdncertSerialNo" type="hidden" value=""/>
+<input name="hdnCertIssuer" type="hidden" value=""/>
+<input name="hdnExpiryDate" type="hidden" value=""/>
+<input name="hdnActiveDate" type="hidden" value=""/>
+<input name="hdnSubjectDN" type="hidden" value=""/>
+<input name="hdnThumbPrint" type="hidden" value=""/>
+<input id="failCount" name="failCount" type="hidden" value=""/>
+<input id="hdnImmediatePreviousPage" name="hdnImmediatePreviousPage" type="hidden" value="login.html"/>
+<input id="hdnPreviousPage" name="hdnPreviousPage" type="hidden" value="login.html"/>
+<input name="hdnSignData" type="hidden" value=""/>
+<input name="encscheme" type="hidden" value=""/>
+<input id="hdnNotifactionFlag" name="hdnNotifactionFlag" type="hidden"/>
+<input name="CSRFToken" type="hidden" value="d5bd4297-1c4c-4a41-8bdd-5cab4e9fdb27"/>
+<input name="hdnEncryptNames" type="hidden" value="hdnEncryptNames"/>
+<input name="hdnEncryptValues" type="hidden" value="hdnEncryptValues"/>
+<footer class="footer">
+<div class="tsBottomFooter text-center">
+<div class="container-fluid">
+<div class="row">
+<ul>
+<li><a href="#" onclick="fnPreLogin('login.html')">Home</a></li>
+<li><a href="#" onclick="fnPreLogin('eprocurement-guidelines.html')">Guidelines</a></li>
+<li><a href="#" onclick="misReport()">MIS Reports</a></li>
+<li><a href="#" onclick="fnPreLogin('news-government-orders.html')">G.O.s</a></li>
+<li><a )"="" href="views/tsPages/downloads/rti-act-2005.pdf" rel="noopener noreferrer" target="_blank">RTI Act 2005</a></li>
+<li><a href="#" onclick="fnPreLogin('faqs.html')">FAQ's</a></li>
+<li><a href="#" onclick="fnPreLogin('terms-conditions.html')">Terms &amp; Conditions</a></li>
+<li><a href="#" onclick="fnPreLogin('privacy-policy.html')">Privacy Policy</a></li>
+<li><a href="#" onclick="fnPreLogin('website-policy.html')">Website Policy</a></li>
+<li><a href="#" onclick="fnPreLogin('disclaimer.html')">Disclaimer</a></li>
+<li><a href="#" onclick="fnPreLogin('accessibility.html')">Accessibility</a></li>
+<li><a href="#" onclick="fnPreLogin('helpdesk.html')">Technical HelpDesk</a></li>
+<a href="#" onclick="fnPreLogin('contact-us.html')">Contact Us</a>
+</ul>
+</div>
+</div>
+</div>
+<div class="tsFooterDown text-center">
+<p>Information Technology, Electronics &amp; Communications Department, Government of Telangana, India. All rights reserved.</p>
+<div>
+<span> <strong> Last Updated on: </strong> <span id="date"></span>
+</span>
+					.
+				</div>
+</div>
+</footer>
+<!-- The customModal -->
+<!--     <button id="myBtn">Custom Window</button> -->
+<!-- customModal Window -->
+<div class="customModal" id="customModelWindow">
+<!-- customModal content -->
+<div class="customModal-content">
+<div>
+<h1>System Requirement</h1>
+<br/>
+<p>
+					This System Requires emSigner to login and registration.<br/>Click on <span class="red">" INSTALL "</span> to download the emSigner
+				</p>
+<br/>
+<p>
+					If downloaded click on <span class="red">" NO I ALREADY HAVE
+						"</span> - Go to your Desktop,<br/> Right-click on the emSigner icon and run the program by selecting Run as administrator and after <span class="yellow">emSigner started Successfully</span> Click on <span class="green">" OK "</span>
+</p>
+</div>
+<div>
+<div class="btnModel" data-ins="0" id="btnInstall">INSTALL</div>
+<div class="btnModel customModalClose" data-ins="1" id="btnInstallNo">No, I Already Have</div>
+</div>
+</div>
+</div>
+<div class="tgep-scope" id="tgep-scope">
+<div class="tgep-banner" id="tgep-banner">
+<b class="tgep-banner-tag">IMPORTANT</b>
+<span class="tgep-banner-text">emSigner upgraded to Version 1.3.1 - install it and check your token before you log in or decrypt tenders.</span>
+<button class="tgep-banner-btn" id="tgep-reopen" type="button">
+      View steps
+    </button>
+<a class="tgep-banner-btn tgep-dlpdf" download="Manual_for_Emsigner_Install_and_Hyper_PKI_verification_Process.pdf" href="/views/tsPages/downloads/Manual_for_Emsigner_Install_and_Hyper_PKI_verification_Process_pdf_2.pdf" title="Download User Guide">
+      Download User Guide
+    </a>
+</div>
+<div aria-labelledby="tgep-title" aria-modal="true" class="tgep-overlay" id="tgep-overlay" role="dialog">
+<div class="tgep-card">
+<div class="tgep-head">
+<h2 class="tgep-title" id="tgep-title">
+          IMPORTANT NOTICE - All Users:
+          <em>emSigner upgraded to Version 1.3.1</em>
+</h2>
+</div>
+<div class="tgep-body">
+<p class="tgep-intro"> Dear users, As per the CCA Guidelines, the Digital
+						Signature Token security standard has been upgraded from <b>FIPS
+						140-2</b> to <b>FIPS 140-3</b>. Accordingly, the Telangana eProcurement
+						emSigner has been upgraded from <b>Version 1.3 to Version 1.3.1.</b>
+						Please complete the following steps before accessing the e-Tender
+						application:</p>
+<div class="tgep-grid">
+<div class="tgep-step">
+<h3><i class="tgep-num">1</i>Install emSigner Ver 1.3.1</h3>
+            Uninstall the old one (Control Panel -&gt; Programs and Features),
+            then install
+            <b>"emSigner Windows (OS) Setup File Ver 1.3.1 - NEW"</b>
+            from the Download section.
+          </div>
+<div class="tgep-step">
+<h3><i class="tgep-num">2</i>Check token compatibility</h3>
+<b>Hyper Key:</b> run
+            <b>"Test Hyper2003 Token OAEP Supported Check"</b>
+            (Download section) -&gt; <b>readOAEP</b>:
+            <span class="tgep-yes">Y</span> = compatible,
+            <span class="tgep-no">N</span> = not compatible.
+            <br/>
+<b>Other tokens:</b> insert token, click
+            <b>"Check Your DSC Token"</b> on home page -&gt;
+            <b>OAEP Supported</b>:
+            <span class="tgep-yes">true</span> = compatible,
+            <span class="tgep-no">false</span> = not compatible.
+            <div class="tgep-warn">
+              If N / false: contact your DSC token vendor for a compatible token.
+            </div>
+</div>
+<div class="tgep-step">
+<h3><i class="tgep-num">3</i>Repeated Token PIN requests</h3>
+            Open <b>Hyper Token Driver -&gt; Settings</b> and enable
+            <b>Single Sign-On (SSO)</b>.
+          </div>
+<div class="tgep-step">
+<h3><i class="tgep-num">4</i>WatchData Token users</h3>
+            Go to <b>Quick Links -&gt; Digital Signature</b> and install
+            the WatchData Token Driver.
+          </div>
+<div class="tgep-step tgep-wide">
+<h3>
+<i class="tgep-num">5</i>
+              Dashboard not loading after login (Firefox)
+            </h3>
+            Open <b>about:config</b> in the address bar, accept the warning,
+            search <b>network.lna.websocket.enabled</b> and set it to
+            <span class="tgep-no">false</span>.
+          </div>
+<div class="tgep-step tgep-guide tgep-wide">
+<div class="tgep-guide-text">
+<h3>Login Instructions</h3>
+              Step-by-step guide with screenshots for installation,
+              token check, setup and login.
+            </div>
+<a class="tgep-dl tgep-dlpdf" download="Manual_for_Emsigner_Install_and_Hyper_PKI_verification_Process.pdf" href="/views/tsPages/downloads/Manual_for_Emsigner_Install_and_Hyper_PKI_verification_Process_pdf_2.pdf" title="Download User Guide">
+              Download User Guide
+            </a>
+</div>
+</div>
+</div>
+<div class="tgep-foot">
+<button class="tgep-close" disabled="" id="tgep-ok" type="button">
+          Please wait... (5)
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- customModal Window -->
+<div class="modalNew" id="myModal2">
+<!-- Modal content -->
+<div class="modal-contentNew">
+<div class="modal-header">
+				Kind Attention
+				<!-- <span class="close">X</span> -->
+</div>
+<div class="modal-body">
+<table class="tablesorter-blue" width="100%">
+<thead>
+<tr>
+<th align="center" width="5%"><span class="TextHead">S.No.</span></th>
+<th align="center" width="30%"><span class="TextHead">Existing Tender Date labels</span></th>
+<th align="center" width="25%"><span class="TextHead">Proposed Tender Date labels</span></th>
+<th align="center" width="40%"><span class="TextHead">Remarks</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td>Pre-Bid Meeting Date &amp; Time</td>
+<td><b>Remains same</b></td>
+<td>Should be less than the <b>Bid Submission Start Date &amp; Time</b>. <br/>Minimum 1 Day gap required between <b>
+							Pre-bid Meeting Date &amp; Time and Bid Submission Start Date &amp; Time</b></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>Tender Document Download Start Date &amp; Time</td>
+<td rowspan="2"><b>Bid Submission Start Date &amp; Time</b></td>
+<td rowspan="2">Interval between <b>Bid Submission Start Date &amp; Time and Bid Submission closing End Date &amp; Time.</b> <br/>
+							Remains Same as per the Bid calls.
+							</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>Tender Document Download End Date &amp; Time</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>Bid Submission Closing End Date &amp; Time</td>
+<td><b>Remains same</b></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<br/> <span><b>Note:</b> </span> <br/> <span><b>Department Users: <span>Please change the Tender Label Names in Tender documents during Tender Publishing.</span></b> </span> <br/> <span><b>Bidders/Contractors: <span>Please click on "Pre-bid/Upcoming Tenders" Section on Home page to search/view New Tenders published by all Departments instead of "Current Tenders" . Tenders will move from Upcoming to "Current Tenders" only after Bid submission start date and time is reached.</span></b> </span>
+</div>
+<br/>
+<div class="modal-footer" id="divFt">
+<center>
+<a class="btn btn-primary" href="#" onclick="closeModel2();"> 
+						  OK     </a>
+</center>
+</div>
+</div>
+</div>
+<!-- -->
+<input name="version" type="hidden" value="18032020"/>
+</body>
+</html>

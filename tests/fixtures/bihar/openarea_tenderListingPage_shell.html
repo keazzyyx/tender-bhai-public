@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>E-Procurement</title>
+<!--  <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+ <script src="https://d3js.org/d3-array.v1.min.js"></script>  -->
+</head>
+<body>
+<div id="loading">
+<div id="overlay"></div>
+<div id="spinnerholder">
+<div class="spinner"></div>
+<div class="spinner-text ng-binding">Please Wait...</div>
+</div>
+</div>
+<form action="/EPSV2Web/login/loginDashboard.action" id="pageNavigateForm" method="post" name="pageNavigateForm">
+<input id="Authorization" name="Authorization" type="hidden" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZUlkIjowLCJhdWQiOiIwIiwib3JnYW5pemF0aW9uTmFtZSI6bnVsbCwiY3VycmVudExvY2FsZSI6bnVsbCwiaXNzIjoiU1lTVEVNIiwidmVuZG9ySWQiOjAsImV4cCI6MTc5MzQxNzYyMCwidXNlclJvbGVMaXN0IjpudWxsLCJiaWRkZXJDb21wYW55TmFtZSI6bnVsbCwiaWF0IjoxNzkzNDE2NzIwLCJ1c2VyQ29kZSI6bnVsbCwianRpIjoiOTIyMzM3MjAzIn0.mhWbs9LAR0q7swq_EgFjpgZ5B08fjQ1EEFujXd4JB4M"/>
+<input id="userCode" name="userCode" type="hidden" value=""/>
+<input id="orgId" name="orgId" type="hidden" value=""/>
+<input id="loginSignHash" name="loginSignHash" type="hidden" value=""/>
+<input id="loginDetailsUpdateId" name="loginDetailsUpdateId" type="hidden" value=""/>
+<input id="pkiEnabledFlag" name="pkiEnabledFlag" type="hidden" value=""/>
+<input id="loginSignUserId" name="loginSignUserId" type="hidden" value=""/>
+<input id="serverDateValue" name="serverDateValue" type="hidden" value=""/>
+</form>
+<div class="container-fluid">
+<img class="img-responsive" src="/EPSV2Web/images/bihar/banner1.jpg?version=6.5"/>
+</div>
+<nav class="navbar navbar-default-danger" role="navigation">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/EPSV2Web/">Eproc2.0 Govt. of Bihar</a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">How to Start <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Manuals <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('system_requirement')" rel="noopener noreferrer">System Requirement Manuals</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('pki_install_manual')" rel="noopener noreferrer">How to Install PKI Component</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('bidder_manual')" rel="noopener noreferrer">Vendor Portal Registration Manual</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('reset_password')" rel="noopener noreferrer">How to Reset Password</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="download('procurement_manual')" rel="noopener noreferrer">Procurement Manual og Govt. of Bihar</a>
+</li>
+</ul>
+</li>
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Audio-Video Help <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<!-- <li>
+                                        <a href="https://youtu.be/TpuYrppiDNs" rel="noopener noreferrer" target="_blank">Portal Registration Process for Existing (Eproc1.0) Vendors</a>
+                                    </li> -->
+<li>
+<a href="https://youtu.be/y15DLGfccXM" rel="noopener noreferrer" target="_blank">Portal Registration Process for Fresh/New Vendors</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('system_requirement')" rel="noopener noreferrer">System Requirement Manual</a>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button" target="_blank">Install DSC PKI Component <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" rel="noopener noreferrer" role="button">Permanent Installation <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('32_pki')" rel="noopener noreferrer">32 bit Version</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('64_pki')" rel="noopener noreferrer">64 bit Version</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="download('web_start')" rel="noopener noreferrer">Temporary Execution</a>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="download('system_requirement')" rel="noopener noreferrer">How to Install ?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="javascript:void(0)" onclick="downloadManual('faq')" rel="noopener noreferrer">FAQ</a>
+</li>
+<li>
+<a onclick="goToBidderReg()" rel="noopener noreferrer">Vendor Registration (Portal)</a>
+</li>
+<li>
+<a onclick="goToTenderList()" rel="noopener noreferrer">Tenders</a>
+</li>
+<li>
+<a href="https://www.eproc.bihar.gov.in/BELTRON" rel="noopener noreferrer" target="_blank">Eproc 1.0</a>
+</li>
+<li>
+<a data-target="#contactUsModal" data-toggle="modal" href="javascript:void(0)" rel="noopener noreferrer">Contact Us</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</div>
+<!-- /.container -->
+</nav>
+<div class="modal fade" id="contactUsModal" role="dialog">
+<div class="modal-dialog">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h4 class="modal-title">Contact Us</h4>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12">
+<p><i class="fa fa-phone"></i> Toll Free Number: 1800 572 6571</p><p>
+</p><p><i class="fa fa-envelope"></i> Email Id: eproc2support@bihar.gov.in</p>
+<p><i class="fa fa-clock-o"></i> Working Hours: 8AM to 7PM (All days in week except few selected state holidays)</p>
+<p><i class="fa fa-home"></i> eProc 2.0 Help Desk Address: RJ Complex, 2nd Floor, 
+Opposite Vidyapeeth Institute,
+Khajpura, Ashiana Road, 
+P.S. - Shastri Nagar, Patna 800 014, Bihar.
+                           (supported by mjunction)
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation" ng-app="login" ng-controller="LoginDiv" ng-init="clientPage = 'HOME'">
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="pkiSetupModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">x</button>
+<h4 class="modal-title" id="myModalLabel">Setup</h4>
+</div> <!-- modal-header -->
+<div class="modal-body" id="myModalBody">
+<div class="form-group">
+<label class="radio-inline">
+<input checked="" name="optradio" ng-change="radioClicked('pki')" ng-model="myRadio" type="radio" value="pki"/>PKI Component Download
+														    </label>
+<label class="radio-inline">
+<input name="optradio" ng-change="radioClicked('jnlp')" ng-model="myRadio" type="radio" value="jnlp"/>JNLP File Download
+														    </label>
+</div>
+<div class="gstin-legend">
+<div class="gstin-legend-heading">{{pkiHeading}}</div>
+<div ng-if="pkiType!='jnlp'">
+<table border="1">
+<thead>
+<tr>
+	                                   Download &amp; Run Component Manually 
+	                                </tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img src="images/Downloadpki.png"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div ng-if="pkiType=='jnlp'">
+<table border="1">
+<thead>
+<tr>
+	                                   Download &amp; Run Component Manually 
+	                                </tr>
+</thead>
+<tbody>
+<tr>
+<td>
+	                                        Launch PKI Component
+	                                    </td><td>
+<img src="images/webstart.png"/>
+<br/>
+	                                        Or 
+	                                        <br/>
+	                                        use the following link element to launch with the application 
+	                                        <br/>
+<a href="launchDomain.jnlp">Launch the application</a>
+<br/>
+<br/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<a href="#">Download Manual</a>
+</div>
+</div> <!-- /.modal-body -->
+<div class="modal-footer">
+<button class="form-control btn btn-primary" id="login" ng-click="" ng-disabled="disableLoginBtn || loginForm.$invalid">Ok</button>
+</div> <!-- /.modal-footer -->
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+</div>
+<!-- end of nav bar -->
+<!--<link href="/EPSV2Web/css/home/style.css?version=15.1.241" media="screen" rel="stylesheet" type="text/css" />-->
+<!--main content start-->
+<section class="main-content" id="main-content-nw" ng-app="epsv2App">
+<section class="wrapper">
+<div class="panel" ng-cloak="" ng-controller="openareaTenderList" ng-init="init()">
+<!--<div class="col-md-2">
+					<aside>
+					   <div class="toggle-nav-res">
+					      <div class="icon-reorder tooltips" data-original-title="" title=""><i class="icon_menu"></i></div>
+					   </div>
+					   <div id="" class="nav-collapse" >
+					      &lt;!&ndash; sidebar-nw menu start&ndash;&gt;
+					      <ul class="sidebar-nw-menu-nw" >
+					        &lt;!&ndash;<li class="sub-menu">
+					            <a href="javascript:void(0);" class="not-active">
+					            <lavel>MIS Reports</lavel>
+					            </a>
+					         </li>
+					         <li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" ng-click="openSearchModal('TenderSearchByLocation')" class="not-active">
+					            <lavel>Tenders by location</lavel>
+					            </a>
+					         </li>&ndash;&gt;
+					         &lt;!&ndash;<li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" data-target="#tenderSearchByOrganisation"  ng-click="openSearchModal('tenderSearchByOrganisation')">
+					            <lavel>Tenders by Organization</lavel>
+					            </a>
+					         </li>&ndash;&gt;
+					         &lt;!&ndash;<li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" ng-click="openSearchModal('tenderSearchByClassification')" class="not-active">
+					            <lavel>Tenders by Classification</lavel>
+					            </a>
+					         </li>
+					         <li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" ng-click="openSearchModal('tendersInArchive')" class="not-active">
+					            <lavel>Tenders in Archive</lavel>
+					            </a>
+					         </li>&ndash;&gt;
+					         <li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" data-target="#tenderStatus" ng-click="openSearchModal('tenderStatus')">
+					            <lavel>Tender Status</lavel>
+					            </a>
+					         </li>
+					         &lt;!&ndash;<li class="sub-menu">
+					            <a href="javascript:void(0);" data-toggle="modal" data-target="#" class="not-active">
+					            <lavel>Cancelled/Retendered</lavel>
+					            </a>
+					         </li>&ndash;&gt;
+					      </ul>
+					      &lt;!&ndash; </li>
+					         </ul> &ndash;&gt;
+					      &lt;!&ndash; sidebar-nw menu end&ndash;&gt;
+					   </div>
+					</aside></div>-->
+<div class="col-md-12">
+<div class="panel-body box_shadow">
+<!--<div class="rownavbar navbar-inverse workflow box_shadow affix-top" data-spy="affix" data-offset-top="40">-->
+<div class="panel-header box_shadow">
+<ol class="breadcrumb">
+<li><i class="fa fa-home"></i><a href="/EPSV2Web/">Home</a></li>
+<li><i class="fa fa fa-list-alt"></i>Open area Tender List</li>
+<div class="timset_sec pull-right">
+<i aria-hidden="true" class="fa fa-clock-o"></i>
+<p id="appClock"> </p>
+</div>
+</ol>
+</div>
+<h3 class="page-header box_shadow">
+<i class="fa fa-list title_icon"></i>Open area Tender List
+							<div class="pull-right">
+<!-- <button type="button" class="btn btn-icon btn-primary btn-circle btn-lg"
+									 data-toggle="modal" data-target="#advanceSearch"  
+									 ng-click="openSearchModal('advanceSearch')"
+									 data-original-title="Advanced Search">
+									<i class="fa fa-search"></i>
+								</button> -->
+<!--<button type="button" class="rte-btn"
+									style="width:172px !important; float:right;margin-right:15px;" 
+									data-toggle="modal" data-target="#advanceSearch"  
+									ng-click="openSearchModal('advanceSearch')">Advanced Search
+								</button>-->
+<!--<button class="btn btn-icon btn-primary" data-toggle="modal" data-target="#tenderStatus" ng-click="openSearchModal('tenderStatus')">
+									<lavel>Tender Status</lavel>
+								</button>-->
+</div>
+</h3>
+<form class="form form-horizontal ng-pristine ng-valid" name="queryForm">
+<div class="row">
+<div class="col-md-2" ng-show="pastTendersTab"><!-- ng-class="{'col-md-3':!evaluationSelected,'col-md-2':evaluationSelected}" col-md-3 -->
+<div class="input-group stylish-input-group">
+<input "="" class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-model="tenderFilter" placeholder="Type any keyword" type="text"/>
+<span class="input-group-addon">
+<button class="submit_nil" ng-click="filterTender(tenderFilter,tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled)" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+</div>
+</div>
+<div class="col-md-2" ng-hide="pastTendersTab"><!-- ng-class="{'col-md-3':!evaluationSelected,'col-md-2':evaluationSelected}" col-md-3 -->
+<div class="input-group stylish-input-group">
+<input class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter,tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled)" ng-model="tenderFilter" placeholder="Type any keyword" type="text"/>
+<span class="input-group-addon">
+<button class="submit_nil" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+</div>
+</div>
+<div class="col-md-2 marg_btm15">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.currentdeptid" ng-options="value.organizationId as value.organizationName for value in orgList | orderBy:'organizationName'">
+<option class="" selected="selected" value="">-- Select Department --</option>
+</select>
+</div>
+<div class="col-md-2 marg_btm15 dateparam" ng-hide="cancelTab">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.dateParam">
+<option class="" selected="selected" value="">--Select Date Parameter--</option>
+<option value="1">Tender Publish Date</option>
+<option value="2">Bid Submission Start Date</option>
+<option value="3">Bid Submission Closing Date</option>
+</select>
+</div>
+<div class="col-md-2" ng-hide="cancelTab">
+<div class="input-group" datetimepicker="" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-model="tenderF.startDate" on-load="'N'" options="datePickerOption">
+<input class="form-control" ng-disabled="(tenderF.dateParam == '')" placeholder="From Date" type="text"/>
+<span class="input-group-addon" ng-mouseover="initDatePicker()">
+<span class="fa fa-calendar"></span>
+</span>
+</div>
+</div>
+<div class="col-md-2" ng-hide="cancelTab">
+<div class="input-group" datetimepicker="" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-model="tenderF.endDate" on-load="'N'" options="datePickerOption">
+<input class="form-control" ng-disabled="(tenderF.dateParam == '')" placeholder="To Date" type="text"/>
+<span class="input-group-addon" ng-mouseover="initDatePicker()">
+<span class="fa fa-calendar"></span>
+</span>
+</div>
+</div>
+<div class="col-md-2 marg_btm15" ng-hide="cancelTab || pastTendersTab">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.gettingClosed">
+<option class="" selected="selected" value="">--Tender Getting Closed--</option>
+<option class="" value="0">Today</option>
+<option class="" value="7">In 7 days</option>
+<option class="" value="15">In 15 days</option>
+<option class="" value="30">In 30 days</option>
+</select>
+</div>
+<div class="col-md-2 marg_btm15" ng-show="cancelTab">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.tendercancelled">
+<option class="" selected="selected" value="">--Tender Cancelled--</option>
+<option class="" value="0">Today</option>
+<option class="" value="7">In last 7 days</option>
+<option class="" value="15">In last 15 days</option>
+<option class="" value="30">In last 30 days</option>
+</select>
+</div>
+<div class="col-md-2 marg_btm15" ng-show="pastTendersTab">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.tenderClosed">
+<option class="" selected="selected" value="">Tender closed</option>
+<option class="" value="0">Today</option>
+<option class="" value="7">In 7 days</option>
+<option class="" value="15">In 15 days</option>
+<option class="" value="30">In 30 days</option>
+</select>
+</div>
+<div class="col-md-2 marg_btm15">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.procatId" ng-options="catList.proccatId as catList.description | titleCase for catList in categoryTypeList.procCatList | orderBy: 'description'">
+<option class="" selected="selected" value="">--Select Procurement Category--</option>
+</select>
+</div>
+<div class="col-md-2 m-bot15">
+<div class="loading"><img height="20" src="../img/ajax-loader.gif" width="20"/>LOADING....</div>
+<select class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-change="broadcastFilter(); filterTender(tenderFilter, tenderF.currentdeptid,tenderF.dateParam,tenderF.startDate,tenderF.endDate,tenderF.procatId,tenderF.typeId,tenderF.gettingClosed,tenderF.tendercancelled,tenderF.tenderClosed)" ng-hide="loading" ng-model="tenderF.typeId" ng-options="type.rfqtypeId as type.description | titleCase for type in categoryTypeList.rfqTypeList | orderBy: 'rfqtypeId'">
+<option class="" selected="selected" value="">-- Select Tender Type --</option>
+</select>
+</div>
+</div>
+</form>
+<!--</div>-->
+<div class="row">
+<div class="col-md-12">
+<ul class="nav nav-tabs ctTabs">
+<li class="active">
+<a href="#latestTenders" ng-click="tabClicked('latestTenders')">
+										Latest Tenders
+									</a>
+</li>
+<li>
+<a href="#cancelTenders" ng-click="tabClicked('cancelTenders')">
+										Latest Cancelled Tenders
+									</a>
+</li>
+<li>
+<a href="#corrigendumTenders" ng-click="tabClicked('corrigendumTenders')">
+										Tenders with Corrigendum
+									</a>
+</li>
+<li>
+<a href="#upcomingTenders" ng-click="tabClicked('upcomingTenders')">
+										Upcoming Tenders
+									</a>
+</li>
+<li>
+<a href="#pastTenders" ng-click="tabClicked('pastTenders')">
+										Past Tenders
+									</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade active in" id="latestTenders">
+<loading></loading>
+<table class="table table-striped table-advance table-hover" id="myTablebyrTl">
+<thead>
+<tr>
+<th>SL No.</th>
+<th>Tender/RFQ ID</th>
+<th>Tender Description</th>
+<th>Reference No.</th>
+<th>Department</th>
+<th>End Date</th>
+<th>Time left (in DD:HH:MM)</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="tender in tenderList | orderBy: 'tender.currentbidEndDate' | limitTo:openAreaLoadTendetListCount">
+<td>{{$index+1}}</td>
+<td class="frelips"> {{tender.currentOrgTenderId}}</td>
+<td class="oneline-text" title="{{tender.currentdescription}}">{{tender.currentdescription}}</td>
+<td class="frelips">{{tender.currenttenderrefno}}</td>
+<td>{{  tender.currentdeptid|codeFilterOrg:{code:tender.currentdeptid} }}</td>
+<td>{{tender.currentbidEndDate|date:'yyyy-MM-dd HH:mm'}}</td>
+<td time-countdown="tender.currentbidEndDate | date : 'yyyy/MM/dd HH:mm'"></td>
+<td>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="View tender" data-toggle="tooltip" ng-click="previewTender(tender.currenttenderid, tender.currentorgid)" title="" type="button">
+<i class="fa fa-eye"></i>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="8" ng-if="(tenderList.length&gt;openAreaLoadTendetListCount)"><a href="javascript:void(0);" id="PageLink_12" ng-click="clickForMoreTender()" title="More Tenders">More...</a></td>
+<td colspan="8" ng-if="tenderList.length==0">No record found</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="cancelTenders">
+<loading></loading>
+<table class="table table-striped table-advance table-hover" id="myTab">
+<thead>
+<tr>
+<th>SL No.</th>
+<th>Tender/RFQ ID</th>
+<th>Tender Description</th>
+<th>Reference No.</th>
+<th>Department</th>
+<th>Cancellation Date</th>
+<th>Cancellation Reason</th>
+<th>Attachment</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="tender in cancelTenderList | limitTo:openAreaLoadCancelTenderListCount">
+<td>{{$index+1}}</td>
+<td class="frelips"> {{tender.currentOrgTenderId}}</td>
+<td class="oneline-text" title="{{tender.currentdescription}}">{{tender.currentdescription}}</td>
+<td class="frelips">{{tender.currenttenderrefno}}</td>
+<td>{{ tender.currentdeptid|codeFilterOrg:{code:tender.currentdeptid} }}</td>
+<td>{{tender.currentTenderCancelDate | date:'yyyy-MM-dd HH:mm'}}</td>
+<td>{{tender.currentTenderCancelReason}}</td>
+<td>
+<span ng-show="(tender.currentTenderCancelAttachment == null)">-</span>
+<a href="javascript:void(0);" ng-show="(tender.currentTenderCancelAttachment != null)">{{tender.currentTenderCancelAttachment}} <i class="fa fa-download" ng-click="downloadCancelTenderAttachment(tender.currenttenderid)" ng-hide="tender.currentTenderCancelAttachment==null"></i></a>
+</td>
+<td>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="View tender" data-toggle="tooltip" ng-click="previewTender(tender.currenttenderid, tender.currentorgid)" title="" type="button">
+<i class="fa fa-eye"></i>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="9" ng-if="(cancelTenderList.length&gt;openAreaLoadCancelTenderListCount)"><a href="javascript:void(0);" id="PageLink_13" ng-click="clickForMoreCancelTender()" title="More Tenders">More...</a></td>
+<td colspan="9" ng-if="cancelTenderList.length==0">No record found</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="corrigendumTenders">
+<loading></loading>
+<table class="table table-striped table-advance table-hover" id="tenderwithcorrigendumTable">
+<thead>
+<tr>
+<th>SL No.</th>
+<th>Tender/RFQ ID</th>
+<th>Tender Description</th>
+<th>Reference No.</th>
+<th>Corrigendum</th>
+<th>Department</th>
+<th>End Date</th>
+<th>Time left (in DD:HH:MM)</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="tender in tenderWithCorrigendumList | limitTo:openAreaLoadtenderWithCorrigendumListCount">
+<td>{{$index+1}}</td>
+<td class="frelips"> {{tender.currentOrgTenderId}}</td>
+<td class="oneline-text" title="{{tender.currentdescription}}">{{tender.currentdescription}}</td>
+<td class="frelips">{{tender.currenttenderrefno}}</td>
+<td><button class="btn btn-icon btn-primary btn-circle btn-lg" ng-click="corrigendumQuickView(tender.currenttenderid);"><i class="fa fa-info"></i></button></td>
+<td>{{  tender.currentdeptid|codeFilterOrg:{code:tender.currentdeptid} }}</td>
+<td>{{tender.currentbidEndDate|date:'yyyy-MM-dd HH:mm'}}</td>
+<td time-countdown="tender.currentbidEndDate | date : 'yyyy/MM/dd HH:mm'"></td>
+<td>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="View tender" data-toggle="tooltip" ng-click="previewTender(tender.currenttenderid, tender.currentorgid)" title="" type="button">
+<i class="fa fa-eye"></i>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="9" ng-if="(tenderWithCorrigendumList.length&gt;openAreaLoadtenderWithCorrigendumListCount)"><a href="javascript:void(0);" id="PageLink_14" ng-click="clickForMoreCorrigendumTenders()" title="More Tenders">More...</a></td>
+<td colspan="9" ng-if="tenderWithCorrigendumList.length==0">No record found</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="upcomingTenders">
+<table class="table table-striped table-advance table-hover" id="myTab">
+<thead>
+<tr>
+<th>SL No.</th>
+<th>Tender/RFQ ID</th>
+<th>Tender Description</th>
+<th>Reference No.</th>
+<th>Department</th>
+<th>End Date</th>
+<th>Time to Start Bidding </th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="tender in upcomingtendersList | limitTo:openAreaUpcomingTendersListCount">
+<td>{{$index+1}}</td>
+<td class="frelips"> {{tender.currentOrgTenderId}}</td>
+<td class="oneline-text" title="{{tender.currentdescription}}">{{tender.currentdescription}}</td>
+<td class="frelips">{{tender.currenttenderrefno}}</td>
+<td>{{  tender.currentdeptid|codeFilterOrg:{code:tender.currentdeptid} }}</td>
+<td>{{tender.currentbidEndDate|date:'yyyy-MM-dd HH:mm'}}</td>
+<td time-countdown="tender.currentbidStartDate | date : 'yyyy/MM/dd HH:mm'"></td>
+<td>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="View tender" data-toggle="tooltip" ng-click="previewTender(tender.currenttenderid, tender.currentorgid)" title="" type="button">
+<i class="fa fa-eye"></i>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="8" ng-if="(upcomingtendersList.length&gt;openAreaUpcomingTendersListCount)"><a href="javascript:void(0);" id="PageLink_15" ng-click="clickForMoreUpcomingTenders()" title="More Tenders">More...</a></td>
+<td colspan="8" ng-if="upcomingtendersList.length==0">No record found</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="pastTenders">
+<table class="table table-striped table-advance table-hover" id="myTab">
+<thead>
+<tr>
+<th>SL No.</th>
+<th>Tender/RFQ ID</th>
+<th>Tender Description</th>
+<th>Reference No.</th>
+<th>Department</th>
+<th>End Date</th>
+<th>Roll Back</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="tender in pasttendersList | limitTo:openAreaPastTendersListCount">
+<td>{{$index+1}}</td>
+<td class="frelips"> {{tender.currentOrgTenderId}}</td>
+<td class="oneline-text" title="{{tender.currentdescription}}">{{tender.currentdescription}}</td>
+<td class="frelips">{{tender.currenttenderrefno}}</td>
+<td>{{  tender.currentdeptid|codeFilterOrg:{code:tender.currentdeptid} }}</td>
+<td>{{tender.currentbidEndDate|date:'yyyy-MM-dd HH:mm'}}</td>
+<td>{{ (tender.isRollBack=='Y') ? 'Yes' : 'No' }}</td>
+<td>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="View tender" data-toggle="tooltip" ng-click="previewTender(tender.currenttenderid, tender.currentorgid)" title="" type="button">
+<i class="fa fa-eye"></i>
+</button>
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-original-title="Awarded PO Details" data-toggle="tooltip" ng-click="viewPoPreview(tender)" title="" type="button">
+<i class="fa fa-file"></i>
+</button>
+</td>
+</tr>
+<tr>
+<td colspan="7" ng-if="(pasttendersList.length&gt;=openAreaPastTendersListCount)"><a href="javascript:void(0);" id="PageLink_15" ng-click="clickForMorePastTenders()" title="More Tenders">More...</a></td>
+<td colspan="7" ng-if="pasttendersList.length==0">No record found</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- status search moadl end -->
+<!-- corrigendum view modal start -->
+<div aria-hidden="false" class="modal modalsnd-main fade in" id="myModaliview" role="dialog">
+<div class="corri-quick-view-loader" id="loading">
+<div id="overlay"></div>
+<div id="spinnerholder">
+<div class="spinner"></div>
+<div class="spinner-text ng-binding">Please Wait...</div>
+</div>
+</div>
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3 class="modal-title">View All</h3>
+</div>
+<div class="modal-body">
+<div>
+<table class="table table-striped table-advance table-bordered" id="">
+<tr>
+<th><label class="font-bold">Corrigendum Number</label></th>
+<th><label class="font-bold">Corrigendum Date</label></th>
+<th><label class="font-bold">Corrigendum Description</label></th>
+<th><label class="font-bold">History</label></th>
+</tr>
+<tr ng-repeat="corrigendum in corriView">
+<td><label><a data-target="#corrigendumReport" data-toggle="modal" href="javascript: void(0);" ng-click="corrigendumReport(corrigendum.corrId)">{{corrigendum.orgcorrigendumid}}</a></label></td>
+<td><label>{{corrigendum.updatedate |date:configurationSettings.orgConfigDateTimeFormatForAngular}}</label></td>
+<td><label>{{corrigendum.corrDesc}}</label></td>
+<td>
+<label>
+<a class="dlt_tr" data-target="#myModalihistory" data-toggle="modal" href="javascript: void(0);" name="deleteWork" ng-click="corrigendumViewHistory(corrigendum.corrId)"><i class="fa fa-history"></i> History</a>
+</label>
+</td>
+</tr>
+</table>
+</div>
+<!-- end of RFQ Item -->
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- corrigendum view modal end -->
+<!-- corrigendum history modal start -->
+<div aria-hidden="false" class="modal modalsnd-main fade in" id="myModalihistory" role="dialog">
+<div class="corri-history-loader" id="loading">
+<div id="overlay"></div>
+<div id="spinnerholder">
+<div class="spinner"></div>
+<div class="spinner-text ng-binding">Please Wait...</div>
+</div>
+</div>
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">x</button>
+<h3 class="modal-title">History</h3>
+</div>
+<div class="modal-body printablehistory">
+<div class="row">
+<div class="col-md-12">
+<table class="table table-advance borderless" id="">
+<tbody>
+<tr>
+<td><label class="control-label font-bold-print">Corrigendum Number :</label></td>
+<td><label class="control-label">{{historyObj.orgcorrigendumid}}</label></td>
+<td><label class="control-label font-bold-print">Tender No :</label></td>
+<td><label class="control-label">{{historyObj.orgtenderId}}</label></td>
+</tr>
+<tr>
+<td><label class="control-label font-bold-print">Corrigendum Date :</label></td>
+<td><label class="control-label">{{historyObj.updatedate |date:configurationSettings.orgConfigDateTimeFormatForAngular}}</label></td>
+<td><label class="control-label font-bold-print">Tender Publish Date :</label></td>
+<td><label class="control-label">{{historyObj.tenderPublishedDate |date:configurationSettings.orgConfigDateTimeFormatForAngular}}</label></td>
+</tr>
+<tr>
+<td><label class="control-label font-bold-print">Corrigendum Reference Number :</label></td>
+<td><label class="control-label all-break">{{historyObj.corrRefNo}}</label></td>
+</tr>
+<tr>
+<td><label class="control-label font-bold-print">Corrigendum Description :</label></td>
+<td colspan="3"><label class="control-label" ng-if="historyObj.corrDesc!=null || historyObj.corrDesc!=''">{{historyObj.corrDesc}}</label></td>
+</tr>
+<tr>
+<td><label class="control-label font-bold-print">Tender Description :</label></td>
+<td colspan="3"><label class="control-label" ng-if="historyObj.tenderDescription!=null || historyObj.tenderDescription!=''">{{historyObj.tenderDescription}}</label></td>
+</tr>
+<tr ng-if="configurationSettings.nitRequired=='Y'">
+<td><label class="control-label font-bold-print">NIT :</label></td>
+<td colspan="3"><label class="control-label" ng-if="historyObj.nit!=null || historyObj.nit!=''">{{historyObj.nit}}</label></td>
+</tr>
+<tr ng-if="historyObj.tendertypeId == 100 ">
+<td><label class="control-label font-bold-print">Limited Tender Reason :</label></td>
+<td colspan="3"><label class="control-label" ng-if="historyObj.limitedTenderReason!=null || historyObj.limitedTenderReason!=''">{{historyObj.limitedTenderReason}}</label></td>
+</tr>
+<tr ng-if="!openAreaTender">
+<td><label class="control-label font-bold-print">Attachment :</label>
+<label class="control-label font-bold-print">(Document uploaded will be visible only to internal users)</label></td>
+<td colspan="3" ng-if="historyObj.fileName != null &amp;&amp; historyObj.fileName != ''">
+<label class="control-label">{{historyObj.fileName}}</label>
+<span ng-click="downloadCorrTenderAttachment(historyObj.corrId)"><i aria-hidden="true" class="fa fa-download"></i></span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div>
+<table class="table table-striped table-advance table-bordered" id="">
+<tbody>
+<tr>
+<th colspan="3">Approval Section</th>
+</tr>
+<tr ng-if="approverHistory.length == 0">
+<td><label class="font-bold">No Records Found</label></td>
+<td></td>
+<td></td>
+</tr>
+<tr ng-if="approverHistory.length &gt; 0" ng-repeat="approvalList in approverHistory">
+<td colspan="3">
+<table class="table table-striped table-advance table-bordered">
+<tbody>
+<tr>
+<th><label class="font-bold">Name</label></th>
+<th><label class="font-bold">Approval Date</label></th>
+<th><label class="font-bold">Comment</label></th>
+</tr>
+<tr ng-if="approverHistory.length &gt; 0" ng-repeat="data in approvalList.approvalDetails">
+<td><label>{{data.userName}}</label></td>
+<td><label>{{data.updatedate |date:configurationSettings.orgConfigDateTimeFormatForAngular}}</label></td>
+<td><label>{{data.overallComment}}</label></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary printbtnhistory" id="btn-prev" type="button">Print</button>
+<button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- corrigendum history modal end -->
+<!-- corrigendum report modal start -->
+<div aria-hidden="false" class="modal modalsnd-main fade in" id="corrigendumReport" role="dialog">
+<!-- use for loader -->
+<div id="loading">
+<div id="overlay"></div>
+<div id="spinnerholder">
+<div class="spinner"></div>
+<div class="spinner-text ng-binding">Please Wait...</div>
+</div>
+</div>
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3 class="modal-title">Preview All</h3>
+</div>
+<div class="modal-body printablecorr">
+<!-- start of General Information -->
+<div ng-if="value.corrid &gt; 0" ng-repeat="(key, value) in genInfoView">
+<table class="table table-striped table-advance table-bordered table-responsive">
+<tbody>
+<tr>
+<th colspan="4">{{key}} General Information</th>
+</tr>
+<tr>
+<td><label class="font-bold">Template Group</label></td>
+<td>
+<label>{{value.tenderPreviewMap.templateGroupId}}</label>
+</td>
+<td><label class="font-bold">Bid Parts</label></td>
+<td>
+<label>{{value.bidPartNo}}</label>
+</td>
+</tr>
+<tr>
+<td><label class="font-bold">Category</label></td>
+<td><label>{{value.tenderPreviewMap.catagory.categoryDescription}}</label></td>
+<td><label class="font-bold">Dealing Officer</label></td>
+<td><label>{{value.tenderPreviewMap.creatorDetail.DealingOfficer}}</label></td>
+</tr>
+<tr>
+<td><label class="font-bold">Organization Hierarchy</label></td>
+<td><label ng-repeat="dept in value.tenderPreviewMap.creatorDetail.OrgHirarchy">{{dept}}<span ng-if="!$last"> --&gt; </span></label></td>
+<td><label class="font-bold">System Tender No.</label></td>
+<td><label>{{value.orgtenderid}}</label></td>
+</tr>
+<tr>
+<td><label class="font-bold">Tender Reference No.*</label></td>
+<td><label>{{value.tenderrefno}}</label></td>
+<td><label class="font-bold">Procurement Category *</label></td>
+<td><label>{{value.tenderPreviewMap.procCat}}</label></td>
+</tr>
+<tr>
+<td><label class="font-bold">Tender Currency</label></td>
+<td><label>{{value.tendercurrency}}</label></td>
+<td><label class="font-bold">Bidding Currency</label></td>
+<td><label>{{value.bidcurrency}}</label></td>
+</tr>
+<tr>
+<td ng-if="isPacValShow">
+<label class="font-bold">Estimated Value in INR</label>
+</td>
+<td ng-if="isPacValShow"><label>{{value.pacamt}}</label></td>
+<td><label class="font-bold">Tender Type*</label></td>
+<td><label>{{value.tenderPreviewMap.tenderType}}</label></td>
+</tr>
+<tr ng-if="value.vendorNameList.length &gt; 0">
+<td><label class="font-bold">Bidder</label></td>
+<td colspan="3"><label>{{value.vendorNameList}}</label></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- END of General Information -->
+<div ng-repeat="(key, previewTemplate) in finalCorrihendumHistoryData"><!-- overflow-x: auto; -->
+<div ng-if="previewTemplate.length &gt; 1">{{$index % 2 == 0 ? 'new': 'old'}} {{previewTemplate[1].subProcess.description}}</div>
+<div ng-if="previewTemplate.length == 1">{{$index % 2 == 0 ? 'new': 'old'}} {{previewTemplate[0].subProcess.description}}</div>
+<table class="table table-striped table-advance table-bordered" id="" ng-if="previewTemplate.length&gt;1">
+<!-- <tr>
+   							<th colspan="previewTemplate.length + 1">{{previewTemplate[1].subProcess.description}}</th>
+   						</tr> -->
+<tr ng-if="$index == 0" ng-repeat="perItem in previewTemplate">
+<th ng-hide="key=='bidder_selection' &amp;&amp; reportCorrigendumData['old'].differntialFlag!='Y'" ng-repeat="(key, col) in perItem">{{col}}</th>
+</tr>
+<tr ng-class="{fileHighlitedFlag: (perItem.corrAttachmentFlag == 'Y' &amp;&amp; perItem.shortName == 'rfqattachment')}" ng-if="$index &gt;= 0" ng-repeat="perItem in previewTemplate | orderBy : 'indexSerialNo'"><!-- data-index="{{$index}}" -->
+<!-- <td ng-repeat = "fieldLocal in perItem.templateFieldList">{{fieldLocal.value}}</td> -->
+<td ng-hide="fieldLocal.shortName=='bidder_selection' &amp;&amp; reportCorrigendumData['old'].differntialFlag!='Y'" ng-if="fieldLocal.isVisible == 'Y' &amp;&amp; fieldLocal.roleWiseFieldEntry != 'H'" ng-repeat="fieldLocal in perItem.templateFieldList">
+<span ng-if="fieldLocal.controlTypeId === 104">{{fieldLocal.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="fieldLocal.controlTypeId === 110">{{fieldLocal.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-bind-html="fieldLocal.value | trustHtml" ng-if="fieldLocal.controlTypeId === 106"></span>
+<span ng-bind-html="fieldLocal.value | trustHtml" ng-if="fieldLocal.controlTypeId !== 104 &amp;&amp; fieldLocal.controlTypeId !== 110 &amp;&amp; fieldLocal.controlTypeId != 106 &amp;&amp; fieldLocal.controlTypeId !== 108 &amp;&amp; (fieldLocal.value | number:2) == ''"></span>
+<span ng-bind-html="fieldLocal.value | number:2" ng-if="fieldLocal.controlTypeId !== 104 &amp;&amp; fieldLocal.controlTypeId !== 110 &amp;&amp; fieldLocal.controlTypeId != 106 &amp;&amp; fieldLocal.controlTypeId !== 108 &amp;&amp; (fieldLocal.value | number:2) != ''"></span>
+<!-- <span ng-if="fieldLocal.amountInWords == 'Y'">({{fieldLocal.value | convertInWords}})</span> -->
+</td>
+</tr>
+<!-- for aggregation -->
+<tr ng-if="$index==1 &amp;&amp; perItem.displayLayoutid==102 &amp;&amp; perItem.templateFieldList | containsAggregation" ng-repeat="perItem in previewTemplate track by $index ">
+<td ng-class="returnClassName(templateField)" ng-hide="(field.shortName=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y')" ng-if="field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H'" ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder' track by $index">
+<div class="input-group-agg" ng-if="field.isAggregation=='Y'">
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==100">SUM:</span>
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==101">AVG:</span>
+<!-- <input type="text" style="padding:0;" class="form-control right-align" value="{{field |calculateSum:previewTemplate}}" readonly> -->
+<span class="form-control right-align">{{field |calculateSum:previewTemplate}}</span>
+<span ng-if="field.amountInWords == 'Y'">{{field |calculateSum:previewTemplate | convertInWords}}</span>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+</table>
+<table class="table table-striped table-advance table-bordered" id="" ng-if="previewTemplate.length == 1">
+<!-- <tr>
+           					<th colspan="2">{{previewTemplate[0].subProcess.description}}</th>
+           				</tr> -->
+<tr ng-if="previewTemplate[0].displayLayoutid == 100  &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList">
+<th>{{field.longName}}</th>
+<td>
+<span ng-if="field.controlTypeId === 104">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 110">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.amountInWords == 'Y'">({{field.value | convertInWords}})</span>
+</td>
+</tr>
+<tr ng-if="previewTemplate[0].displayLayoutid == 101 &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList">
+<th>{{field.longName}}</th>
+<td>
+<span ng-if="field.controlTypeId === 104">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 110">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.amountInWords == 'Y'">({{field.value | convertInWords}})</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="modal-footer">
+<!-- <button type="button" class="btn btn-primary succes_mail" data-dismiss="modal">Email</button> -->
+<button class="btn btn-primary printbtncorr" id="btn-prev" type="button">Print</button>
+<button class="btn btn-primary" data-dismiss="modal" type="button">Ok</button>
+</div>
+</div>
+</div>
+</div>
+<!-- corrigendum report modal end -->
+<div aria-hidden="false" class="modal modalsnd-main fade in" id="myModalprev" role="dialog">
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button"><i class="fa fa-times"></i></button>
+<h3 class="modal-title">
+               Preview All
+               <span class="button pull-right" data-original-title="Download CS Report" data-placement="left" data-toggle="tooltip" ng-click="csReport(parentTender)" ng-if="showDownLoadCS" title=""><i aria-hidden="true" class="fa fa-download"></i>
+</span>
+</h3>
+</div>
+<div class="modal-body printabletender">
+<!-- start of General Information -->
+<div ng-if="(previewTenderData.corrid != undefined &amp;&amp; previewTenderData.corrid &gt; 0) || previewTenderData.corrid == undefined">
+<div>General Information</div>
+<table class="table table-striped table-advance table-bordered" id="">
+<tbody>
+<tr ng-hide="userTypeId === bidderTypeId">
+<td>
+<label class="font-bold">
+                              Template Group
+                           </label>
+</td>
+<td colspan="3">
+<label>{{previewTenderData.tenderPreviewMap.templateGroupId}}</label>
+<a class="" data-target="#prevModel" data-toggle="modal" href="#" ng-if="previewDestinationObj.showInvitedVendor">
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-toggle="tooltip" ng-click="viewTemplateGroup(previewTenderData.groupid)" title="Template Group Preview" type="button">
+<i aria-hidden="true" class="fa fa-eye"></i></button>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Bid Parts
+                           </label>
+</td>
+<td>
+<label>{{previewTenderData.bidPartNo}}</label>
+</td>
+<td>
+<label class="font-bold">
+                              Category
+                           </label>
+</td>
+<td><label>{{previewTenderData.tenderPreviewMap.catagory.categoryDescription}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Tender Creator
+                           </label>
+</td>
+<td><label>{{previewTenderData.tenderPreviewMap.creatorDetail.DealingOfficer}}</label></td>
+<td>
+<label class="font-bold">
+                              Organization Hierarchy
+                           </label>
+</td>
+<td><label>{{organizationHircy.orgDetailsInASingleProperty}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              System Tender No.
+                           </label>
+</td>
+<td><label>{{previewTenderData.orgtenderid}}</label></td>
+<td>
+<label class="font-bold">
+                              Tender Reference No.
+                           </label>
+</td>
+<td><label>{{previewTenderData.tenderrefno}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Procurement Category
+                           </label>
+</td>
+<td><label>{{previewTenderData.tenderPreviewMap.procCat}}</label></td>
+<td>
+<label class="font-bold">
+                              Tender Currency
+                           </label>
+</td>
+<td><label>{{previewTenderData.tendercurrency}}</label></td>
+</tr>
+<tr>
+<td ng-if="isPacValShow">
+<label class="font-bold">Estimated Value in INR</label>
+</td>
+<td ng-if="isPacValShow"><label>{{previewTenderData.pacamt}}</label></td>
+<!--  <td style="width: 22%;" ng-if="(!isPacValShow) && (!configurationSettings || configurationSettings.pacVisibilityFlag !='N')"><label style="word-break: break-word;">{{previewTenderData.pacamt | number : 2}}</label></td> -->
+<td>
+<label class="font-bold">
+                              Bidding Currency
+                           </label>
+</td>
+<td colspan="{{(!configurationSettings || configurationSettings.pacVisibilityFlag !='N') ? '1' : '3'}}"><label>{{previewTenderData.bidcurrency}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Tender Type
+                           </label>
+</td>
+<td colspan="{{(userTypeId !=2) ? '1' : '3'}}"><label>{{previewTenderData.tenderPreviewMap.tenderType}}</label></td>
+<td ng-if="userTypeId != 2">
+<label class="font-bold">
+                              Estimated Value Visibility Flag
+                           </label>
+</td>
+<td ng-if="userTypeId != 2"><label>{{previewTenderData.pacVisibilityFlag}}</label></td>
+</tr>
+<tr ng-if="previewDestinationObj.showInvitedVendor &amp;&amp; previewTenderData.vendorNameList.length &gt; 0">
+<td>
+<label class="font-bold">
+                              Bidder
+                           </label>
+</td>
+<td colspan="3" ng-if="showVendorDetailsLink != true"><label>{{previewTenderData.vendorNameList}}</label></td>
+<td colspan="3" ng-if="showVendorDetailsLink == true">
+<label>
+<span ng-repeat="ptd in previewTenderData.vendorNameListArr track by $index">
+<a data-placement="left" href="javascript:void(0)" ng-click="getBidderDet($event,ptd.vendorId,$index)" popover-append-to-body="true" popover-placement="left" popover-title="{{dynamicPopover.title}}" popover-trigger="'outsideClick'" uib-popover-template="dynamicPopover.templateUrl">
+                        			{{ptd.vendorOrg}}<span ng-if="$index != (previewTenderData.vendorNameListArr.length-1)">,</span>
+</a> 
+                        		</span></label>
+<!--  ng-mouseover="getBidderDet($event,ptd.vendorId,$index)" ng-mouseleave="mouseOutEvent()" -->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div ng-if="previewTenderData.cancellationReason!=undefined">
+<div>Tender Cancel Reason</div>
+<table class="table table-striped table-advance table-bordered">
+<tr>
+<th width="80%">Reason</th>
+<th>Attachment</th>
+</tr>
+<tr>
+<td><label>{{previewTenderData.cancellationReason}}</label></td>
+<td ng-hide="previewTenderData.cancelledFileName == null"><a href="javascript:void(0)" ng-click="downloadCancelTenderAttachment(previewTenderData.tenderid)"><i class="fa fa-download"></i></a>
+                        {{previewTenderData.cancelledFileName}}
+                        </td>
+</tr>
+</table>
+</div>
+<div ng-if="(previewTenderData.tenderBidOpenerList!=undefined &amp;&amp; previewTenderData.tenderBidOpenerList.length&gt;0)">
+<div>Tender Openers</div>
+<table class="table table-striped table-advance table-bordered">
+<tr>
+<th width="5%">Sl No.</th>
+<th width="55%">Name</th>
+<th width="40%">Email</th>
+</tr>
+<tr ng-repeat="opener in previewTenderData.tenderBidOpenerList">
+<td>{{$index+1}}</td>
+<td>{{opener.openerName}}</td>
+<td>{{opener.openerEmail}}</td>
+</tr>
+</table>
+</div>
+<div ng-if="previewTenderData.bidopeningActivityList!=undefined">
+<table class="table table-striped table-advance table-bordered tabular-print-show" id="" ng-show="previewTenderData.bidopeningActivityList.length&gt;1">
+<tr>
+<th>Bid Part Template</th>
+<th>Bid Part Number</th>
+<th>Scheduled Open Date</th>
+</tr>
+<tr ng-repeat="bidActivity in previewTenderData.bidopeningActivityList">
+<td>{{bidActivity.bidpartTemplate}}</td>
+<td>{{bidActivity.bidPartNo}}</td>
+<td>{{bidActivity.scheduledopenDate|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</td>
+</tr>
+</table>
+</div>
+<div ng-repeat="previewTemplate in previewData track by $index">
+<br/>
+<div ng-if="previewTemplate.length &gt; 1">{{previewTemplate[1].subProcess.description}}</div>
+<div ng-if="previewTemplate.length == 1">{{previewTemplate[0].subProcess.description}}</div>
+<table class="table table-striped table-advance table-bordered tabular-print-show" id="" ng-show="previewTemplate.length&gt;1">
+<tr ng-if="$index == 0" ng-repeat="perItem in previewTemplate track by $index">
+<th ng-hide="key=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y'" ng-repeat="(key, col) in perItem track by $index">{{col}}</th>
+</tr>
+<tr ng-if="$index &gt; 0" ng-repeat="perItem in previewTemplate track by $index">
+<td ng-class="{'text-right':fieldLocal.dataTypeId==100 || fieldLocal.dataTypeId==102}" ng-hide="(fieldLocal.shortName=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y')" ng-if="fieldLocal.isVisible == 'Y' &amp;&amp; fieldLocal.roleWiseFieldEntry != 'H'" ng-repeat="fieldLocal in perItem.templateFieldList track by $index">
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; !( perItem.liveNodeItemFlag == 'N' &amp;&amp; fieldLocal.shortName == 'sor_rate') &amp;&amp; perItem.shortName!='delivery_schedule'"></span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; !( perItem.liveNodeItemFlag == 'N' &amp;&amp; fieldLocal.shortName == 'sor_rate') &amp;&amp; perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName != 'item_code'"></span>
+<span ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; (perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName == 'item_code')">{{fieldLocal.value| splitAndGet:'__':1}}</span>
+<!-- DELIVERY SCHEDULE -->
+<!-- <span style="color:#C50F1F;" ng-if="perItem.filevisibleType == ndaConstantval && perItem.isDownloadPossible == 'N' && fieldLocal.shortName == 'file_name'">(NDA not yet accepted)</span>
+                     <span id="att_{{perItem.indexSerialNo}}"  style="color: #0C730F;"  ng-if="perItem.filevisibleType == ndaConstantval && perItem.isDownloadPossible == 'Y' && fieldLocal.shortName == 'file_name'">(NDA accepted at {{perItem.aceptedOn|date:configurationSettings.orgConfigDateTimeFormatForAngular}})</span> -->
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 2">{{fieldLocal.value| splitAndGet:'|':1}}</span>
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 3">{{fieldLocal.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="validateAttachSignHash(previewTenderData.tenderid, perItem.templategroupId, fieldLocal.value,perItem.fileSignHash,perItem.dscPublicKey,perItem.dscCertString)" ng-if="previewTenderData.pkiEnabled=='Y' &amp;&amp; fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-check"></i></span>
+<span class="pull-right" ng-click="downloadFile(previewTenderData.tenderid, perItem.templategroupId, fieldLocal.value,perItem.isDownloadPossible)" ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''">
+<i aria-hidden="true" class="fa fa-download"></i>
+</span>
+<!-- for date format -->
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value == undefined"></span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value == undefined"></span>
+<!-- for date format -->
+</td>
+</tr>
+<!-- for aggregation -->
+<!-- <tr ng-repeat="perItem in previewTemplate" ng-if="$index==1 && perItem.displayLayoutid==102 && perItem.templateFieldList | containsAggregation">
+							<td ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder'">							
+								<span ng-if="field.isAggregation=='Y'"><table style="margin-right: -6px;">										
+								<tr>
+								<td style="border: 0"><span ng-if='field.aggregationtypeid==101'>Avg</span><span ng-if='field.aggregationtypeid==100'>Sum</span></td>
+								<td style="border: 0;">{{field |calculateSum:previewTemplate}}</td>												
+								</tr>
+								</table>
+								</span>
+							</td>
+						</tr> -->
+<tr ng-if="$index==1 &amp;&amp; perItem.displayLayoutid==102 &amp;&amp; perItem.templateFieldList | containsAggregation" ng-repeat="perItem in previewTemplate track by $index ">
+<td ng-class="returnClassName(templateField)" ng-hide="(field.shortName=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y')" ng-if="field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H'" ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder' track by $index">
+<div class="input-group-agg" ng-if="field.isAggregation=='Y'">
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==100">SUM:</span>
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==101">AVG:</span>
+<!-- <input type="text" style="padding:0;" class="form-control right-align" value="{{field |calculateSum:previewTemplate}}" readonly> -->
+<span class="form-control right-align">{{field |calculateSum:previewTemplate}}</span>
+<span ng-if="field.amountInWords == 'Y'">{{field |calculateSum:previewTemplate | convertInWords}}</span>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+</table>
+<table class="table table-striped table-advance table-bordered" id="" ng-if="previewTemplate.length == 1">
+<tr ng-if="previewTemplate[0].displayLayoutid == 100 &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewTenderData.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+<tr ng-if="previewTemplate[0].displayLayoutid == 101 &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112 &amp;&amp; field.longName=='Physical doc Submission End Date as allowed in the tender document'">{{field.longName}}  <i class="fa fa-info-circle" data-placement="top" data-toggle="tooltip" title="Please submit only those document(s) physically which has been instructed by the tendering authority"></i></th>
+<th ng-if="field.controlTypeId != 112 &amp;&amp; field.longName!='Physical doc Submission End Date as allowed in the tender document'">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewTenderData.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+<tr ng-if="(previewTemplate[0].displayLayoutid == 103 || previewTemplate[0].displayLayoutid == 104 || previewTemplate[0].displayLayoutid == 105) &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewTenderData.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+</table>
+<table class="table table-striped table-advance table-bordered tabular-print-hidden" id="" ng-show="previewTemplate.length&gt;1">
+<tbody>
+<tr ng-if="$index &gt; 0" ng-repeat="perItem in previewTemplate track by $index">
+<td>
+<div>
+<div ng-hide="(fieldLocal.shortName=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y')" ng-if="fieldLocal.isVisible == 'Y' &amp;&amp; fieldLocal.roleWiseFieldEntry != 'H'" ng-repeat="fieldLocal in perItem.templateFieldList track by $index" ng-style="{'width':(fieldLocal.displaySize == 'S') ? '100px' : (fieldLocal.displaySize == 'M') ? '200px': (fieldLocal.displaySize == 'L')? '400px' : 'auto'}">
+<div><strong>{{fieldLocal.longName}}</strong></div>
+<div>
+<span ng-bind-html="fieldLocal.value | trustHtml" ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; perItem.shortName!='delivery_schedule'"></span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp;  perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName != 'item_code'"></span>
+<span ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; (perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName == 'item_code')">{{fieldLocal.value| splitAndGet:'__':1}}</span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 2">{{fieldLocal.value| splitAndGet:'|':1}}</span>
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 3">{{fieldLocal.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewTenderData.tenderid, perItem.templategroupId, fieldLocal.value)" ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<!-- for date format -->
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value == undefined"></span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value == undefined"></span>
+<!-- for date format -->
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+<tr ng-if="$index==1 &amp;&amp; perItem.displayLayoutid==102 &amp;&amp; perItem.templateFieldList | containsAggregation" ng-repeat="perItem in previewTemplate track by $index">
+<!-- <td ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder'">							
+								<span ng-if="field.isAggregation=='Y'">
+								<span style="border: 0;">Sum: {{field |calculateSum:previewTemplate}}</span>												
+								</span>
+							</td> -->
+<td>
+<div ng-hide="(field.shortName=='bidder_selection' &amp;&amp; previewTenderData.differntialFlag!='Y')" ng-if="(field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H') &amp;&amp; field.isAggregation=='Y'" ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder' track by $index ">
+<div>
+<span><strong><span ng-if="field.aggregationtypeid==101">Avg</span>
+<span ng-if="field.aggregationtypeid==100">Sum</span>({{field.longName}}):</strong> {{field |calculateSum:previewTemplate}} <span ng-if="field.amountInWords == 'Y'">({{field |calculateSum:previewTemplate | convertInWords}})</span></span>
+</div>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+</tbody>
+</table>
+</div>
+<!-- approval history -->
+<div>
+<table cellpadding="5" cellspacing="5" ng-if="tenderDataApproverList.length&gt;0">
+<thead>
+<tr>
+<th class="fontSizeFamilyHeaders">
+<strong>Approval History</strong>
+</th>
+</tr>
+</thead>
+</table>
+<!-- approval history section -->
+<table class="table table-striped table-advance table-bordered table-hover table-custom" id="">
+<tbody ng-repeat="(parentKey,approval) in tenderDataApproverList | orderBy : '-approvalId'">
+<tr>
+<th></th>
+<th>Name</th>
+<th>Approval Type</th>
+<th>Co-ordinator</th>
+<th>Status</th>
+<th>Comment</th>
+<th>Updated On</th>
+<th>Attachment</th>
+</tr>
+<!-- branch history updates -->
+<!-- && {'pointer-events':'none'} -->
+<tr data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="expandFnForPreview(parentKey,childKey)" ng-repeat="(childKey,approverComment) in approval.approvalDetailsDummy  | orderBy:'sequence'" ng-style="approverComment.branchArray.length==0 ">
+<td cellpadding="0" cellspacing="0" colspan="8">
+<table class="table table-bordered table-hover table-custom">
+<tbody>
+<tr>
+<td><i class="fa fa-plus" data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="$event.stopPropagation();expandFnChildForPreview(parentKey,childKey)" ng-if="approverComment.showFlag &amp;&amp; approverComment.branchArray.length&gt;0" title="Click to see discussion history"></i><i class="fa fa-minus" data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="$event.stopPropagation();expandFnChildForPreview(parentKey,childKey)" ng-if="approverComment.showFlag==false &amp;&amp; approverComment.branchArray.length&gt;0" title="Click to hide discussion history"></i></td>
+<td>{{approverComment.userName}}</td>
+<td>{{approvalTypeList[approverComment.approvalType]}}</td>
+<td>
+<span ng-if="approverComment.coordinatorFlag == 'Y'">
+<i aria-hidden="true" class="fa fa-check"></i>
+</span>
+<span ng-if="approverComment.coordinatorFlag == 'N'">
+<i aria-hidden="true" class="fa fa-times"></i>
+</span>
+</td>
+<td>{{approvalStatusList[approverComment.statusCode]}}</td>
+<td>{{approverComment.overallComment}}</td>
+<td><span ng-if="approverComment.statusCode != 'WIP' &amp;&amp; approverComment.statusCode != 'P'">{{approverComment.updatedate
+															| date:orgConfigDateTimeFormatForAngular}}</span></td>
+<td ng-class="{selfidentify: approverComment.userId==userId}">
+<span ng-repeat="approverAttach in approverComment.attachementDtls">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(approverAttach)" ng-if="approverAttach!=''  &amp;&amp; approverAttach!=null &amp;&amp; approverAttach.approvalDetailId==approverComment.approvalDetailId" title="{{approverAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+																{{approverAttach.fileName | limitTo: 5}}
+																{{approverAttach.fileName.length&gt;5 ? '...' : ''}}
+														</a>
+</span>
+<br/></td>
+</tr>
+<tr class="collapse" id="{{getTRKey(parentKey,childKey,'2')}}">
+<td colspan="8" ng-if="approverComment.branchArray.length&gt;0">
+<!-- branch details -->
+<table class="table table-bordered table-hover table-custom">
+<thead>
+<th></th>
+<th>???label.branch.number???</th>
+<th>???label.branch.userName???</th>
+<th>Status</th>
+<th>???label.branch.initiatorComment???</th>
+<th>???label.branch.otherComment???</th>
+<th>???label.branch.initiatorAttachment???</th>
+<th>???label.branch.otherAttachment???</th>
+<th>???label.branch.initiatedOn???</th>
+<th>Updated On</th>
+</thead>
+<tbody ng-repeat="branchItem in approverComment.branchArray">
+<td></td>
+<td>{{branchItem.branchNumber}}</td>
+<td>{{branchItem.userName}}</td>
+<td>{{approvalStatusList[branchItem.statusCode]}}</td>
+<td>{{branchItem.branchComment}}</td>
+<td>{{branchItem.overallComment}}</td>
+<td>
+<span ng-repeat="initAttach in branchItem.initiatorAttachmentArray">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(initAttach)" ng-if="initAttach!=''  &amp;&amp; initAttach!=null" title="{{initAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+                                                 {{initAttach.fileName | limitTo: 5}} {{initAttach.fileName.length&gt;5 ? '...' : ''}}
+                                                   </a><br/></span>
+<!-- <i href="javascript:void(0)" ng-if="initAttach!='' && initAttach!=null" class="fa fa-download" title="{{initAttach.fileName}}" ng-repeat="initAttach in branchItem.initiatorAttachmentArray" ng-click="$event.stopPropagation();workflowDownloadEvent(initAttach)"></i> --></td>
+<td>
+<span ng-repeat="otherAttach in branchItem.otherAttachmentArray">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(otherAttach)" ng-if="otherAttach!=''  &amp;&amp; otherAttach!=null" title="{{otherAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+                                                 {{otherAttach.fileName | limitTo: 5}} {{otherAttach.fileName.length&gt;5 ? '...' : ''}}
+                                                   </a><br/></span>
+<!-- <i href="javascript:void(0)" ng-if="otherAttach!='' && otherAttach!=null"  class="fa fa-download" title="{{otherAttach.fileName}}" ng-repeat="otherAttach in branchItem.otherAttachmentArray" ng-click="$event.stopPropagation();workflowDownloadEvent(otherAttach)"></i> --></td>
+<td>{{branchItem.createdate | date:orgConfigDateTimeFormatForAngular}}</td>
+<td>{{branchItem.updatedate | date:orgConfigDateTimeFormatForAngular}}</td>
+</tbody>
+</table>
+<!-- branch details -->
+</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<!-- approval history section -->
+</div>
+<!-- approval history -->
+<div class="" ng-if="previewTenderData.approvalFlag='N' &amp;&amp; userTypeId != 2" ng-repeat="data in getRemarkAndAttchFile">
+<p><span>Remark :  </span><span>{{data.comment}}</span></p>
+<p><span>File Name :  </span><span>{{data.fileName}}</span>  <span class="glyphicon glyphicon-download" ng-click="downloadNotReqDoc(data.documentId)" value="{{data[1]}}"></span></p>
+</div>
+<p><span>Created By :  </span><span>{{previewTenderData.tenderPreviewMap.creatorDetail.DealingOfficer}}</span></p>
+<p><span>Created On :  </span><span>{{previewTenderData.createdate | date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span></p>
+</div>
+<div class="modal-footer">
+<input id="verifyHashString" type="hidden" value=""/>
+<input id="verifySignHash" type="hidden" value=""/>
+<input id="verifyFileHashString" type="hidden" value=""/>
+<input id="verifyFileSignHash" type="hidden" value=""/>
+<input id="serverDate" name="serverDate" type="hidden" value="31/10/2026 08:48 +0530"/>
+<button class="btn btn-primary isPublic" ng-click="validateTenderSignHash(previewTenderData);" ng-if="previewTenderData.pkiEnabled=='Y' &amp;&amp; previewTenderData.status != draftStatus &amp;&amp; previewTenderData.status!=pendingForApprovalStatus" ng-show="previewDestinationObj.previewDestination.length == 0" type="button">
+               Validate Signature
+            </button>
+<button class="btn btn-primary printtenderbtn" id="btn-prev" ng-show="previewDestinationObj.previewDestination.length == 0" type="button">
+               Print
+            </button>
+<button class="btn btn-primary" data-dismiss="modal" ng-show="previewDestinationObj.previewDestination.length == 0" type="button">
+               Ok
+            </button>
+<button class="btn btn-primary" data-dismiss="modal" id="btn-prev" ng-if="previewDestinationObj.previewDestination.length &gt; 0" type="button">
+               Cancel
+            </button>
+<button class="btn btn-primary" ng-click="doTenderClone(previewTenderData.tenderid)" ng-disabled="cloneDisable" ng-if="previewDestinationObj.previewDestination.length &gt; 0" type="button">
+               Clone
+            </button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="false" class="modal modalsnd-main fade in" id="modelPreviewForParent" role="dialog">
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button"><i class="fa fa-times"></i></button>
+<h3 class="modal-title">
+               Preview Of Parent Tender
+               <span class="button pull-right" data-original-title="Download CS Report" data-placement="left" data-toggle="tooltip" ng-click="csReport(parentTender)" ng-if="showDownLoadCS" title=""><i aria-hidden="true" class="fa fa-download"></i>
+</span>
+</h3>
+</div>
+<div class="modal-body printabletender">
+<!-- start of General Information -->
+<div>
+<div>General Information</div>
+<table class="table table-striped table-advance table-bordered" id="">
+<tbody>
+<tr ng-hide="userTypeId === bidderTypeId">
+<td>
+<label class="font-bold">
+                              Template Group
+                           </label>
+</td>
+<td colspan="3">
+<label>{{previewParentTender.tenderPreviewMap.templateGroupId}}</label>
+<a class="" data-target="#prevModel" data-toggle="modal" href="#" ng-if="previewDestinationObj.showInvitedVendor">
+<button class="btn btn-icon btn-primary btn-circle btn-lg" data-toggle="tooltip" ng-click="viewTemplateGroup(previewParentTender.groupid)" title="Template Group Preview" type="button">
+<i aria-hidden="true" class="fa fa-eye"></i></button>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Bid Parts
+                           </label>
+</td>
+<td>
+<label>{{previewParentTender.bidPartNo}}</label>
+</td>
+<td>
+<label class="font-bold">
+                              Category
+                           </label>
+</td>
+<td><label>{{previewParentTender.tenderPreviewMap.catagory.categoryDescription}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Tender Creator
+                           </label>
+</td>
+<td><label>{{previewParentTender.tenderPreviewMap.creatorDetail.DealingOfficer}}</label></td>
+<td>
+<label class="font-bold">
+                              Organization Hierarchy
+                           </label>
+</td>
+<td><label>{{organizationHircy.orgDetailsInASingleProperty}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              System Tender No.
+                           </label>
+</td>
+<td><label>{{previewParentTender.orgtenderid}}</label></td>
+<td>
+<label class="font-bold">
+                              Tender Reference No.
+                           </label>
+</td>
+<td><label>{{previewParentTender.tenderrefno}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Procurement Category
+                           </label>
+</td>
+<td><label>{{previewParentTender.tenderPreviewMap.procCat}}</label></td>
+<td>
+<label class="font-bold">
+                              Tender Currency
+                           </label>
+</td>
+<td><label>{{previewParentTender.tendercurrency}}</label></td>
+</tr>
+<tr>
+<td ng-if="isPacValShow">
+<label class="font-bold">Estimated Value in INR</label>
+</td>
+<td ng-if="isPacValShow"><label>{{previewParentTender.pacamt}}</label></td>
+<!--  <td style="width: 22%;" ng-if="(!isPacValShow) && (!configurationSettings || configurationSettings.pacVisibilityFlag !='N')"><label style="word-break: break-word;">{{previewTenderData.pacamt | number : 2}}</label></td> -->
+<td>
+<label class="font-bold">
+                              Bidding Currency
+                           </label>
+</td>
+<td colspan="{{(!configurationSettings || configurationSettings.pacVisibilityFlag !='N') ? '1' : '3'}}"><label>{{previewParentTender.bidcurrency}}</label></td>
+</tr>
+<tr>
+<td>
+<label class="font-bold">
+                              Tender Type
+                           </label>
+</td>
+<td colspan="{{(userTypeId !=2) ? '1' : '3'}}"><label>{{previewParentTender.tenderPreviewMap.tenderType}}</label></td>
+<td ng-if="userTypeId != 2">
+<label class="font-bold">
+                              Estimated Value Visibility Flag
+                           </label>
+</td>
+<td ng-if="userTypeId != 2"><label>{{previewParentTender.pacVisibilityFlag}}</label></td>
+</tr>
+<tr ng-if="previewDestinationObj.showInvitedVendor &amp;&amp; previewParentTender.vendorNameList.length &gt; 0">
+<td>
+<label class="font-bold">
+                              Bidder
+                           </label>
+</td>
+<td colspan="3" ng-if="showVendorDetailsLink != true"><label>{{previewParentTender.vendorNameList}}</label></td>
+<td colspan="3" ng-if="showVendorDetailsLink == true">
+<label>
+<span ng-repeat="ptd in previewParentTender.vendorNameListArr track by $index">
+<a data-placement="left" href="javascript:void(0)" ng-click="getBidderDet($event,ptd.vendorId,$index)" popover-append-to-body="true" popover-placement="left" popover-title="{{dynamicPopover.title}}" popover-trigger="'outsideClick'" uib-popover-template="dynamicPopover.templateUrl">
+                        			{{ptd.vendorOrg}}<span ng-if="$index != (previewParentTender.vendorNameListArr.length-1)">,</span>
+</a> 
+                        		</span></label>
+<!--  ng-mouseover="getBidderDet($event,ptd.vendorId,$index)" ng-mouseleave="mouseOutEvent()" -->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div ng-if="previewParentTender.cancellationReason!=undefined">
+<div>Tender Cancel Reason</div>
+<label>{{previewParentTender.cancellationReason}}</label>
+</div>
+<div ng-if="previewParentTender.bidopeningActivityList!=undefined">
+<table class="table table-striped table-advance table-bordered tabular-print-show" id="" ng-show="previewParentTender.bidopeningActivityList.length&gt;1">
+<tr>
+<th>Bid Part Template</th>
+<th>Bid Part Number</th>
+<th>Scheduled Open Date</th>
+</tr>
+<tr ng-repeat="bidActivity in previewParentTender.bidopeningActivityList">
+<td>{{bidActivity.bidpartTemplate}}</td>
+<td>{{bidActivity.bidPartNo}}</td>
+<td>{{bidActivity.scheduledopenDate|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</td>
+</tr>
+</table>
+</div>
+<div ng-repeat="previewTemplate in previewData track by $index">
+<br/>
+<div ng-if="previewTemplate.length &gt; 1">{{previewTemplate[1].subProcess.description}}</div>
+<div ng-if="previewTemplate.length == 1">{{previewTemplate[0].subProcess.description}}</div>
+<table class="table table-striped table-advance table-bordered tabular-print-show" id="" ng-show="previewTemplate.length&gt;1">
+<tr ng-if="$index == 0" ng-repeat="perItem in previewTemplate track by $index">
+<th ng-hide="key=='bidder_selection' &amp;&amp; previewParentTender.differntialFlag!='Y'" ng-repeat="(key, col) in perItem track by $index">{{col}}</th>
+</tr>
+<tr ng-if="$index &gt; 0" ng-repeat="perItem in previewTemplate track by $index">
+<td ng-class="{'text-right':fieldLocal.dataTypeId==100 || fieldLocal.dataTypeId==102}" ng-hide="(fieldLocal.shortName=='bidder_selection' &amp;&amp; previewParentTender.differntialFlag!='Y')" ng-if="fieldLocal.isVisible == 'Y' &amp;&amp; fieldLocal.roleWiseFieldEntry != 'H'" ng-repeat="fieldLocal in perItem.templateFieldList track by $index">
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; !( perItem.liveNodeItemFlag == 'N' &amp;&amp; fieldLocal.shortName == 'sor_rate') &amp;&amp; perItem.shortName!='delivery_schedule'"></span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; !( perItem.liveNodeItemFlag == 'N' &amp;&amp; fieldLocal.shortName == 'sor_rate') &amp;&amp; perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName != 'item_code'"></span>
+<span ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; (perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName == 'item_code')">{{fieldLocal.value| splitAndGet:'__':1}}</span>
+<!-- DELIVERY SCHEDULE -->
+<!-- <span style="color:#C50F1F;" ng-if="perItem.filevisibleType == ndaConstantval && perItem.isDownloadPossible == 'N' && fieldLocal.shortName == 'file_name'">(NDA not yet accepted)</span>
+                     <span id="att_{{perItem.indexSerialNo}}"  style="color: #0C730F;"  ng-if="perItem.filevisibleType == ndaConstantval && perItem.isDownloadPossible == 'Y' && fieldLocal.shortName == 'file_name'">(NDA accepted at {{perItem.aceptedOn|date:configurationSettings.orgConfigDateTimeFormatForAngular}})</span> -->
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 2">{{fieldLocal.value| splitAndGet:'|':1}}</span>
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 3">{{fieldLocal.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="validateAttachSignHash(previewTenderData.tenderid, perItem.templategroupId, fieldLocal.value,perItem.fileSignHash,perItem.dscPublicKey,perItem.dscCertString)" ng-if="previewTenderData.pkiEnabled=='Y' &amp;&amp; fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-check"></i></span>
+<span class="pull-right" ng-click="downloadFile(previewParentTender.tenderid, perItem.templategroupId, fieldLocal.value,perItem.isDownloadPossible)" ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''">
+<i aria-hidden="true" class="fa fa-download"></i>
+</span>
+<!-- for date format -->
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value == undefined"></span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value == undefined"></span>
+<!-- for date format -->
+</td>
+</tr>
+<!-- for aggregation -->
+<!-- <tr ng-repeat="perItem in previewTemplate" ng-if="$index==1 && perItem.displayLayoutid==102 && perItem.templateFieldList | containsAggregation">
+							<td ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder'">							
+								<span ng-if="field.isAggregation=='Y'"><table style="margin-right: -6px;">										
+								<tr>
+								<td style="border: 0"><span ng-if='field.aggregationtypeid==101'>Avg</span><span ng-if='field.aggregationtypeid==100'>Sum</span></td>
+								<td style="border: 0;">{{field |calculateSum:previewTemplate}}</td>												
+								</tr>
+								</table>
+								</span>
+							</td>
+						</tr> -->
+<tr ng-if="$index==1 &amp;&amp; perItem.displayLayoutid==102 &amp;&amp; perItem.templateFieldList | containsAggregation" ng-repeat="perItem in previewTemplate track by $index ">
+<td ng-class="returnClassName(templateField)" ng-hide="(field.shortName=='bidder_selection' &amp;&amp; previewParentTender.differntialFlag!='Y')" ng-if="field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H'" ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder' track by $index">
+<div class="input-group-agg" ng-if="field.isAggregation=='Y'">
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==100">SUM:</span>
+<span class="input-group-addon-agg" ng-if="field.aggregationtypeid==101">AVG:</span>
+<!-- <input type="text" style="padding:0;" class="form-control right-align" value="{{field |calculateSum:previewTemplate}}" readonly> -->
+<span class="form-control right-align">{{field |calculateSum:previewTemplate}}</span>
+<span ng-if="field.amountInWords == 'Y'">{{field |calculateSum:previewTemplate | convertInWords}}</span>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+</table>
+<table class="table table-striped table-advance table-bordered" id="" ng-if="previewTemplate.length == 1">
+<tr ng-if="previewTemplate[0].displayLayoutid == 100 &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewParentTender.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+<tr ng-if="previewTemplate[0].displayLayoutid == 101 &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewParentTender.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+<tr ng-if="(previewTemplate[0].displayLayoutid == 103 || previewTemplate[0].displayLayoutid == 104 || previewTemplate[0].displayLayoutid == 105) &amp;&amp; (field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H')" ng-repeat="field in previewTemplate[0].templateFieldList track by $index">
+<th colspan="2" ng-if="field.controlTypeId == 112">
+<div class="panel brPanel">
+<div class="brPanelHead">
+<h4 class="panel-title">
+<span>
+<span class="glyphicon glyphicon-file"></span>
+                               		{{field.longName}}
+                               	</span>
+</h4>
+</div>
+</div>
+</th>
+<th ng-if="field.controlTypeId != 112">{{field.longName}}</th>
+<td ng-if="field.controlTypeId != 112">
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="field.controlTypeId === 104 &amp;&amp; field.value == undefined"></span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value != undefined">{{field.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="field.controlTypeId === 110 &amp;&amp; field.value == undefined"></span>
+<span ng-bind-html="field.value | trustHtml" ng-if="field.controlTypeId !== 104 &amp;&amp; field.controlTypeId !== 108 &amp;&amp; field.controlTypeId !== 110"></span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 2">{{field.value| splitAndGet:'|':1}}</span>
+<span ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(field.value) == 3">{{field.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewParentTender.tenderid, perItem.templategroupId, field.value)" ng-if="field.controlTypeId == 108 &amp;&amp; field.value != undefined &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<span ng-if="field.amountInWords == 'Y'">{{field.value | convertInWords}}</span>
+</td>
+</tr>
+</table>
+<table class="table table-striped table-advance table-bordered tabular-print-hidden" id="" ng-show="previewTemplate.length&gt;1">
+<tbody>
+<tr ng-if="$index &gt; 0" ng-repeat="perItem in previewTemplate track by $index">
+<td>
+<div>
+<div ng-hide="(fieldLocal.shortName=='bidder_selection' &amp;&amp; previewParentTender.differntialFlag!='Y')" ng-if="fieldLocal.isVisible == 'Y' &amp;&amp; fieldLocal.roleWiseFieldEntry != 'H'" ng-repeat="fieldLocal in perItem.templateFieldList track by $index" ng-style="{'width':(fieldLocal.displaySize == 'S') ? '100px' : (fieldLocal.displaySize == 'M') ? '200px': (fieldLocal.displaySize == 'L')? '400px' : 'auto'}">
+<div><strong>{{fieldLocal.longName}}</strong></div>
+<div>
+<span ng-bind-html="fieldLocal.value | trustHtml" ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; perItem.shortName!='delivery_schedule'"></span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-bind-html="fieldLocal.value | trustHtml " ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp;  perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName != 'item_code'"></span>
+<span ng-if="fieldLocal.controlTypeId != 108 &amp;&amp; fieldLocal.controlTypeId != 104 &amp;&amp; fieldLocal.controlTypeId != 110 &amp;&amp; (perItem.shortName=='delivery_schedule' &amp;&amp; fieldLocal.shortName == 'item_code')">{{fieldLocal.value| splitAndGet:'__':1}}</span>
+<!-- DELIVERY SCHEDULE -->
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 2">{{fieldLocal.value| splitAndGet:'|':1}}</span>
+<span ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != '' &amp;&amp; getLength(fieldLocal.value) == 3">{{fieldLocal.value| splitAndGet:'|':2}}</span>
+<span class="pull-right" ng-click="downloadFile(previewParentTender.tenderid, perItem.templategroupId, fieldLocal.value)" ng-if="fieldLocal.controlTypeId == 108 &amp;&amp; fieldLocal.value != undefined  &amp;&amp; fieldLocal.value != ''"><i aria-hidden="true" class="fa fa-download"></i></span>
+<!-- for date format -->
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span>
+<span ng-if="fieldLocal.controlTypeId === 104 &amp;&amp; fieldLocal.value == undefined"></span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value != undefined">{{fieldLocal.value|date:configurationSettings.masterDateFormatDesc}}</span>
+<span ng-if="fieldLocal.controlTypeId === 110 &amp;&amp; fieldLocal.value == undefined"></span>
+<!-- for date format -->
+</div>
+</div>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+<tr ng-if="$index==1 &amp;&amp; perItem.displayLayoutid==102 &amp;&amp; perItem.templateFieldList | containsAggregation" ng-repeat="perItem in previewTemplate track by $index">
+<!-- <td ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder'">							
+								<span ng-if="field.isAggregation=='Y'">
+								<span style="border: 0;">Sum: {{field |calculateSum:previewTemplate}}</span>												
+								</span>
+							</td> -->
+<td>
+<div ng-hide="(field.shortName=='bidder_selection' &amp;&amp; previewParentTender.differntialFlag!='Y')" ng-if="(field.isVisible == 'Y' &amp;&amp; field.roleWiseFieldEntry != 'H') &amp;&amp; field.isAggregation=='Y'" ng-repeat="field in perItem.templateFieldList | orderBy:'displayOrder' track by $index ">
+<div>
+<span><strong><span ng-if="field.aggregationtypeid==101">Avg</span>
+<span ng-if="field.aggregationtypeid==100">Sum</span>({{field.longName}}):</strong> {{field |calculateSum:previewTemplate}} <span ng-if="field.amountInWords == 'Y'">({{field |calculateSum:previewTemplate | convertInWords}})</span></span>
+</div>
+</div>
+</td>
+</tr>
+<!-- for aggregation -->
+</tbody>
+</table>
+</div>
+<!-- approval history -->
+<div>
+<table cellpadding="5" cellspacing="5" ng-if="tenderDataApproverList.length&gt;0">
+<thead>
+<tr>
+<th class="fontSizeFamilyHeaders">
+<strong>Approval History</strong>
+</th>
+</tr>
+</thead>
+</table>
+<!-- approval history section -->
+<table class="table table-striped table-advance table-bordered table-hover table-custom" id="">
+<tbody ng-repeat="(parentKey,approval) in tenderDataApproverList | orderBy : '-approvalId'">
+<tr>
+<th></th>
+<th>Name</th>
+<th>Approval Type</th>
+<th>Co-ordinator</th>
+<th>Status</th>
+<th>Comment</th>
+<th>Updated On</th>
+<th>Attachment</th>
+</tr>
+<!-- branch history updates -->
+<!-- && {'pointer-events':'none'} -->
+<tr data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="expandFnForPreview(parentKey,childKey)" ng-repeat="(childKey,approverComment) in approval.approvalDetailsDummy  | orderBy:'sequence'" ng-style="approverComment.branchArray.length==0 ">
+<td cellpadding="0" cellspacing="0" colspan="8">
+<table class="table table-bordered table-hover table-custom">
+<tbody>
+<tr>
+<td><i class="fa fa-plus" data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="$event.stopPropagation();expandFnChildForPreview(parentKey,childKey)" ng-if="approverComment.showFlag &amp;&amp; approverComment.branchArray.length&gt;0" title="Click to see discussion history"></i><i class="fa fa-minus" data-target="{{getTRKey(parentKey,childKey,'1')}}" data-toggle="collapse" ng-click="$event.stopPropagation();expandFnChildForPreview(parentKey,childKey)" ng-if="approverComment.showFlag==false &amp;&amp; approverComment.branchArray.length&gt;0" title="Click to hide discussion history"></i></td>
+<td>{{approverComment.userName}}</td>
+<td>{{approvalTypeList[approverComment.approvalType]}}</td>
+<td>
+<span ng-if="approverComment.coordinatorFlag == 'Y'">
+<i aria-hidden="true" class="fa fa-check"></i>
+</span>
+<span ng-if="approverComment.coordinatorFlag == 'N'">
+<i aria-hidden="true" class="fa fa-times"></i>
+</span>
+</td>
+<td>{{approvalStatusList[approverComment.statusCode]}}</td>
+<td>{{approverComment.overallComment}}</td>
+<td><span ng-if="approverComment.statusCode != 'WIP' &amp;&amp; approverComment.statusCode != 'P'">{{approverComment.updatedate
+															| date:orgConfigDateTimeFormatForAngular}}</span></td>
+<td ng-class="{selfidentify: approverComment.userId==userId}">
+<span ng-repeat="approverAttach in approverComment.attachementDtls">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(approverAttach)" ng-if="approverAttach!=''  &amp;&amp; approverAttach!=null &amp;&amp; approverAttach.approvalDetailId==approverComment.approvalDetailId" title="{{approverAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+																{{approverAttach.fileName | limitTo: 5}}
+																{{approverAttach.fileName.length&gt;5 ? '...' : ''}}
+														</a>
+</span>
+<br/></td>
+</tr>
+<tr class="collapse" id="{{getTRKey(parentKey,childKey,'2')}}">
+<td colspan="8" ng-if="approverComment.branchArray.length&gt;0">
+<!-- branch details -->
+<table class="table table-bordered table-hover table-custom">
+<thead>
+<th></th>
+<th>???label.branch.number???</th>
+<th>???label.branch.userName???</th>
+<th>Status</th>
+<th>???label.branch.initiatorComment???</th>
+<th>???label.branch.otherComment???</th>
+<th>???label.branch.initiatorAttachment???</th>
+<th>???label.branch.otherAttachment???</th>
+<th>???label.branch.initiatedOn???</th>
+<th>Updated On</th>
+</thead>
+<tbody ng-repeat="branchItem in approverComment.branchArray">
+<td></td>
+<td>{{branchItem.branchNumber}}</td>
+<td>{{branchItem.userName}}</td>
+<td>{{approvalStatusList[branchItem.statusCode]}}</td>
+<td>{{branchItem.branchComment}}</td>
+<td>{{branchItem.overallComment}}</td>
+<td>
+<span ng-repeat="initAttach in branchItem.initiatorAttachmentArray">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(initAttach)" ng-if="initAttach!=''  &amp;&amp; initAttach!=null" title="{{initAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+                                                 {{initAttach.fileName | limitTo: 5}} {{initAttach.fileName.length&gt;5 ? '...' : ''}}
+                                                   </a><br/></span>
+<!-- <i href="javascript:void(0)" ng-if="initAttach!='' && initAttach!=null" class="fa fa-download" title="{{initAttach.fileName}}" ng-repeat="initAttach in branchItem.initiatorAttachmentArray" ng-click="$event.stopPropagation();workflowDownloadEvent(initAttach)"></i> --></td>
+<td>
+<span ng-repeat="otherAttach in branchItem.otherAttachmentArray">
+<a class="btn-file btn-xs btn-default" href="#" ng-click="$event.stopPropagation();workflowDownloadEvent(otherAttach)" ng-if="otherAttach!=''  &amp;&amp; otherAttach!=null" title="{{otherAttach.fileName}}">
+<i aria-hidden="true" class="fa fa-download"></i> 
+                                                 {{otherAttach.fileName | limitTo: 5}} {{otherAttach.fileName.length&gt;5 ? '...' : ''}}
+                                                   </a><br/></span>
+<!-- <i href="javascript:void(0)" ng-if="otherAttach!='' && otherAttach!=null"  class="fa fa-download" title="{{otherAttach.fileName}}" ng-repeat="otherAttach in branchItem.otherAttachmentArray" ng-click="$event.stopPropagation();workflowDownloadEvent(otherAttach)"></i> --></td>
+<td>{{branchItem.createdate | date:orgConfigDateTimeFormatForAngular}}</td>
+<td>{{branchItem.updatedate | date:orgConfigDateTimeFormatForAngular}}</td>
+</tbody>
+</table>
+<!-- branch details -->
+</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<!-- approval history section -->
+</div>
+<!-- approval history -->
+<p><span>Created By :  </span><span>{{previewParentTender.tenderPreviewMap.creatorDetail.DealingOfficer}}</span></p>
+<p><span>Created On :  </span><span>{{previewParentTender.publishdate | date:configurationSettings.orgConfigDateTimeFormatForAngular}}</span></p>
+</div>
+<div class="modal-footer">
+<input id="verifyHashString" type="hidden" value=""/>
+<input id="verifySignHash" type="hidden" value=""/>
+<input id="verifyFileHashString" type="hidden" value=""/>
+<input id="verifyFileSignHash" type="hidden" value=""/>
+<input id="serverDate" name="serverDate" type="hidden" value="31/10/2026 08:48 +0530"/>
+<button class="btn btn-primary printtenderbtn" id="btn-prev" ng-show="previewDestinationObj.previewDestination.length == 0" type="button">
+               Print
+            </button>
+<button class="btn btn-primary" data-dismiss="modal" ng-show="previewDestinationObj.previewDestination.length == 0" type="button">
+               Ok
+            </button>
+<button class="btn btn-primary" data-dismiss="modal" id="btn-prev" ng-if="previewDestinationObj.previewDestination.length &gt; 0" type="button">
+               Cancel
+            </button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="false" class="modal fade" data-backdrop="static" data-keyboard="false" id="editpoMdl" role="">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button">×</button>
+<h3 class="modal-title">PO/WO Detail</h3>
+</div>
+<div class="modal-body model-body printablePo">
+<!--<div ng-bind-html="previewDataHTML"></div> -->
+<div class="row" ng-if="!releasePoBtn">
+<div class="row">
+<div class="col-md-4 m-bot15">
+<span ng-if="poDetail.poStatus==2">PENDING FOR APPROVAL</span>
+<span ng-if="poDetail.poStatus==4">ACCEPTED</span>
+<span ng-if="poDetail.poStatus==5">REJECTED</span>
+<span ng-if="poDetail.poStatus==6">CANCELLED</span>
+<span ng-if="poDetail.poStatus==3">ACCEPTANCE PENDING</span>
+<span ng-if="poDetail.poStatus==7">PENDING FOR CANCELLATION APPROVAL</span>
+</div>
+</div>
+</div>
+<div ng-repeat="(templateIndex, templates) in templateData | orderBy:'displaySequenceNo'">
+<div>
+<span ng-if="templates.templateTypeId == 110 &amp;&amp; userTypeId == 2">My Details</span>
+<span ng-if="templates.templateTypeId == 110 &amp;&amp; userTypeId == 1">{{templates.data[0].subProcessName}}</span>
+<span ng-if="templates.templateTypeId != 110">{{templates.data[0].subProcessName}}</span>
+</div>
+<!-- NON TABULAR -->
+<table class="table table-striped table-advance table-bordered" ng-if="templates.data[0].displayLayoutid != 102">
+<thead>
+</thead>
+<tbody>
+<tr ng-if="chekVisableOrNot(field)" ng-repeat="field in templates.data[0].templateFieldList | orderBy:'displayOrder'">
+<td>
+<label class="font-bold"><b>{{field.longName}}</b></label>
+</td>
+<td>
+<label ng-if="(field.controlTypeId === 104 || field.controlTypeId === 110)">{{field.value.toDate() |date:configurationSettings.masterDateFormatDesc }}</label>
+<label ng-if="(field.controlTypeId != 104 &amp;&amp; field.controlTypeId != 110 &amp;&amp; field.controlTypeId != 108)">
+<span ng-if="field.shortName == 'po_category'">{{field.value | categoryFilter: poCategoryList}}</span>
+<span ng-if="field.shortName == 'uom'">{{field.value | uomFilter: uomList}}</span>
+<span ng-if="field.shortName !== 'po_category' &amp;&amp; field.shortName !== 'uom'">{{field.value}}</span>
+<span ng-if="templates.templateTypeId == '108' &amp;&amp; field.shortName == 'po_no'">
+<i aria-hidden="true" class="fa fa-info-circle" ng-click="getApplicableSource(templates.data[0])" popover-placement="bottom" uib-popover-html="applicableinfo"></i>
+<span ng-if="attachmentField.shortName == 'document_name'" ng-repeat="attachmentField in templates.originalAttachment.templateFieldList">
+<span>
+<i class="fa fa-download" ng-click="fileDownload(templates.originalAttachment.shortName,attachmentField.shortName,templateIndex, templates.originalAttachment)" title="Download File"></i>
+</span>
+</span>
+</span>
+</label>
+<label ng-if="field.controlTypeId ==108">
+    									{{field.value | fileNameFilter}}
+    									<span ng-if="templates.templateTypeId == 112">
+<i class="fa fa-download" ng-click="fileDownload(templateIndex, field.value)" title="Download File"></i>
+</span>
+</label>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-striped table-advance table-bordered" ng-if="templates.data[0].displayLayoutid == 102">
+<thead>
+<tr>
+<th ng-if="chekVisableOrNot(field)" ng-repeat="field in templates.data[0].templateFieldList | orderBy:'displayOrder'">
+<label class="font-bold"><b>{{field.longName}}</b></label>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="template in templates.data | orderBy: 'display_order'">
+<td ng-if="chekVisableOrNot(field)" ng-repeat="field in template.templateFieldList | orderBy:'displayOrder'">
+<label ng-if="(field.controlTypeId === 104 || field.controlTypeId === 110)">{{field.value.toDate() |date:configurationSettings.masterDateFormatDesc }}</label>
+<span ng-if="(field.controlTypeId != 108 &amp;&amp; field.controlTypeId != 104 &amp;&amp;  field.controlTypeId != 110)">
+<span ng-if="field.shortName == 'po_category'">{{field.value | categoryFilter: poCategoryList}}</span>
+<span ng-if="field.shortName == 'uom'">{{field.value | uomFilter: uomList}}</span>
+<span ng-if="field.shortName !== 'po_category' &amp;&amp; field.shortName !== 'uom'">{{field.value}}</span>
+</span>
+<span ng-if="(field.controlTypeId == 108)">
+    									{{field.value | fileNameFilter}}
+    									<span ng-if="templates.templateTypeId == 112">
+<i class="fa fa-download" ng-click="fileDownload(templateIndex, field.value)" title="Download File"></i>
+</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" ng-click="releasePo()" ng-if="releasePoBtn" type="button">Release PO</button>
+<button class="btn btn-primary printbtn" id="btn-po-print" ng-if="!releasePoBtn" type="button">Print</button>
+<button class="btn btn-primary" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ---################# Cancellation History Module Starts ################################## -->
+<div class="modal modalsnd-main fade in" id="cancelTenderHistoryModal" role="dialog">
+<div class="modal-dialog modalsnd">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" ng-click="closeApprovalModal()" type="button">×</button>
+<h3 class="modal-title">Tender Cancellation History</h3>
+</div>
+<div>
+<div class="submitBid alert alert-success in alert-dismissable" ng-show="btnDisable">
+<a aria-label="close" class="close" data-dismiss="alert" href="#" title="close">x</a>
+<strong>Success!</strong> {{resultForSuccess}}
+										</div>
+<div class="submitBid alert alert-danger in alert-dismissable" ng-show="errorMsg">
+<a aria-label="close" class="close" data-dismiss="alert" href="#" title="close">x</a>
+<strong>Error!</strong> {{resultForError}}
+										</div>
+</div>
+<div class="modal-body">
+<form class="form" name="approvalForm">
+<table class="table table-striped table-advance table-hover marg_btm15 addpadd" id="">
+<tr>
+<td>Document Id</td>
+<td>{{cancelTender.documentId}}</td>
+</tr>
+<tr>
+<td>Initiator's Name</td>
+<td>{{cancelTender.intiatorName}}
+													</td>
+</tr>
+<tr>
+<td>Initiator's Comment</td>
+<td>
+														{{cancelTender.intiatorComment}}
+													</td>
+</tr>
+<tr>
+<td>Initiation Date(Cancellation)</td>
+<td>
+														{{cancelTender.intiationTime | date:configurationSettings.orgConfigDateTimeFormatForAngular}}
+													</td>
+</tr>
+<tr>
+<td>Stage</td>
+<td>
+														{{tenderStatusListReverse[cancelTender.cancelStage]}}
+													</td>
+</tr>
+<tr>
+<td>Attachment</td>
+<td ng-if="cancelTender.fileName != null &amp;&amp; cancelTender.fileName != ''">
+														{{cancelTender.fileName}}
+														<span ng-click="downloadCancelTenderAttachment(cancelTender.tenderId)"><i aria-hidden="true" class="fa fa-download"></i></span>
+</td>
+</tr>
+</table>
+</form>
+<!--  </div>
+                                           <button type="button" data-dismiss="modal" class="btn btn-primary cloosBtn" ng-click="closeApprovalModal()">Close</button>
+                                         </div> -->
+</div>
+</div>
+</div>
+</div>
+<!-- ---################# Cancellation History Module Ends ################################# -->
+</div></div></div>
+</section>
+<div id="footer"></div>
+</section>
+<!--main content end-->
+<!-- </section> -->
+<div class="footer_section">
+<p>Copyright © Beltron  | Supported by <a href="https://www.mjunction.in" rel="noopener noreferrer" target="_blank">mjunction</a></p></div>
+<!-- javascripts -->
+<!-- bootstrap -->
+<!--script for this page only-->
+<!-- Global site tag (gtag.js) - Google Analytics Start-->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133185986-2"></script> -->
+<!-- Global site tag (gtag.js) - Google Analytics End-->
+</body>
+</html>

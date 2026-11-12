@@ -1,0 +1,323 @@
+<!-- Grid Control Developed by Raghu Dadi --><html>
+<head>
+<title>
+			Welcome to (n)Procure Tender Management System
+		</title>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr align="left" valign="top">
+<td align="left" background="/images/bg.gif" valign="top" width="195"><img height="70" src="/Images/logo_dashboard.jpg" width="195"/></td>
+<td align="middle" background="/images/bg.gif" valign="center"> </td>
+<td align="right" background="/images/bg.gif" width="120"><img height="70" src="/images/c1-logo.jpg" width="120"/></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" class="topMenu" height="20" width="100%">
+<tr valign="top">
+<td align="center" valign="middle"><a href="/">HOME</a> </td>
+</tr>
+</table>
+<center>
+<form id="Form1" method="post" name="frmIndex">
+<input id="Hidden1" name="tid" type="hidden"/> <input id="Hidden2" name="deptid" type="hidden"/>
+<input id="Hidden3" name="Procurementid" type="hidden"/> <input id="Hidden4" name="hdnProcurementid" type="hidden"/>
+<input id="controlstring" name="controlstring" type="hidden"/> <input id="hashstring" name="hashstring" type="hidden"/>
+</form>
+<form action="new_home_tenders.asp" id="Form2" method="post" name="search" onsubmit="return _doValidate();">
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="Table1" width="98%">
+<tr>
+<td class="TD_Header" valign="middle" width="3"><img src="/asp/tmsv2/images/tblCurveleft.gif"/></td>
+<td class="TD_Header" nowrap="" valign="middle">Tender Details
+						</td>
+<td valign="top" width="3"><img src="/asp/tmsv2/images/tblcurve.gif"/></td>
+<td align="right" class="Body_Text" valign="top" width="79%"> </td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="1" class="tblBG" id="Table2" width="98%">
+<tr align="center" class="tblTrBg">
+<td align="right">IFB/Tender Notice No.:</td>
+<td align="LEFT" width="300px"><input id="Text1" name="txtTenderNo" type="text" value=""/></td> <!-- /B07 -->
+<td align="right">Name of Work:</td>
+<td align="LEFT"><input id="Text6" maxlength="200" name="txtNameofWork" type="text" value=""/></td> <!-- /B07 -->
+<td align="right" colspan="4" width="100px">
+<span>
+<!--<select name=txtCategory>
+				<option SELECTED onChange="document.frmTenderLst.txtCategory.value='online'">Online</option>
+                <option  onChange="document.frmTenderLst.txtCategory.value='offline'">Offline</option>
+				</select--><a href="short_new_home_tenders.asp">Click here for Offline Tenders</a>
+</span>
+</td>
+</tr>
+<tr align="center" class="tblTrBg">
+<td align="right">Enter Value Criteria :
+						</td>
+<td align="Left" colspan="7">
+<span>
+<select id="Select1" name="txtValue">
+<option value="">-Select Field-</option>
+<option value="EMD">EMD</option>
+<option value="TenderFee">TenderFee</option>
+<option value="EstimatedCost">ECV</option>
+</select>
+</span>
+<span>
+<select id="Select2" name="txtParameter" onchange="_doEnableDisable()">
+<option value="">-Select Parameter-</option>
+<option value="=">Equal</option>
+<option value="&lt;">LessThan</option>
+<option value="&gt;">GreaterThan</option>
+<option value="Between">Between</option>
+</select>
+<span>
+<input id="Text2" maxlength="19" name="minValue" onkeypress="javascript:return _checkFloat();" size="21" type="text" value=""/>
+<input disabled="" id="Text3" maxlength="19" name="maxValue" onkeypress="javascript:return _checkFloat();" size="21" type="text" value=""/>
+</span>
+</span>
+<span></span>
+</td>
+</tr>
+<tr class="tblTrBg">
+<td align="right">Department :</td>
+<td align="LEFT">
+<select id="Select3" name="Pdept" onchange="document.search.subdept.selectedIndex = 0;if(_doValidate()==true){document.search.submit();}else{document.search.subdept.length=0;}">
+<option value="0">Select</option><option value="190">AGRICULTURE AND CO-OPERATIVE DEPARTMENT (0)</option><option value="123">AGRICULTURE UNIVERSITY (0)</option><option value="189">AHMEDABAD MUNICIPAL CORPORATION (0)</option><option value="260">AHMEDABAD MUNICIPAL TRANSPORT SERVICE (0)</option><option value="65">AHMEDABAD URBAN DEVELOPMENT AUTHORITY (AUDA) (0)</option> <!--/B05-->
+</select>
+</td>
+<td align="right">Circle/Division Name :</td>
+<td align="LEFT" colspan="5">
+<select id="subdept" name="subdept">
+<option value="0">Select</option>
+</select>
+</td>
+</tr>
+<tr align="center" class="tblTrBg">
+<td align="right">Tender Publishing Date:
+						</td>
+<td align="LEFT">
+<span>
+<input id="Text4" name="txtFromDate" readonly="" size="14" type="text" value=""/> <!-- /B06 -->
+<a hidefocus="" href="javascript:void(0)" onclick="if(self.gfPop)gfPop.fPopCalendar(document.search.txtFromDate);return false;"><img align="absmiddle" alt="" border="0" height="22" name="popcal" src="/images/calbtn.gif" width="34"/></a>
+</span>
+</td>
+<td align="left">Bid Submission Closing Date:</td>
+<td align="LEFT" colspan="5"><span>
+<input id="Text5" name="txtToDate" readonly="" size="14" type="text" value=""/> <!-- /B06 -->
+<a hidefocus="" href="javascript:void(0)" onclick="if(self.gfPop)gfPop.fPopCalendar(document.search.txtToDate);return false;"><img align="absmiddle" alt="" border="0" height="22" name="popcal" src="/images/calbtn.gif" width="34"/></a>
+</span>
+</td>
+</tr>
+<tr align="center" class="tblTrBg">
+<td align="right">Tender ID :</td>
+<td align="left" colspan="1"><input id="txtProcurementID" maxlength="30" name="txtProcurementID" onblur="return _fncIsInteger(this)" ondrop="return false;" onkeydown="return _fncAcceptDigitsOnly()" onpaste="return false;" type="text" value=""/></td> <!-- /B08 -->
+<td align="right" class="tblTrBg">Tender Category</td>
+<td align="left" class="tblTrBg" colspan="5"><select id="txtCategoryCat" name="txtCategoryCat">
+<option selected="" value="">Select</option>
+<option value="W">
+									Works
+								</option>
+<option value="G">
+									Goods
+								</option>
+<option value="S">
+									Services
+								</option>
+</select></td>
+<td align="left" colspan="2"></td>
+</tr>
+<tr class="tblTrBg">
+<td align="right">Product Category :</td>
+<td align="left" class="tblTrBg" colspan="5">
+<select id="productseacrh" name="productseacrh" size="1">
+<option value="-1">-Select-</option>
+<option value="65">
+									Abrasives 
+								</option>
+<option value="37">
+									Access Control System 
+								</option>
+<option value="44">
+									Adhesives 
+								</option>
+<option value="1">
+									Agricultural/ Forestry 
+								</option>
+<option value="99">
+									Aids and appliances for the dis-abled 
+								</option>
+</select>
+</td>
+</tr>
+<tr class="tblTrBg">
+<td align="right" class="tblTrBg" nowrap="" width="130px">Sector Category:</td>
+<td align="left" class="tblTrBg" nowrap="" width="500px">
+<select id="Select5" name="ddlsector" size="1">
+<option value="-1">-Select-</option>
+<option value="8">
+									Administration &amp; Management 
+								</option>
+<option value="9">
+									Agriculture and Food 
+								</option>
+<option value="20">
+									Art, Culture &amp; Entertainment 
+								</option>
+<option value="45">
+									Aviation 
+								</option>
+<option value="21">
+									Banking, Finance &amp; Insurance 
+								</option>
+</select>
+</td>
+<td align="right" class="tblTrBg" nowrap="">Form of Contract:</td>
+<td colspan="3">
+<select id="Select6" name="ddlFrmContract" size="1">
+<option value="-1">-Select-</option>
+<option value="8">
+									Buy
+								</option>
+<option value="5">
+									Fixed-rate
+								</option>
+<option value="2">
+									Lump-sum
+								</option>
+<option value="4">
+									Multi-stage
+								</option>
+<option value="1">
+									Piece-work
+								</option>
+</select>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="2" cellspacing="1" id="Table3" width="98%">
+<tr align="center">
+<td align="center" colspan="4">
+<input id="Hidden5" name="search" type="hidden" value="true"/> <input id="Hidden6" name="Type" type="hidden" value="Open"/>
+<input class="BUTTON_ALL" id="Submit1" name="btnSubmit" type="submit" value="Search"/>
+</td>
+</tr>
+</table>
+<input id="controlstring" name="controlstring" type="hidden"/> <input id="hashstring" name="hashstring" type="hidden"/>
+<input id="hdnSubmit" name="hdnSubmit" type="hidden"/>
+</form>
+<form action="new_home_tenders.asp" id="Form3" method="post" name="frmTenderLst" onsubmit="return _doValidate()" target="_self">
+<input id="controlstring" name="controlstring" type="hidden"/> <input id="hashstring" name="hashstring" type="hidden"/>
+<input id="Hidden7" name="hdnpid" type="hidden"/> <input id="Hidden8" name="txtFromDate" type="hidden" value=""/>
+<input id="Hidden9" name="txtToDate" type="hidden" value=""/> <input id="Hidden10" name="txtDepartment" type="hidden" value="0"/>
+<input id="Hidden11" name="subdept" type="hidden" value="0"/> <input id="Hidden12" name="pdept" type="hidden" value="0"/>
+<input id="Hidden13" name="txtTenderNo" type="hidden" value=""/>
+<input id="Hidden46" name="txtNameofWork" type="hidden" value=""/>
+<input id="Hidden14" name="txtSubType" type="hidden" value="0"/> <input id="Hidden16" name="txtValue" type="hidden" value=""/>
+<input id="Hidden17" name="txtParameter" type="hidden" value=""/> <input id="Hidden18" name="minValue" type="hidden" value=""/>
+<input id="Hidden19" name="maxValue" type="hidden" value=""/> <input id="Hidden15" name="productseacrh" type="hidden" value=""/>
+<input id="Hidden37" name="ddlsector" type="hidden" value=""/> <input id="Hidden38" name="ddlFrmContract" type="hidden" value=""/>
+<input id="Hidden39" name="txtCategoryCat" type="hidden" value=""/>
+<input id="Hidden20" name="tid" type="hidden"/> <input id="Hidden21" name="af" type="hidden"/>
+<input id="Hidden22" name="hdnReferer" type="hidden" value="/asp/home/new_home_tenders.asp"/>
+<table align="CENTER" border="0" cellpadding="0" cellspacing="0" id="Table4" width="98%">
+<tr>
+<td>
+<input id="Hidden23" name="hdnsortgrid1" type="hidden" value="CreationDate"/>
+<input id="Hidden24" name="hdnpagegrid1" type="hidden" value=""/>
+<input id="Hidden25" name="hdnrecosgrid1" type="hidden" value="12"/>
+<input id="Hidden26" name="hdndescgrid1" type="hidden" value="desc"/>
+<div align="center"><font color="red">No Search Results Found.</font></div><br/>
+</td>
+</tr>
+</table>
+<br/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="Table5" width="98%">
+<tr>
+<td align="left"><table align="left" border="0" cellpadding="2" cellspacing="1" class="gridbg" id="Table6" width="0%">
+<tr class="td_header">
+<td align="left" colspan="4">Icons Representation</td>
+</tr>
+<tr class="rowI">
+<td align="left" width="0"><img hspace="4" src="/images/search_button.gif"/></td>
+<td align="left" width="0">View Notification
+									</td>
+<td align="left" width="0"><img hspace="4" src="/asp/tmsv2/images/download.gif"/></td>
+<td align="left" width="0">View Document
+									</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br/>
+<br/>
+</form>
+</center>
+<!--Added By Happy GOG CR-->
+<table border="0" cellpadding="0" cellspacing="0" class="topMenu" height="20" width="100%">
+<tr valign="top">
+<td align="center" valign="middle"><a href="/">HOME</a> </td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" class="pgHeading" colspan="2" height="10" valign="middle"><img height="1" src="/Images/pixel.gif" width="1"/></td>
+</tr>
+<tr>
+<td align="left" class="topMenu" height="20" valign="middle" width="45%">   Powered by: <a class="topMenu" href="http://www.c1india.com" target="_blank">C1India Private Limited</a></td>
+<td align="left" class="topMenu" height="20" valign="middle">Server Time : <span id="clock"></span></td>
+</tr>
+</table>
+<!--include virtual="/asp/tmsv2/Include/inc/Supplier_bottom_v2.inc" -->
+<form action="/asp/tmsv2/TenderItems.asp" id="Form4" method="post" name="frmShowCOT">
+<input id="Hidden27" name="pid" type="hidden"/> <input id="Hidden28" name="pDept" type="hidden"/>
+<input id="Hidden29" name="cat" type="hidden"/> <input id="Hidden30" name="Procurementcatid" type="hidden"/>
+<input id="Hidden31" name="IsHome" type="hidden" value="true"/> <input id="controlstring" name="controlstring" type="hidden"/>
+<input id="hashstring" name="hashstring" type="hidden"/>
+</form>
+<form id="Form5" method="post" name="frmDocument">
+<input id="Hidden40" name="productseacrh" type="hidden" value=""/>
+<input id="Hidden41" name="ddlsector" type="hidden" value=""/> <input id="Hidden42" name="ddlFrmContract" type="hidden" value=""/>
+<input id="Hidden43" name="txtCategoryCat" type="hidden" value=""/>
+<input id="Hidden34" name="ProcurementID" type="hidden"/> <input id="DisplayType" name="DisplayType" type="hidden" value="Display"/>
+<input id="hdnreferer" name="hdnreferer" type="hidden" value="../home/new_home_tenders.asp"/>
+<input id="Hidden44" name="controlstring" type="hidden"/> <input id="Hidden45" name="hashstring" type="hidden"/>
+<input name="txtProcurementID" type="hidden" value=""/>
+<input id="Hidden32" name="txtpageno1" type="hidden" value="0"/> <input id="Hidden33" name="sort1" type="hidden" value="CreationDate"/>
+<input id="Hidden35" name="recos1" type="hidden" value="12"/> <input id="Hidden36" name="desc1" type="hidden" value="desc"/>
+<!--Avnish -->
+<input id="Hidden4" name="hdntxtTenderNo" type="hidden" value=""/>
+<input id="Hidden20" name="txtTenderNo" type="hidden" value=""/>
+<input id="Hidden5" name="hdntxtTenderID" type="hidden" value=""/>
+<input id="Hidden31" name="txtTenderID" type="hidden" value=""/>
+<input id="Hidden6" name="hdntxtCategory" type="hidden" value="online"/>
+<input id="Hidden22" name="txtCategory" type="hidden" value="online"/>
+<input id="Hidden7" name="hdnType" type="hidden" value=""/>
+<input id="Hidden23" name="Type" type="hidden" value=""/>
+<input id="Hidden8" name="Pdept" type="hidden" value="0"/>
+<input id="Hidden9" name="subdept" type="hidden" value="0"/>
+<input id="Hidden10" name="hdntxtValue" type="hidden" value=""/>
+<input id="Hidden24" name="txtValue" type="hidden" value=""/>
+<input id="Hidden11" name="hdntxtParameter" type="hidden" value=""/>
+<input id="Hidden25" name="txtParameter" type="hidden" value=""/>
+<input id="Hidden12" name="hdnminValue" type="hidden" value=""/>
+<input id="Hidden13" name="hdnmaxValue" type="hidden" value=""/>
+<input id="Hidden14" name="hdntxtFromDate" type="hidden" value=""/>
+<input id="Hidden15" name="hdntxtToDate" type="hidden" value=""/>
+<input id="Hidden26" name="minValue" type="hidden" value=""/>
+<input id="Hidden27" name="maxValue" type="hidden" value=""/>
+<input id="Hidden28" name="txtFromDate" type="hidden" value=""/>
+<input id="Hidden29" name="txtToDate" type="hidden" value=""/>
+<input id="Hidden42" name="txtNameofWork" type="hidden" value=""/>
+<input id="Hidden41" name="hdnNameofWork" type="hidden" value=""/>
+<input id="Hidden32" name="hdntxtpageno" type="hidden" value=""/>
+<input id="Hidden33" name="hdnsort" type="hidden" value=""/>
+<input id="Hidden34" name="hdnrecos" type="hidden" value=""/>
+<input id="Hidden35" name="hdndesc" type="hidden" value=""/>
+<input id="Hidden36" name="txtpageno" type="hidden" value=""/>
+<input id="Hidden37" name="sort" type="hidden" value=""/>
+<input id="Hidden38" name="recos" type="hidden" value=""/>
+<input id="Hidden39" name="desc" type="hidden" value=""/>
+<!--end -->
+</form>
+</body></html>

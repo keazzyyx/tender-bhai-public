@@ -1,0 +1,248 @@
+{
+ "createdTs": null,
+ "noticeInvitingTenderDTO": {
+  "createdTs": 1793371264558,
+  "id": 63804,
+  "evaluationType": "TWO_COVER",
+  "evaluationTypeText": "Two Tender Document System(Two Cover)",
+  "invitingStrategy": "OPEN",
+  "invitingStrategyText": "Open",
+  "tenderFee": "500.00",
+  "emd": "8000.00",
+  "bidValueTypeText": "Itemwise",
+  "tenderReceiptClose": "16-11-2026 11:00:00",
+  "tenderQueryClose": "04-11-2026 11:00:00",
+  "technicalBidOpen": "17-11-2026 11:01:43",
+  "publishedDate": "30-10-2026 20:29:53",
+  "publishedByPost": "RDPR_PDO_GP_219724",
+  "publishedByUser": "KPE17788 - Praveen Kumar",
+  "bidValidityPeriod": 90,
+  "noOfCalls": 1,
+  "preBidMeetingDate": null,
+  "preBidMeetingYn": false,
+  "preQualificationBidOpen": null,
+  "denominationTypeText": "Rupees",
+  "retenderedYn": null,
+  "contactPerson": "Praveen Patil",
+  "splitEmdRequiredYn": false,
+  "emdBankGuarantee": null,
+  "emdCash": null,
+  "bgValidityPeriod": null,
+  "hideWeightage": null,
+  "isMultipleSupplierSelectionAllowed": null,
+  "multipleCurrencySelectionAllowedYn": false,
+  "isTechWeightageAllowed": null,
+  "highestBidderSelection": false,
+  "qcbsTenderYn": null,
+  "itemwiseEmdRequiredYn": false,
+  "itemwiseTechEvalYn": true,
+  "sampleSubmissionDate": null,
+  "officeNumber": null,
+  "mobileNumber": "7760201056",
+  "provisionalAmount": 450000.0,
+  "tenderSupplierList": null
+ },
+ "tenderSchedule": {
+  "createdTs": 1793371264616,
+  "tenderNumber": "RDPR/2026-27/IND15368",
+  "title": "SUPPLY OF MATERIAL TO KUKKUT SHED IN NAGARAHAL",
+  "description": "As per tender documents",
+  "category": "GOODS",
+  "categoryText": "Goods",
+  "ecv": "308552.86",
+  "indentId": 53213,
+  "deptName": "Rural Development and Panchayat Raj Department",
+  "fileName": null,
+  "status": "PUBLISHED",
+  "statusText": "Published",
+  "remarks": null,
+  "csrValue": null,
+  "ecvtenderYn": true,
+  "location": 9092,
+  "locationName": "RDPR Gram Panchayat Office Nagarahal TP Lingsugur",
+  "procEntityType": "GOVT_DEPT",
+  "procEntityTypeText": "Government Department"
+ },
+ "tenderGroups": [
+  {
+   "createdTs": 1793371264617,
+   "groupName": "Default",
+   "bidItemsMandatoryYn": true,
+   "groupMandatoryYn": true,
+   "itemList": [
+    {
+     "createdTs": 1793371264632,
+     "itemCode": "KUKKUT708",
+     "itemName": "Display board kuk0258",
+     "netAmt": 2500.0,
+     "price": 2500.0,
+     "quantity": 1.0,
+     "specifications": "Specification:As per tender documents , ",
+     "uomName": "Nos",
+     "sampleRequiredYn": null,
+     "itemEmd": null,
+     "technicalParameters": []
+    },
+    {
+     "createdTs": 1793371264632,
+     "itemCode": "KUKKUT707",
+     "itemName": "Bolts and nuts kuk0257",
+     "netAmt": 620.67,
+     "price": 71.19,
+     "quantity": 8.7185,
+     "specifications": "Specification:As per tender documents , ",
+     "uomName": "Kg",
+     "sampleRequiredYn": null,
+     "itemEmd": null,
+     "technicalParameters": []
+    },
+    {
+     "createdTs": 1793371264632,
+     "itemCode": "KUKKUT706",
+     "itemName": "MS flat kuk0256",
+     "netAmt": 268.1,
+     "price": 49.2,
+     "quantity": 5.4491,
+     "specifications": "Specification:As per tender documents , ",
+     "uomName": "Kg",
+     "sampleRequiredYn": null,
+     "itemEmd": null,
+     "technicalParameters": []
+    }
+   ],
+   "nitId": 63804,
+   "itemIdList": null,
+   "itemSize": 38
+  }
+ ],
+ "tenderCriterionDocumentList": [
+  {
+   "documentName": "Annual Turnover Certificate",
+   "optional": false,
+   "documentTypeText": "Technical Bid"
+  },
+  {
+   "documentName": "Company Registration Certificate",
+   "optional": false,
+   "documentTypeText": "Technical Bid"
+  },
+  {
+   "documentName": "Small Scale Industries Certificate",
+   "optional": false,
+   "documentTypeText": "Technical Bid"
+  }
+ ],
+ "tenderGoodsItemsList": [
+  {
+   "createdTs": 1793371264632,
+   "itemCode": "KUKKUT708",
+   "itemName": "Display board kuk0258",
+   "netAmt": 2500.0,
+   "price": 2500.0,
+   "quantity": 1.0,
+   "specifications": "Specification:As per tender documents , ",
+   "uomName": "Nos",
+   "sampleRequiredYn": null,
+   "itemEmd": null,
+   "technicalParameters": []
+  },
+  {
+   "createdTs": 1793371264632,
+   "itemCode": "KUKKUT707",
+   "itemName": "Bolts and nuts kuk0257",
+   "netAmt": 620.67,
+   "price": 71.19,
+   "quantity": 8.7185,
+   "specifications": "Specification:As per tender documents , ",
+   "uomName": "Kg",
+   "sampleRequiredYn": null,
+   "itemEmd": null,
+   "technicalParameters": []
+  },
+  {
+   "createdTs": 1793371264632,
+   "itemCode": "KUKKUT706",
+   "itemName": "MS flat kuk0256",
+   "netAmt": 268.1,
+   "price": 49.2,
+   "quantity": 5.4491,
+   "specifications": "Specification:As per tender documents , ",
+   "uomName": "Kg",
+   "sampleRequiredYn": null,
+   "itemEmd": null,
+   "technicalParameters": []
+  }
+ ],
+ "deliveryScheduleList": null,
+ "tenderTechnicalParameterList": [],
+ "tenderSampleDTO": null,
+ "tenderEligibilityCriterionList": [
+  {
+   "createdTs": 1793371265507,
+   "description": "Tenderers should not be associated, or have been associated in the\r\n past, directly or indirectly, with a firm or any of its affiliates which  have been engaged by the Purchaser to provide consulting services for the  preparation of the design, specifications, and other documents to be used  for the procurement of the goods to be purchased under this Invitation of  Tenders.\r\n\u0013",
+   "isUserAdded": false,
+   "tenderEligibilityCriterionDocumentList": null
+  },
+  {
+   "createdTs": 1793371265508,
+   "description": "Bidders shall not be under a declaration of ineligibility for\r\n corrupt and fraudulent practices issued by Government of Karnataka\r\n",
+   "isUserAdded": false,
+   "tenderEligibilityCriterionDocumentList": null
+  },
+  {
+   "createdTs": 1793371265509,
+   "description": "It shall be the responsibility of the Bidder to ensure credit of Tender Processing Fee and EMD into the respective receiving bank accounts of e-Procurement on or before the last date and time of bid submission.",
+   "isUserAdded": false,
+   "tenderEligibilityCriterionDocumentList": null
+  },
+  {
+   "createdTs": 1793371265509,
+   "description": "EMD Payments through e-Payment mode shall be made as one single transaction and payments made in part are liable for rejection.",
+   "isUserAdded": false,
+   "tenderEligibilityCriterionDocumentList": null
+  }
+ ],
+ "tenderTechnicalCriterionList": [
+  {
+   "createdTs": null,
+   "description": "As per tender documents",
+   "criterionCategoryText": "Past Experience",
+   "criterionTypeOthersValue": null,
+   "tenderTechnicalCriterionDocumentList": [
+    {
+     "createdTs": null,
+     "documentName": "Work Done Certificate"
+    },
+    {
+     "createdTs": null,
+     "documentName": "GST Registration"
+    },
+    {
+     "createdTs": null,
+     "documentName": "ITR Filed Copy (Mentioning PAN)"
+    },
+    {
+     "createdTs": null,
+     "documentName": "PWD Registration Certificate (Class I/II/III/IV)"
+    }
+   ]
+  }
+ ],
+ "tenderPreQualCriterionList": null,
+ "tenderAddress": null,
+ "tenderRecallDTO": null,
+ "evalStagesCompletedInfoDTO": {
+  "commercialQualificationProcessApprover": null,
+  "commercialQualificationProcessApprovedDate": null,
+  "preQualificationProcessApprover": null,
+  "preQualificationProcessApprovedDate": null,
+  "technicalQualificationProcessApprover": null,
+  "technicalQualificationProcessApprovedDate": null,
+  "commercialQualificationProcessOpenBy": null,
+  "commercialQualificationProcessOpenDate": null
+ },
+ "tenderAwardDatesDTO": {
+  "awardedDates": null,
+  "listOfBidderDonePBGDTO": null
+ }
+}

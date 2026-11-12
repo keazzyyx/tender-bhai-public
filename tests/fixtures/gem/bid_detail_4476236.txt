@@ -1,0 +1,376 @@
+PROVENANCE: NOT LIVE. pdftotext -layout of Wayback snapshot 2024-12-05T01:43:22Z of https://bidplus.gem.gov.in/showbidDocument/4476236 (GEM/2023/B/3178963). Live site refused TCP from US IPs on 2026-10-30.
+                                                                              Bid Number/बोली  मांक ( बड सं या) :
+                                                                                         GEM/2023/B/3178963
+                                                                                      Dated/ दनांक : 23-02-2023
+
+
+
+                                       Bid Document/ बड द तावेज़
+
+
+                                           Bid Details/ बड ववरण
+
+Bid End Date/Time/ बड बंद होने क तार ख/समय       16-03-2023 15:00:00
+
+Bid Opening Date/Time/ बड खुलने क
+                                                 16-03-2023 15:30:00
+तार ख/समय
+
+Bid Offer Validity (From End Date)/ बड पेशकश
+                                                 180 (Days)
+वैधता (बंद होने क तार ख से)
+
+Ministry/State Name/मं ालय/रा य का नाम           Ministry Of Finance
+
+Department Name/ वभाग का नाम                     Department Of Financial Services
+
+Organisation Name/संगठन का नाम                   Regional Rural Banks (rrb)
+
+Office Name/कायालय का नाम                        Aryavart Bank
+
+                                                 Group Personal Accidental Insurance Service - Permanent
+Item Category/मद केटे गर
+                                                 Employees; As per Tender Document
+
+Contract Period                                  1 Year(s) 1 Day(s)
+
+Minimum Average Annual Turnover of the
+bidder (For 3 Years)/ बडर का यूनतम औसत           80 Lakh (s)
+वा षक टनओवर (3 वष का)
+
+Past Experience of Similar Services
+                                                 Yes
+required
+
+MSE Exemption for Years Of
+Experience/अनुभव के वष से एमएसई छूट/ and         Yes
+Turnover
+
+Startup Exemption for Years Of
+Experience/अनुभव के वष से टाटअप छूट/ and         Yes
+Turnover
+
+                                                 Experience Criteria,Bidder Turnover,Certificate (Requested
+                                                 in ATC),OEM Authorization Certificate,OEM Annual
+                                                 Turnover,Additional Doc 1 (Requested in ATC),Additional
+Document required from seller/ व े ता से मांगे   Doc 2 (Requested in ATC),Additional Doc 3 (Requested in
+                                                 ATC),Additional Doc 4 (Requested in ATC)
+गए द तावेज़                                       *In case any bidder is seeking exemption from Experience /
+                                                 Turnover Criteria, the supporting documents to prove his
+                                                 eligibility for exemption must be uploaded for evaluation by
+                                                 the buyer
+
+Bid to RA enabled/ बड से रवस नीलामी स    य कया No
+
+Type of Bid/ बड का     कार                       Two Packet Bid
+
+
+
+
+                                                                                                                    1/6
+                                              Bid Details/ बड ववरण
+
+ Time allowed for Technical Clarifications
+ during technical evaluation/तकनीक मू यांकन के 2 Days
+ दौरान तकनीक प ीकरण हे तु अनुमत समय
+
+ Estimated Bid Value/अनुमािनत बड मू य               2000000
+
+ Evaluation Method/मू यांकन प ित                    Total value wise evaluation
+
+ Financial Document Indicating Price
+                                                    Yes
+ Breakup Required
+
+
+EMD Detail/ईएमड      ववरण
+
+
+ Required                                           No
+
+
+
+ePBG Detail/ईपीबीजी ववरण
+
+
+ Required                                           No
+
+
+
+
+Splitting/ वभाजन
+
+Bid splitting not applied.
+
+MII Compliance
+
+
+ MII Compliance                                     Yes
+
+
+MSE Purchase Preference/एमएसई खर द वर यता
+
+
+ MSE Purchase Preference/एमएसई खर द वर यता          Yes
+
+
+
+
+1. If the bidder is a Micro or Small Enterprise as per latest definitions under MSME rules, the bidder shall be
+exempted from the requirement of "Bidder Turnover" criteria and "Experience Criteria" subject to meeting of
+quality and technical specifications. If the bidder is OEM of the offered products, it would be exempted from the
+"OEM Average Turnover" criteria also subject to meeting of quality and technical specifications. In case any
+bidder is seeking exemption from Turnover / Experience Criteria, the supporting documents to prove his eligibility
+for exemption must be uploaded for evaluation by the buyer.
+2. If the bidder is a Startup, the bidder shall be exempted from the requirement of "Bidder Turnover" criteria and
+"Experience Criteria" subject to their meeting of quality and technical specifications. If the bidder is OEM of the
+offered products, it would be exempted from the "OEM Average Turnover" criteria also subject to meeting of
+quality and technical specifications. In case any bidder is seeking exemption from Turnover / Experience Criteria,
+the supporting documents to prove his eligibility for exemption must be uploaded for evaluation by the buyer.
+3. The minimum average annual financial turnover of the bidder during the last three years, ending on 31st
+March of the previous financial year, should be as indicated above in the bid document. Documentary evidence in
+the form of certified Audited Balance Sheets of relevant periods or a certificate from the Chartered Accountant /
+Cost Accountant indicating the turnover details for the relevant period shall be uploaded with the bid. In case the
+date of constitution / incorporation of the bidder is less than 3-year-old, the average turnover in respect of the
+completed financial years after the date of constitution shall be taken into account for this criteria.
+4. Purchase preference to Micro and Small Enterprises (MSEs): Purchase preference will be given to MSEs as
+
+
+
+                                                                                                                  2/6
+defined in Public Procurement Policy for Micro and Small Enterprises (MSEs) Order, 2012 dated 23.03.2012 issued
+by Ministry of Micro, Small and Medium Enterprises and its subsequent Orders/Notifications issued by concerned
+Ministry. If the bidder wants to avail the Purchase preference for services, the bidder must be the Service
+provider of the offered Service. Relevant documentary evidence in this regard shall be uploaded along with the
+bid in respect of the offered service. If L-1 is not an MSE and MSE Service Provider (s) has/have quoted price
+within L-1+ 15% of margin of purchase preference /price band defined in relevant policy, then 100% order
+quantity will be awarded to such MSE bidder subject to acceptance of L1 bid price.
+5. Estimated Bid Value indicated above is being declared solely for the purpose of guidance on EMD amount and
+for determining the Eligibility Criteria related to Turn Over, Past Performance and Project / Past Experience etc.
+This has no relevance or bearing on the price to be quoted by the bidders and is also not going to have any
+impact on bid participation. Also this is not going to be used as a criteria in determining reasonableness of
+quoted prices which would be determined by the buyer based on its own assessment of reasonableness and
+based on competitive prices received in Bid / RA process.
+6. Past Experience of Similar Services: The Bidder must have successfully executed / completed at least one
+single order of 80 % of the Estimated Bid Value or 2 orders each of 50 % of the Estimated Bid Value or 3 orders
+each of 40 % of the Estimated Bid Value for similar service(s) in last three years to any Central / State Govt
+Organization / PSU / Public Listed Company. Copies of contracts / work orders and documentary evidence of
+successful execution / completion in support of Past Experience of Similar Services along with names, address
+and contact details of clients shall be uploaded with the bid for verification by the Buyer.
+
+
+Excel Upload Required/ए सेल म अपलोड कए जाने क आव यकता :
+
+Cadre wise cover and premium - 1677157570.xlsx
+
+Additional Qualification/Data Required
+
+Service Provider and it's insurance company must have been in the Insurance business in India for
+at least XX years:As per tender documents.
+
+Buyer to specify the Service Provider must have a Solvency Ratio more than YYY%:As per tender
+documents.
+
+Service Provider and it's insurance company should currently be providing insurance to at least YY
+Government, Semi-government,PSU,Govt. Undertaking,Autonomous bodies,Educational institutes of
+national repute,etc.:As per tender documents.
+
+Service Provider and it's insurance company should be providing insurance to at least XX clients in
+India where the annual premium is more than INR XX for each client:As per tender documents.
+
+Service Provider and it's insurance company should be providing insurance to at least XX clients in
+India where the insurance cover (sum insured) is more than INR XX for each client:As per tender
+documents.
+
+The bidder should have a claim settlement ratio of more than ZZ% for (Type of Insurance) over the
+last 3 years:As per tender documents.
+
+More than YY (type of Insurance) Insurance Policies should have been issued to govt depts in past 3
+years with Sum Insured not less than INR XX:As per tender documents.
+
+Gross Total Premium underwritten within India in last XX Financial Years should be more than INR
+Rs. XXX Crores.:As per tender documents.
+
+Gross Total Premium for (Type of Insurance) underwritten within India in last XX Financial Years
+should be more than INR Rs. XXX Crores:As per tender documents.
+
+Details of people to be insured:1677158565.pdf
+
+Group Personal Accidental Insurance Service - Permanent Employees; As Per Tender
+Document ( 7420 )
+
+Technical Specifications/तकनीक      विश याँ
+
+
+
+
+                                                                                                                 3/6
+Spec
+ificat                                                   Values
+ ion
+
+Core
+
+Type
+of
+Peopl
+e         Permanent Employees
+being
+Insur
+ed
+
+Type
+of        As per Tender Document
+Cover
+
+Additi
+onal      As per Tender Document
+Cover
+
+Premi
+um
+Paym
+          Annually
+ent
+Optio
+ns
+
+Age
+Grou
+p of
+          As per Tender Document
+the
+insur
+ed
+
+List of
+Insur
+er
+from      Acko General Insurance Ltd. , Aditya Birla Health Insurance Co. Ltd. , Agriculture Insurance Company
+wher      of India Ltd. , Bajaj Allianz General Insurance Co. Ltd , Bharti AXA General Insurance Co. Ltd. ,
+e         Cholamandalam MS General Insurance Co. Ltd. , Manipal Cigna Health Insurance Company Limited ,
+insur     Edelweiss General Insurance Co. Ltd. , ECGC Ltd. , Future Generali India Insurance Co. Ltd. , Go Digit
+ance      General Insurance Ltd. , HDFC ERGO General Insurance Co.Ltd. , ICICI LOMBARD General Insurance Co.
+to be     Ltd. , IFFCO TOKIO General Insurance Co. Ltd. , Kotak Mahindra General Insurance Co. Ltd. , Liberty
+taken     General Insurance Ltd. , Magma HDI General Insurance Co. Ltd. , Niva Bupa Health Insurance Co Ltd. ,
+(can      National Insurance Co. Ltd. , Raheja QBE General Insurance Co. Ltd. , Reliance General Insurance Co.
+indica    Ltd. , Reliance Health Insurance Ltd. , Care Health Insurance Ltd , Royal Sundaram General Insurance
+te        Co. Ltd. , SBI General Insurance Co. Ltd. , Shriram General Insurance Co. Ltd. , Star Health & Allied
+multi     Insurance Co. Ltd. , Tata AIG General Insurance Co. Ltd. , The New India Assurance Co. Ltd. , The
+ple       Oriental Insurance Co. Ltd. , United India Insurance Co. Ltd. , Universal Sompo General Insurance Co.
+servic    Ltd.
+e
+provi
+ders)
+
+Addon(s)
+
+                                               Additional Details
+
+Insur
+ance
+Start
+Date
+
+
+
+
+                                                                                                                   4/6
+Additional Specification Documents/अित र           विश   द तावेज़
+
+
+
+
+Consignees/Reporting Officer/परे षती/ रपो टग अिधकार
+
+
+                                                                           No. of
+                  Consignee                                             People in the
+ S.No./ .      Reporting/Officer/                                          Buyer                Additional
+                 परे षती/ रपो टग               Address/पता
+      सं.                                                               organization           Requirement
+                     अिधकार                                                being
+                                                                          insured
+
+                                      226010,A-2/46, Vijay Khand,
+ 1            Gourav Pandey                                             7420             N/A
+                                      Gomti Nagar, Lucknow-226010.
+
+
+
+
+Buyer Added Bid Specific Terms and Conditions/ े ता                                       ारा जोड़ गई बड क    वशेष शत
+
+     1. Generic
+
+        OPTION CLAUSE: The Purchaser reserves the right to increase or decrease the quantity to be ordered up
+        to 25 percent of bid quantity at the time of placement of contract. The purchaser also reserves the right to
+        increase the ordered quantity by up to 25% of the contracted quantity during the currency of the
+        contract at the contracted rates. Bidders are bound to accept the orders accordingly.
+
+
+
+Disclaimer/अ वीकरण
+The additional terms and conditions have been incorporated by the Buyer after approval of the Competent
+Authority in Buyer Organization, whereby Buyer organization is solely responsible for the impact of these clauses
+on the bidding process, its outcome, and consequences thereof including any eccentricity / restriction arising in
+the bidding process due to these ATCs and due to modification of technical specifications and / or terms and
+conditions governing the bid. Any clause(s) incorporated by the Buyer regarding following shall be treated as
+null and void and would not be considered as part of bid:-
+
+     1. Definition of Class I and Class II suppliers in the bid not in line with the extant Order / Office Memorandum
+        issued by DPIIT in this regard.
+     2. Seeking EMD submission from bidder(s), including via Additional Terms & Conditions, in contravention to
+        exemption provided to such sellers under GeM GTC.
+     3. Publishing Custom / BOQ bids for items for which regular GeM categories are available without any
+        Category item bunched with it.
+     4. Creating BoQ bid for single item.
+     5. Mentioning specific Brand or Make or Model or Manufacturer or Dealer name.
+     6. Mandating submission of documents in physical form as a pre-requisite to qualify bidders.
+     7. Floating / creation of work contracts as Custom Bids in Services.
+     8. Seeking sample with bid or approval of samples during bid evaluation process.
+     9. Mandating foreign / international certifications even in case of existence of Indian Standards without
+        specifying equivalent Indian Certification / standards.
+  10. Seeking experience from specific organization / department / institute only or from foreign / export
+      experience.
+  11. Creating bid for items from irrelevant categories.
+  12. Incorporating any clause against the MSME policy and Preference to Make in India Policy.
+
+
+
+                                                                                                                        5/6
+     13. Reference of conditions published on any external site or reference to external documents/clauses.
+     14. Asking for any Tender fee / Bid Participation fee / Auction fee in case of Bids / Forward Auction, as the
+         case may be.
+
+Further, if any seller has any objection/grievance against these additional clauses or otherwise on any aspect of
+this bid, they can raise their representation against the same by using the Representation window provided in
+the bid details field in Seller dashboard after logging in as a seller within 4 days of bid publication on GeM. Buyer
+is duty bound to reply to all such representations and would not be allowed to open bids if he fails to reply to
+such representations.
+
+
+
+
+ This Bid is governed by the General Terms and Conditions/सामा य िनयम और शत, conditons stipulated in Bid and
+Service Level Agreement specific to this Service as provided in the Marketplace. However in case if any condition
+specified in General Terms and Conditions/सामा य िनयम और शत is contradicted by the conditions stipulated in
+Service Level Agreement, then it will over ride the conditions in the General Terms and Conditions.
+In terms of GeM GTC clause 26 regarding Restrictions on procurement from a bidder of a country which shares a land border with India, any bidder from a country which
+shares a land border with India will be eligible to bid in this tender only if the bidder is registered with the Competent Authority. While participating in bid, Bidder has to
+undertake compliance of this and any false declaration and non-compliance of this would be a ground for immediate termination of the contract and further legal action
+
+in accordance with the laws./ जेम   क सामा य शत के खंड 26 के संदभ म भारत के साथ भूिम सीमा साझा करने वाले दे श के बडर से खर द
+पर     ितबंध के संबंध म भारत के साथ भूिम सीमा साझा करने वाले दे श का कोई भी बडर इस िन वदा म बड दे ने के िलए तभी पा                                                       होगा
+जब वह बड दे ने वाला स म                 ािधकार के पास पंजीकृ त हो। बड म भाग लेते समय बडर को इसका अनुपालन करना होगा और कोई भी
+गलत घोषणा कए जाने व इसका अनुपालन न करने पर अनुबंध को त काल समा                                             करने और कानून के अनुसार आगे क कानूनी कारवाई
+का आधार होगा।
+
+
+                                                                  ---Thank You/ ध यवाद---
+
+
+
+
+                                                                                                                                                                              6/6
+
